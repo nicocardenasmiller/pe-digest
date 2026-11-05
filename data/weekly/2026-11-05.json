@@ -1,0 +1,3295 @@
+{
+ "generated_at": "2026-11-05T22:00:16+00:00",
+ "week_of": "2026-11-05",
+ "window": {
+  "from": "2026-10-22",
+  "to": "2026-11-05"
+ },
+ "counts": {
+  "raw": 105,
+  "new_after_dedupe": 105,
+  "candidates": 80,
+  "other": 25,
+  "rising": 15,
+  "missing_abstract": 16,
+  "unresolved_sources": [
+   "CEPR Discussion Papers",
+   "IZA Discussion Papers",
+   "CESifo Working Papers",
+   "IDB Working Papers"
+  ],
+  "api_calls": 58
+ },
+ "candidates": [
+  {
+   "id": "W7225174171",
+   "doi": "https://doi.org/10.1017/psrm.2026.10135",
+   "title": "Partisan responsiveness in real time: causal evidence from Trump’s military attack on Iran",
+   "abstract": "Abstract Elite cues signal citizens how to interpret political events through a partisan lens. Do these effects occur in real time? We exploit President Trump’s unexpected announcement of US military strikes against Iran during a nationally representative survey to estimate the causal effect of elite cues on public opinion. Leveraging minute-level variation in exposure, we find that partisan divergence emerges almost immediately: support for military intervention increases among Republicans but declines among Democrats. These large effects remain robust across 28,672 model specifications and 57,344 partisan-specific treatment effects. Our quasi-experimental evidence demonstrates that elite cues can polarize public opinion within minutes, even before media framing and partisan commentary have diffused, highlighting the speed of partisan opinion formation and its implications for democratic accountability.",
+   "missing_abstract": false,
+   "authors": [
+    "Stuart James Turnbull-Dugarte",
+    "Peter Luca Versteegen",
+    "Daniel Devine",
+    "Owen Winter"
+   ],
+   "institutions": [
+    "University of Southampton",
+    "Universität Hamburg"
+   ],
+   "author_ids": [
+    "A5037553581",
+    "A5077906978",
+    "A5047715928",
+    "A5071471757"
+   ],
+   "date": "2026-11-03",
+   "type": "article",
+   "language": "en",
+   "source": "Political Science Research and Methods",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/psrm.2026.10135",
+   "cited_by_count": 0,
+   "prefilter_score": 0.1425,
+   "max_author_h_index": 16
+  },
+  {
+   "id": "W7223168253",
+   "doi": "https://doi.org/10.1016/j.ejpoleco.2026.102910",
+   "title": "Beyond technocracy: Toward a holistic approach to central bank trust",
+   "abstract": "We examine public trust in the European Central Bank (ECB) and its correlates using survey data from the Bundesbank Online Panel of Households for Germany. Drawing on insights from political science and psychology, we move beyond technocracy and develop a more holistic account of central bank trust. We show that trust in the ECB is associated with both competence aspects, defined as effectiveness in maintaining price stability and reliance on rules, scientific analysis and data—and value aspects, particularly the integrity of senior policymakers, honest communication and broader societal concern. Respondents who report that competence matters more report significantly higher trust in the ECB. In contrast, those who place greater importance on values tend to express lower trust. Trust in the ECB is also strongly associated with trust in political institutions more generally and, to a lesser extent, interpersonal trust. Together, our findings offer a fresh perspective on trust in central banks, in which respondents report value-related considerations alongside competence. Integrity and transparent communication are already part of the ECB’s existing ethics and accountability framework, so placing weight on these considerations raises no question about its mandate.",
+   "missing_abstract": false,
+   "authors": [
+    "Sandra Eickmeier",
+    "Luba Petersen"
+   ],
+   "institutions": [
+    "Deutsche Bundesbank",
+    "Simon Fraser University"
+   ],
+   "author_ids": [
+    "A5059118439",
+    "A5079049446"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Economy",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.ejpoleco.2026.102910",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0987,
+   "max_author_h_index": 26
+  },
+  {
+   "id": "W7223465394",
+   "doi": "https://doi.org/10.1007/s11109-026-10221-z",
+   "title": "Beliefs About Public Opinion and the Perceived Legitimacy of Policy Decisions",
+   "abstract": "Abstract Democratic legitimacy is typically thought to depend on whether political decisions reflect public opinion, or majority preferences. Do citizens share this standard? And what if citizens are wrong about public opinion? We study how beliefs about public support for controversial policy proposals are associated with the perceived legitimacy of adopting them, and whether accurate polling information changes these judgments. In a representative survey experiment in Germany, respondents reported their own position on four such proposals, estimated public support, and rated the legitimacy of adopting each one. For a random subset of proposals, respondents received accurate polling information showing that the proposal lacked majority support. We find that perceived public support predicts legitimacy judgments even after accounting for respondents’ own policy preferences. Yet these perceptions are often inaccurate and shaped by respondents’ own views. Corrective polling information modestly lowers perceived legitimacy, especially among those who initially overestimated public support. The findings suggest that misperceptions of public opinion can distort, but accurate information can also partly correct, citizens’ assessments of democratic legitimacy.",
+   "missing_abstract": false,
+   "authors": [
+    "Nils D. Steiner",
+    "Claudia Landwehr"
+   ],
+   "institutions": [
+    "Johannes Gutenberg University Mainz"
+   ],
+   "author_ids": [
+    "A5059696627",
+    "A5089756562"
+   ],
+   "date": "2026-10-24",
+   "type": "article",
+   "language": "en",
+   "source": "Political Behavior",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1007/s11109-026-10221-z",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0966,
+   "max_author_h_index": 20
+  },
+  {
+   "id": "W7223261584",
+   "doi": "https://doi.org/10.1111/ajps.70088",
+   "title": "Learning traps",
+   "abstract": "Abstract When constituents are uncertain about whether leaders' policy preferences align with their interests, policy choices generate a trade‐off between payoffs and information. Leaders can experiment with their preferred policy, but if the outcome is bad, constituents learn this and threaten office removal. I use a repeated model of political agency to analyze how this trade‐off shapes long‐lived, term‐unlimited leaders' policy choices. When there is uncertainty about the optimal policy for constituents, leaders implement “learning traps”: spatially intermediate policies that halt learning about what the best policy is. They experiment only when their preferences are very likely to be aligned with constituents, a contrast to the “gambling for resurrection” logic ubiquitous in the literature. I provide a case study that examines how the 1861 reforms ending Serfdom in Imperial Russia represented the logic of a “learning trap” and illustrate additional applications of the model to political contagion and economic policymaking.",
+   "missing_abstract": false,
+   "authors": [
+    "Hassan Sayed"
+   ],
+   "institutions": [
+    "Center for Global Development"
+   ],
+   "author_ids": [
+    "A5159333890"
+   ],
+   "date": "2026-10-23",
+   "type": "article",
+   "language": "en",
+   "source": "American Journal of Political Science",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1111/ajps.70088",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0877,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224115010",
+   "doi": "https://doi.org/10.1017/s000305542610207x",
+   "title": "Economic Self-Interest and Support for Redistribution: New Evidence Using Election Results Data",
+   "abstract": "A formidable corpus of scholarship explores the role of economic self-interest in shaping public support for redistribution. One striking feature of this literature is its near-exclusive reliance on reported preferences in surveys, with little-to-no research analyzing revealed preferences in the form of actual voting on redistribution. Leveraging eight redistributive ballot initiatives across six American states and a total of 73,053 observations of revealed support for redistribution, we uncover consistent evidence that the economic standing of precinct voters is systematically related to their support for redistribution. We find that lower- to upper-middle-income precincts are each significantly more supportive of redistribution than upper-income precincts, with pronounced decreases in support associated with the increasing prevalence of high-income households subject to proposed tax increases. Finally, we observe the largest class differential in support for redistribution in more heavily Republican precincts.",
+   "missing_abstract": false,
+   "authors": [
+    "Jieun Lee",
+    "E. Grant Baldwin",
+    "G. Agustin Markarian",
+    "Benjamin J. Newman"
+   ],
+   "institutions": [
+    "Loyola University Chicago",
+    "University of California, Los Angeles",
+    "University of California, Riverside"
+   ],
+   "author_ids": [
+    "A5160002932",
+    "A5160063553",
+    "A5056138287",
+    "A5030044044"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s000305542610207x",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0871,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W7224165558",
+   "doi": "https://doi.org/10.1080/09692290.2026.2752516",
+   "title": "Host-country media discourse and China’s economic presence in Africa",
+   "abstract": "China’s economic engagement in Africa takes place in changing host-country discourse environments, yet the consequences of adverse media reporting for China’s overseas presence remain unclear. We argue that worsening media tone can signal rising operating risk and may therefore trigger adjustment across different margins of presence. Using an annual panel of 54 African countries for 2010–2023, we construct lagged media-tone shocks from the Global Database of Events, Language, and Tone and estimate their dynamic association with Chinese project personnel and FDI stocks. We combine Double Machine Learning with two-way fixed effects, conventional fixed-effects benchmarks, balanced-sample checks and an Afrobarometer exercise. The evidence is consistent with a selective-adjustment pattern. Negative media-tone shocks are associated with a delayed reduction in Chinese project personnel, with effects that emerge at the three- and four-year horizons. Positive shocks show no comparable expansion effect. Chinese overseas presence adjusts primarily to negative shifts in discourse through the more flexible personnel margin, while FDI stocks respond slowly and less consistently. The host country’s institutional context also influences the staffing response. The findings suggest that hostile discourse becomes especially materially consequential when it is likely to translate into operating risk.",
+   "missing_abstract": false,
+   "authors": [
+    "Lita Alita",
+    "Diana Panke"
+   ],
+   "institutions": [
+    "Freie Universität Berlin",
+    "University of International Business and Economics"
+   ],
+   "author_ids": [
+    "A5036974978",
+    "A5090864710"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Review of International Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/09692290.2026.2752516",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0855,
+   "max_author_h_index": 30
+  },
+  {
+   "id": "W7223458148",
+   "doi": "https://doi.org/10.1007/s11558-026-09654-2",
+   "title": "Trading migration? Explaining mobility provisions in preferential trade agreements",
+   "abstract": "Abstract Notwithstanding a generally unfavorable political climate regarding international migration, preferential trade agreements (PTAs) increasingly include provisions facilitating the temporary movement of specific categories of workers. Today, approximately seven in ten newly concluded PTAs contain clauses that enable the mobility of workers and businesspeople—particularly business visitors and intra-corporate transferees, who constitute a substantial share of skilled temporary migration in advanced industrial economies. This trend is striking given states’ longstanding emphasis on preserving sovereign control over migration policy. This article investigates the drivers of mobility provisions in PTAs and the implications for broader economic and migration policy. We develop and test three theoretical logics: (1) a trade logic grounded in interests resulting from economic interdependence; (2) a politics logic centered on migration control objectives; and (3) an institutional logic emphasizing path dependence and diffusion. Drawing on the MITA dataset, which codes mobility provisions in PTAs globally from 1960 to 2020, we find that economic interdependence and institutional path dependence are the primary forces behind mobility provisions, while migration control prerogatives have little explanatory power for either the presence, scope, or depth of these provisions. Our findings underscore the economic rationale behind mobility provisions in trade agreements, highlighting a pattern of selective liberalization for highly skilled workers and an increasingly fragmented landscape of migration governance.",
+   "missing_abstract": false,
+   "authors": [
+    "Philipp Lutz",
+    "Sandra Lavenex",
+    "Paula Hoffmeyer‐Zlotnik"
+   ],
+   "institutions": [
+    "Institut d'Etudes Politiques de Paris",
+    "University of Geneva"
+   ],
+   "author_ids": [
+    "A5047612783",
+    "A5023469819",
+    "A5007602688"
+   ],
+   "date": "2026-10-24",
+   "type": "article",
+   "language": "en",
+   "source": "The Review of International Organizations",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1007/s11558-026-09654-2",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0723,
+   "max_author_h_index": 36
+  },
+  {
+   "id": "W7224330875",
+   "doi": "https://doi.org/10.1017/lar.2026.10170",
+   "title": "International Law, Republican Experiments, and Political Economy in the Americas",
+   "abstract": "The most ambitious book under review, Greg Grandin's America, América, is a beautifully written narrative about the international relations of the Western Hemisphere.Grandin's plot centers on the development of \"American international law,\" a body of norms and international law that exalts the sovereignty and well-being of nation-states.Grandin sees it begin to emerge with Bartolomé de las Casas (1474-1566), the Spanish Dominican priest who denounced the destruction of Indigenous peoples, and the professors and jurists at and around the University of Salamanca who developed theologies and legal theories to protect the rights of the original inhabitants of the Americas.Grandin's tale culminates with the hemispheric solidarity of World War II, when New Dealers, \"who treated Latin America tenderly,\" argued that \"the best way to advance democracy\" was to combat \"the fascist defenders of the oligarchy,\" and to increase \"raising of wages and provision of welfare\" (512).",
+   "missing_abstract": false,
+   "authors": [
+    "Fabrice Lehoucq"
+   ],
+   "institutions": [
+    "University of North Carolina at Greensboro"
+   ],
+   "author_ids": [
+    "A5030844784"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10170",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0719,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W7224259526",
+   "doi": "https://doi.org/10.1093/poq/nfag069",
+   "title": "Investigating the Utility of LLM-Based “Silicon Samples” in Political Science Conjoint Experiments",
+   "abstract": "Abstract This research note is the first study to explore the viability of using LLM-generated respondents in forced-choice conjoint experiments. I generate naive “silicon samples” using three models, GPT 4o-Mini, Llama 3.2, and Magistral-small-2506, benchmarked to a large sample of live conjoint respondents, allowing for direct comparisons between human and silicon choices. The resulting analyses suggest that naively generated silicon samples are insufficient to simulate human decision-making in conjoint tasks; these results also suggest that there are systemic differences in the way demographic covariates shape LLM and human choices in experimental contexts. In total, this analysis makes two important contributions: it establishes a descriptive baseline understanding of LLM-generated respondent performance in conjoint experiments and suggests that naive silicon samples cannot accurately infer human choices using demographic traits in experimental decision making contexts. Finally, the implications of these results imply that LLMs consider covariates differently than live respondents do in micro-level decision making contexts.",
+   "missing_abstract": false,
+   "authors": [
+    "Alice Malmberg"
+   ],
+   "institutions": [
+    "Johns Hopkins University"
+   ],
+   "author_ids": [
+    "A5112252158"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Public Opinion Quarterly",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1093/poq/nfag069",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0705,
+   "max_author_h_index": 4
+  },
+  {
+   "id": "W7224848391",
+   "doi": "https://doi.org/10.1017/s0003055426101981",
+   "title": "Trade Interdependence in the Modern Global Economy",
+   "abstract": "Analyzing global trade interdependence requires an approach that incorporates fundamental features of the modern economy: intense trade in intermediates and the changing availability of alternative partners and substitute products. We use theoretical models of structural gravity to construct measures of dyadic dependence that directly incorporate these features. The measures describe (1) how much trade interruptions damage a country’s welfare and (2) how much additional trade it would take from their existing trade partners to compensate. We then show three important findings. First, the new measures differ from traditional measures based on aggregate trade statistics. Second, they show how, contrary to much common wisdom, the world has not marched inexorably toward greater interdependence. Third, we use China’s foreign assistance, as exemplified by the Belt and Road Initiative, to assess the consequences of one major government policy. Chinese assistance has increased partners’ dependence on China, without a reciprocal increase in Chinese dependence.",
+   "missing_abstract": false,
+   "authors": [
+    "Michael‐David Mangini",
+    "Stephen Chaudoin"
+   ],
+   "institutions": [
+    "Harvard University",
+    "University of Southern California"
+   ],
+   "author_ids": [
+    "A5092236339",
+    "A5064879044"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055426101981",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0673,
+   "max_author_h_index": 16
+  },
+  {
+   "id": "W7224099394",
+   "doi": "https://doi.org/10.1017/s0003055425101147",
+   "title": "PSR volume 120 issue 4 Cover and Back matter",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [],
+   "institutions": [],
+   "author_ids": [],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055425101147",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0664,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224102241",
+   "doi": "https://doi.org/10.1017/s0003055425101135",
+   "title": "PSR volume 120 issue 4 Cover and Front matter",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [],
+   "institutions": [],
+   "author_ids": [],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055425101135",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0664,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224316200",
+   "doi": "https://doi.org/10.1080/13563467.2026.2747292",
+   "title": "Pursuing fiscal credibility, performing fiscal discipline: epistemic politics and status seeking in Italy and Spain’s Eurozone accession",
+   "abstract": "There is a prolific literature on the politics of austerity, highlighting how its confidence effects arise from fiscal retrenchment embodying and signalling a credible commitment to markets’ interests. However, I argue that this implicitly performative account of fiscal credibility is too functionalist, underplaying how states continually negotiate it with different audiences. To overcome these issues, this article develops an alternative theorisation of (fiscal) credibility as a perlocutionary performative, meaning it is dependent on felicitous conditions to be brought about. Channelling a ‘practice-based constructivist’ framework through an ‘epistemic politics’ and ‘status seeking’ lens, I use archival and biographical research to study Italy and Spain’s Eurozone accession during the 1990s. My argument is that the success of their austerity programmes, and therefore of their accession strategies, depended on a series of cognitive and strategic dynamics beyond fiscal retrenchment – mainly, based on the epistemic politics of multilateral surveillance, national status claims to fiscal credibility, and the social construction of ‘credibility’ under a broad set of fiscal and non-fiscal parameters. As such, this article contributes to recent constructivist research on the practical life of ideas and on epistemic politics, showing the dynamics of construction, performance, and contestation surrounding austerity and fiscal credibility.",
+   "missing_abstract": false,
+   "authors": [
+    "Guillermo V. Alonso"
+   ],
+   "institutions": [
+    "University of Warwick"
+   ],
+   "author_ids": [
+    "A5101397629"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2747292",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0633,
+   "max_author_h_index": 5
+  },
+  {
+   "id": "W4400524233",
+   "doi": "https://doi.org/10.1111/ajps.70095",
+   "title": "Can citizen election observation increase public confidence in US elections?",
+   "abstract": "Abstract Nonpartisan citizen election observation plays an important role in promoting the credibility of electoral processes around the world. This article assesses whether nonpartisan observation can shape attitudes among the US public, randomizing information about nonpartisan domestic observers in a series of survey experiments fielded to nearly 10,000 respondents. These included both hypothetical vignettes and information about a real‐world nonpartisan domestic observation mission undertaken by The Carter Center during the 2022 midterm elections in Fulton County, Georgia. The results show that information about positive assessments by nonpartisan observers of the hypothetical and Fulton County elections increased respondents' confidence in electoral results and processes, and also made respondents more likely to identify the officially announced winner over the candidate they favored as the candidate who won. Alternative ways of framing observers were largely inconsequential.",
+   "missing_abstract": false,
+   "authors": [
+    "Jennie Barker",
+    "Oren Samet",
+    "Susan Hyde"
+   ],
+   "institutions": [
+    "Rice University",
+    "University of California, Berkeley"
+   ],
+   "author_ids": [
+    "A5111254158",
+    "A5002656357",
+    "A5041216004"
+   ],
+   "date": "2026-11-04",
+   "type": "article",
+   "language": "en",
+   "source": "American Journal of Political Science",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1111/ajps.70095",
+   "cited_by_count": 2,
+   "prefilter_score": 0.0622,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W4408408603",
+   "doi": "https://doi.org/10.1177/00104140261500267",
+   "title": "When Can Political Parties Credibly Change Their Policies?",
+   "abstract": "When can a party credibly change its policy on an issue? No institution forces parties to keep their promises after being elected. Voters may thus view platform shifts as mere pandering, discounting their credibility. We propose that voters use the direction of a platform shift as a signal of the party’s motives and policy commitment. Shifting to an unpopular position is a costly signal of principled motives, while moving toward a popular one suggests opportunistic ones. Two preregistered survey experiments, one evaluating a general setting and another focusing on a real case of mainstream party accommodation to the radical right, show that voters infer party motives and commitment from platform shifts in line with the predictions of our argument. Our study provides important insights into the electoral persistence of radical right parties, party system stability, and why platform shifts often fail to affect voter perceptions of party positions.",
+   "missing_abstract": false,
+   "authors": [
+    "Love Christensen",
+    "Pablo Fernández-Vázquez"
+   ],
+   "institutions": [
+    "Aarhus University",
+    "Universidad Carlos III de Madrid"
+   ],
+   "author_ids": [
+    "A5041234219",
+    "A5052495519"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500267",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0611,
+   "max_author_h_index": 10
+  },
+  {
+   "id": "W7224807583",
+   "doi": "https://doi.org/10.1007/s11109-026-10208-w",
+   "title": "Distinction Without a Difference: American Public Opinion on Immigrants and Refugees",
+   "abstract": "Abstract Do Americans hold refugees in higher regard than immigrants? If so, why? We theorize that refugees activate humanitarian concerns and perceptions of deservingness, while immigrants trigger threat perceptions and competition, leading to divergent mental associations toward each group. We investigate these questions with a nationally representative online survey experiment fielded in 2024 that contrasts Americans’ attitudes toward refugees and immigrants using both open- and close-ended questions. Open-ended mentions reveal that refugees trigger themes of involuntariness, conflict, and humanitarianism, while immigrants elicit themes of domestic politics, fairness, and threat. Close-ended responses indicate that Americans view immigrants as more competent and more agentic than refugees, and they associate refugees and immigrants with different reasons for coming to the United States. Despite these differences in beliefs, respondents report no significant differences on warmth stereotypes, group affect, or policy preferences. Thus, while Americans do possess some divergent beliefs about refugees and immigrants, ultimately these are distinctions without a difference when it comes to group affect and policy opinions.",
+   "missing_abstract": false,
+   "authors": [
+    "Alexander Tripp",
+    "Cindy D. Kam"
+   ],
+   "institutions": [
+    "Vanderbilt University"
+   ],
+   "author_ids": [
+    "A5103322943",
+    "A5018139925"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "Political Behavior",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1007/s11109-026-10208-w",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0608,
+   "max_author_h_index": 33
+  },
+  {
+   "id": "W7221344873",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751102",
+   "title": "Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling",
+   "abstract": "This article investigates the geopolitical dynamics driving Europe’s emerging technological decoupling from China. Focusing on the semiconductor industry and the Dutch semiconductor firm ASML, it examines how technonationalism emanating from the US has shaped a small European member state’s policy response amid intensifying US-China rivalry. The article analyses how national security arguments and US strategic influence aimed at undermining China’s advances in high-tech has reshaped the Dutch semiconductor export control regime in a way that seemingly contradicts both ASML’s corporate interests and Dutch long-term economic interests. Moreover, cutting the dependency ties of China to one of the few chokepoint industries and tech firms in the EU arguably undermines its commitment to ‘technological sovereignty’. We explain these puzzling outcomes through the inherent contradictions within technonationalism and the tensions between state and corporate actors strategizing around different national security and profit-oriented interests. As such, we argue that the case of ASML offers a useful prism through which to study the ongoing ‘geoeconomic’ shift in the global political economy in which the alignment of the geopolitical and capital logics characteristic of neoliberal globalisation is coming apart, with state and corporate actors attempting to realign these logics into different configurations.",
+   "missing_abstract": false,
+   "authors": [
+    "Naná de Graaff",
+    "Jaša Veselinovič",
+    "Adam Geoffrey Tyler"
+   ],
+   "institutions": [
+    "Vrije Universiteit Amsterdam"
+   ],
+   "author_ids": [
+    "A5041298995",
+    "A5009709352",
+    "A5136886208"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751102",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0589,
+   "max_author_h_index": 19
+  },
+  {
+   "id": "W7224630284",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751110",
+   "title": "The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry",
+   "abstract": "The ramp up of European defence industrial production raises a critical question for the future shape and competitiveness of the European Defence Technological and Industrial Base (EDTIB): will it continue to be dominated and limited by core European Union (EU) producers or is there an ongoing redistribution of defence production? We argue a significant redistribution is underway, although not caused by recent geopolitical shocks, but by the long-term agency of the semi-periphery itself. Our analysis identifies a distinct long-term pathway of defence-industrial upgrading in Eastern and Central Europe (ECE), which unfolds within the broader context of Dependent Market Economies (DMEs) and which we term the Militarised DME (M-DME). The EU’s recent geoeconomic turn did not create this trajectory but validated and accelerated it. Using time-series cluster analysis of EU arms export data, we identify a sustained rise in high-value-added (HVA) exports associated primarily with indigenously controlled actors. Ultimately, our findings point to a contested re-division of labour that predates the current security crisis and has important implications for European strategic autonomy, industrial integration, and the future shape of the EDTIB.",
+   "missing_abstract": false,
+   "authors": [
+    "Martin Chovančík",
+    "Adriana Ilavská",
+    "Oldřich Krpec"
+   ],
+   "institutions": [
+    "Masaryk University"
+   ],
+   "author_ids": [
+    "A5000586581",
+    "A5024313923",
+    "A5051762275"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751110",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0569,
+   "max_author_h_index": 6
+  },
+  {
+   "id": "W7223354473",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751107",
+   "title": "Globalised but divided: European corporations and the EU’s geoeconomic turn against China",
+   "abstract": "The European Union’s ‘geoeconomic turn’ against China is hotly debated among international political economy scholars, but the role of Europe’s leading corporations in this shift remains underexplored. This article focuses on the European Round Table for Industry, an elite forum of corporate executives tightly connected to the European Commission. The ERT played a key role in aligning European integration with corporate interests from the 1980s to 2000s. However, it has fallen out of step with the European Commission, whose posture has hardened since branding China a ‘systemic rival’. The disjuncture between the Commission’s assertive stance and the ERT’s more tentative approach to China prompts us to test and rethink what we know about state-business relations in a new geoeconomic age. Drawing on data under-used in IPE to chart ERT firms’ ‘territorial’ and ‘network integration’ with China, our analysis reveals a significant minority of firms deeply integrated into the Chinese market and supplier base, a small group of firms with minimal ties potentially receptive to the EU’s ‘geoeconomic turn’, and a large array of partially integrated companies in between these two positions. This uneasy balance of forces within the ERT explains why it is trailing rather than driving the EU’s stance.",
+   "missing_abstract": false,
+   "authors": [
+    "Julian Germann",
+    "Steve Rolf",
+    "Joseph Baines",
+    "Sean Kenji Starrs"
+   ],
+   "institutions": [
+    "King's College London",
+    "University of Sussex"
+   ],
+   "author_ids": [
+    "A5069769538",
+    "A5025745712",
+    "A5090702422",
+    "A5022466640"
+   ],
+   "date": "2026-10-23",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751107",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0562,
+   "max_author_h_index": 12
+  },
+  {
+   "id": "W7225204457",
+   "doi": "https://doi.org/10.1111/ecpo.70076",
+   "title": "Sustained Higher Education Expansion and Firms' Productivity: Evidence From China",
+   "abstract": "ABSTRACT This study investigates the relationship between China's sustained higher education expansion and the productivity of A‐share listed firms from 2004 to 2020. We find that a larger supply of university graduates is associated with significantly higher firm total factor productivity (TFP) on average, a result robust to extensive testing. Mechanism analysis points to three plausible channels: an increased share of skilled labor, strengthened innovation, and accelerated digital transformation. However, the relationship is asymmetric. While graduate inflows are linked to higher TFP in large, R&D‐intensive, and high‐intangible‐asset firms, they are linked to lower productivity in small firms. Specifically, this negative association is concentrated among small enterprises that are non‐state‐owned, labor‐intensive, and financially constrained, with low intangible assets. These findings provide new micro‐level evidence on the heterogeneous value of human capital, offering policy implications for better alignment of graduate supply with firm capabilities.",
+   "missing_abstract": false,
+   "authors": [
+    "Haozhi Tong",
+    "Hamish D. Anderson",
+    "Jing Chi"
+   ],
+   "institutions": [
+    "Massey University"
+   ],
+   "author_ids": [
+    "A5160443416",
+    "A5006535955",
+    "A5077736863"
+   ],
+   "date": "2026-11-02",
+   "type": "article",
+   "language": "en",
+   "source": "Economics & Politics",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1111/ecpo.70076",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0555,
+   "max_author_h_index": 21
+  },
+  {
+   "id": "W4414116330",
+   "doi": "https://doi.org/10.1017/s0003055426102111",
+   "title": "Globalization and the Hinterland: International Trade and the Rural–Urban Divide",
+   "abstract": "The growing political divide between rural and urban regions is often attributed to rural deindustrialization and import competition in manufacturing. Yet this cleavage emerged in many countries well before rural industrialization, pointing to underlying economic forces that existing accounts have overlooked. We argue that comparative advantage in agriculture is one such force: rural voters are more likely to support protectionist parties and policies when local agriculture is uncompetitive, as this sector is often central to their communities' economic and social life. Using a new harmonized dataset of surveys from 127 countries and extensive data on voting behavior, we find strong support for our argument. An additional analysis exploiting exogenous subnational variation in agricultural competitiveness in the United States post-NAFTA further corroborates our findings: The political divide between rural and urban voters is pronounced in uncompetitive regions but negligible in those possessing a comparative advantage in agriculture.",
+   "missing_abstract": false,
+   "authors": [
+    "Edward D. Mansfield",
+    "Omer Solodoch"
+   ],
+   "institutions": [
+    "Hebrew University of Jerusalem",
+    "University of Pennsylvania"
+   ],
+   "author_ids": [
+    "A5090940699",
+    "A5059002840"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055426102111",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0551,
+   "max_author_h_index": 46
+  },
+  {
+   "id": "W7223572355",
+   "doi": "https://doi.org/10.1017/lar.2026.10180",
+   "title": "Post-National Tangos: Exile and Cultural Legitimation in El pretexto de París (Jorge Asís, 1985) and Informe de París (Paula Wajsman, 1990)",
+   "abstract": "Abstract This article examines two novels that drew on the themes and tropes of tango to depict Argentine exile in Paris in the aftermath of the 1976–1983 dictatorship: Jorge Asís’s El pretexto de París (1985) and Paula Wajsman’s Informe de París (1990). These novels fictionalized Paris through the lens of Argentine culture to present controversial standpoints regarding issues that were heatedly debated at the time, such as the figure of the exiled intellectual and human rights activism. Moreover, both Asís and Wajsman designed their main characters and self-representations as authors by reimagining the gender archetypes of tango in the Parisian context. A cultural form particular to the Río de la Plata, tango allowed them to challenge the paradigm of the Latin American author favored in Europe during the 1980s, which was commonly associated with political commitment and the figures of the Boom. On the one hand, Asís reappropriated the opportunism and artfulness of the compadrito through a sexualized use of language that allegorized his masculine conquest of literary prestige. On the other hand, Wajsman reimagined the figure of the milonguita to reaffirm her independence as a woman and subvert gendered and neocolonial forms of cultural recognition.",
+   "missing_abstract": false,
+   "authors": [
+    "Rodrigo López Martínez"
+   ],
+   "institutions": [
+    "University College Dublin"
+   ],
+   "author_ids": [
+    "A5101987481"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10180",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0545,
+   "max_author_h_index": 1
+  },
+  {
+   "id": "W7223556067",
+   "doi": "https://doi.org/10.1017/lar.2026.10181",
+   "title": "Confronting Gender-Based Violence: Attacks on Women’s Organizations in Central America",
+   "abstract": "Abstract Women’s rights organizations in Central America have been key actors in promoting women’s right to a life free of violence and advocating for reproductive rights and other social and economic protections for women and girls. Yet throughout Central America, these organizations have experienced myriad attacks in recent years. In this article, we examine attacks on women’s rights organizations in four Central American countries: Guatemala, Honduras, El Salvador, and Nicaragua. Although there are important distinctions among the regimes of these four countries, across all of them, setbacks for women have occurred in contexts characterized by increased militarization, autocratic governance, the incursion of conservative religious ideologies in government policies, and the spread of dangerous misinformation that discredits women’s organizations’ efforts. Within these regimes, women’s organizations have been subjected to intimidation, physical violence, legal threats, and digital harassment. Our analysis identifies patterns in these attacks, showing similarities and differences across the four countries during various temporal moments. To do so, we draw on twenty-nine interviews with twenty-eight women activists, academics, and human rights defenders in the region as well as a compilation of newspaper articles, social media, and independent reports documenting attacks on women’s rights leaders and organizations in the four countries. Efforts to dismantle the work of women’s organizations and committed feminists in Central America provide a window into the gendered dimensions of authoritarian practices in the region.",
+   "missing_abstract": false,
+   "authors": [
+    "Cecilia Menjívar",
+    "Pamela Neumann"
+   ],
+   "institutions": [
+    "Texas A&M International University",
+    "University of California, Los Angeles"
+   ],
+   "author_ids": [
+    "A5005794534",
+    "A5017591134"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10181",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0539,
+   "max_author_h_index": 54
+  },
+  {
+   "id": "W7225102766",
+   "doi": "https://doi.org/10.1017/lar.2026.10172",
+   "title": "Breaking the Ice: Contributions and Challenges for Andean Glaciological Research Led by Women",
+   "abstract": "Abstract This study examines the participation of women in Andean glaciology over the past four decades, combining a bibliometric analysis of 204 peer-reviewed articles (1983–2022) and a survey of female first authors (2018–2022). Results show a steady increase in women-led publications, rising from 8 percent in the 1980s–1990s to 30 percent in the past decade. However, structural barriers, including unequal access to funding, resistance to female leadership, and the disproportionate burden of caregiving, continue to limit gender equity in the field. Women-led studies are concentrated in Argentina and Chile, while countries like Colombia, Bolivia, and Venezuela remain underrepresented. The methods most commonly used by female researchers are fieldwork and remote sensing, which reflects limited access to laboratory-based approaches. Survey responses highlight both the motivations (scientific interest, conservation) and challenges (discrimination, lack of recognition, work-life imbalance) faced by women scientists. The findings reveal persistent epistemic and territorial asymmetries, especially in the context of international research led by Global North institutions. The study underscores the need for inclusive policies that go beyond formal representation, supporting equitable research leadership and collaboration. Promoting gender equity in cryosphere science is not only a matter of justice; it is essential for generating contextually relevant, socially just, and scientifically robust responses to climate change in the Andes.",
+   "missing_abstract": false,
+   "authors": [
+    "Ana Isabel Huaico-Malhue",
+    "Edilia Jaque Castillo",
+    "Ana Guadalupe Hernández-Duarte",
+    "Marion San Juan Díaz",
+    "Mariajosé Herrera-Ossandón",
+    "Elizabet Lizama",
+    "Beatriz Cid Aguayo"
+   ],
+   "institutions": [
+    "Metropolitan University of Technology",
+    "Universidad Andrés Bello",
+    "Universidad de La Frontera",
+    "Universidad de Playa Ancha de Ciencias de la Educación",
+    "University of Concepción"
+   ],
+   "author_ids": [
+    "A5052334277",
+    "A5041665843",
+    "A5086546739",
+    "A5160326530",
+    "A5160357033",
+    "A5016054177",
+    "A5063712693"
+   ],
+   "date": "2026-11-02",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10172",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0537,
+   "max_author_h_index": 11
+  },
+  {
+   "id": "W7223801718",
+   "doi": "https://doi.org/10.1016/j.jpubeco.2026.105808",
+   "title": "Fiscal accountability: Institutional discipline and behavioral frictions",
+   "abstract": "We develop and test a model of fiscal accountability in which parties compete over integrated fiscal platforms comprising taxes, public-good provision, and political rents. The theory shows how power-sharing institutions discipline rent extraction: greater disproportionality in the vote-to-power mapping increases the political cost of marginal vote losses and, along the interior equilibrium, reduces rents, raises public-good provision, and improves voter welfare. We test these predictions in a laboratory election environment that observes both candidate platform choices and voter behavior. The evidence supports the central institutional mechanism. The disproportional rule reduces proposed rents, shifts platforms toward public-good provision, and increases aggregate voter welfare. Accountability, however, remains incomplete. Voters respond to fiscal performance, but less than the rational (automated) benchmark; partisan bias dampens policy responsiveness among opposing voters; and a public-good “gambit” makes rents less electorally costly when bundled with public-good gains.",
+   "missing_abstract": false,
+   "authors": [
+    "Alejandro Saporiti",
+    "Yizhi Wang"
+   ],
+   "institutions": [
+    "Tianjin University",
+    "University of Manchester"
+   ],
+   "author_ids": [
+    "A5058713998",
+    "A5159775441"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Public Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105808",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0523,
+   "max_author_h_index": 9
+  },
+  {
+   "id": "W7223935858",
+   "doi": "https://doi.org/10.1016/j.jpubeco.2026.105809",
+   "title": "Optimal avoidability in cross-border minimum taxation",
+   "abstract": "Many tax regimes collect revenue to the extent that other governments do not. This paper develops a theory of how such cross-border minimum taxes should be designed, focusing on choices that affect avoidance of the regime. Making a minimum tax more difficult to avoid retains more firms within the regime but weakens competition among tax havens. Havens then raise their rates toward the minimum, reducing the top-up tax rate on shifted profit. As a result, an avoidable minimum tax can raise more revenue for the governments that impose it than an unavoidable one.",
+   "missing_abstract": false,
+   "authors": [
+    "Adam L. Kern"
+   ],
+   "institutions": [
+    "University of San Diego"
+   ],
+   "author_ids": [
+    "A5089326712"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Public Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105809",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0519,
+   "max_author_h_index": 5
+  },
+  {
+   "id": "W7223177603",
+   "doi": "https://doi.org/10.1017/lar.2026.10175",
+   "title": "Collective Action, Sex-Gender Dissidence, and Migration in Chile: Politicized Affectivities and Identities",
+   "abstract": "Abstract This article analyzes how sex-gender-dissident migrants living in Chile interpret their involvement in activism. We develop an analysis based on ten in-depth interviews with LGBTI+ migrants residing in five regions of the country. We identify two interpretative repertoires regarding the involvement of these individuals in activism. The first, which we call political-affective, centers on the metaphor of family to describe the organizations where our interviewees participate: these spaces offer containment and protection against the injustices they face due to their gender identity, as well as mutual help and solidarity in the face of loneliness and lack of networks. The second repertoire, which we call political identity, is based on the strategic use of an identity linked to sex-gender dissidence to advance political claims. This use challenges the heteropatriarchal order and also, based on these migrants’ foreignness, the national framework upon which the nation-state is constructed.",
+   "missing_abstract": false,
+   "authors": [
+    "Fernanda Stang",
+    "Antonia Lara",
+    "Caterine Joanna Galaz Valderrama"
+   ],
+   "institutions": [
+    "Universidad Católica Silva Henríquez",
+    "University of Chile"
+   ],
+   "author_ids": [
+    "A5011631580",
+    "A5014018711",
+    "A5029737401"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10175",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0495,
+   "max_author_h_index": 13
+  },
+  {
+   "id": "W7224089378",
+   "doi": "https://doi.org/10.1080/09692290.2026.2748312",
+   "title": "China’s institution-building amidst (dynamic) network effects: how will the relations between the IMF and newcomer institutions evolve?",
+   "abstract": "How will the regime complex of balance-of-payments lending evolve amidst ongoing global power shifts? In this paper, we challenge the hitherto static outlook on the viability of external institutional change within the International Monetary Fund’s (IMF) institutional environment. Dominant views in International Political Economy suggest that the IMF’s current focality will persist as China’s reformist approach to balance-of-payments lending and strong network effects favoring the IMF induce (inter-)institutional inertia. In contrast, we argue that the interests of challenger states – particularly China – and their exposure to network effects are dynamic. Depending on challengers’ evolving reformist or revisionist interests and their dynamic exposure to network effects, we derive pathways for external institutional change toward multiple inter-institutional relations between the IMF and newcomer institutions. Based on theoretical extrapolation and empirical trends, we claim that institutional hedging is a probable pathway for China’s institution-building efforts in the near future. For the more distant future, we introduce complementary layering and conflictual counter-institutionalization as highly contingent possibilities and discuss how the (inter-)actions of challengers and defenders during the hedging phase may shape their (non-)materialization. We thereby offer a methodologically innovative and policy-relevant outlook on future institutional change in international finance.",
+   "missing_abstract": false,
+   "authors": [
+    "Andreas Kruck",
+    "Simon G. Weisser"
+   ],
+   "institutions": [
+    "Ludwig-Maximilians-Universität München",
+    "University of Cambridge"
+   ],
+   "author_ids": [
+    "A5079226965",
+    "A5159988915"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "Review of International Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/09692290.2026.2748312",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0487,
+   "max_author_h_index": 16
+  },
+  {
+   "id": "W7223656183",
+   "doi": "https://doi.org/10.1017/s0020818326101520",
+   "title": "Beyond the Battlefield: Localized Civilian Clashes and Political Attitudes in Violent Conflict",
+   "abstract": "Abstract In protracted conflicts, civilians frequently encounter low-level, hostile actions from adversary civilians in nearby communities, yet the political consequences of these events remain understudied. We investigate this question in the Israeli–Palestinian context, examining how community-level exposure to hostile actions by Israeli settlers shapes Palestinian political attitudes in the West Bank. Leveraging a novel data set containing thousands of geo-coded conflict events from 2010 to 2020 paired with forty-six Palestinian public opinion polls in the West Bank, we find that district-level increases in settler hostilities are significantly associated with heightened political militancy among local Palestinians, associations that are larger and more robust than those from local Israeli military actions. A second empirical strategy examining changes in Palestinian attitudes before and after the establishment of nearby settler outposts reveals that this form of civilian land expropriation likewise leads to modest increases in political militancy among Palestinians in proximate towns. These findings highlight the distinct political impact of localized, low-level civilian actions and territorial expropriation—central but often overlooked features of sectarian territorial conflicts—offering insights for territorial and ethnic disputes globally.",
+   "missing_abstract": false,
+   "authors": [
+    "Carly Nicole Wayne",
+    "Sivan Hirsch‐Hoefler",
+    "Masanori Kikuchi",
+    "Daphna Canetti"
+   ],
+   "institutions": [
+    "Reichman University",
+    "University of Haifa",
+    "Washington University in St. Louis"
+   ],
+   "author_ids": [
+    "A5053581450",
+    "A5044690606",
+    "A5070513783",
+    "A5060267463"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "International Organization",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1017/s0020818326101520",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0479,
+   "max_author_h_index": 37
+  },
+  {
+   "id": "W4415506908",
+   "doi": "https://doi.org/10.1177/00104140261500258",
+   "title": "Trade-Offs in Authoritarian Participatory Digital Surveillance: Evidence From China’s Sharp Eyes Project",
+   "abstract": "How do authoritarian regimes overcome the limits of digital surveillance? They complement camera systems with citizen monitoring and reporting, creating participatory surveillance in which residents interpret what cameras capture and supply local knowledge technology alone cannot provide. I study this hybrid form of control in China’s Sharp Eyes Project, which gives selected residents access to camera feeds and encourages reports of suspected misconduct. I use a staggered difference-in-differences analysis of administrative and survey data from Chinese cities. The program increases citizen reporting by 11%, reduces crimes susceptible to community monitoring, and lowers trust in neighbors. Reports expand the state’s informational reach, but the system makes residents uncertain about how neighbors may interpret and report their behavior. The study places political participation at the center of digital surveillance and shows how authoritarian regimes turn relations among citizens into a source of state power while weakening the foundations of collective action.",
+   "missing_abstract": false,
+   "authors": [
+    "Ziwen Zu"
+   ],
+   "institutions": [
+    "University of Tennessee at Knoxville"
+   ],
+   "author_ids": [
+    "A5045904127"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500258",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0477,
+   "max_author_h_index": 2
+  },
+  {
+   "id": "W7224022803",
+   "doi": "https://doi.org/10.1093/ser/mwag062",
+   "title": "Protestantism and insurance—an elective affinity? A multilevel comparative-historical analysis of the confessional insurance gap",
+   "abstract": "Abstract While there are many studies and theories about the rise of social insurance and the public welfare state, the prior emergence and growth of private life and nonlife insurance are largely understudied, mostly due to a lack of data. This article fills this gap by testing whether there is an elective affinity between the rise and evolution of private insurance and Protestantism that is irreducible to typical factors external to religion (gross domestic product, education, demography, public welfare). Drawing on multiple new datasets, the paper tests whether Catholic–Protestant differences in insurance demand persist when controlling for standard covariates external to religion across nineteen OECD countries (1870–2020), across states in the confessionally mixed federations of Germany, Switzerland and the USA (1876–2020) as well as across US counties and European cities around 1909. The article finds Lutheran and Reformed Protestant areas to have had higher private insurance penetration and density than Catholic ones, controlling for standard covariates. This relationship is more pronounced in life than nonlife branches, more pronounced for insurance demand than insurance company activity, and more consistently found in Europe than within the USA. More generally, the article suggests that the confessional insurance gap may provide a missing empirical link to better understand the emergence of Alpine and Maritime insurance cultures, different premodern poor-ethics traditions and the different worlds of modern welfare states and pension systems.",
+   "missing_abstract": false,
+   "authors": [
+    "Sebastian Kohl"
+   ],
+   "institutions": [
+    "Freie Universität Berlin"
+   ],
+   "author_ids": [
+    "A5048712443"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Socio-Economic Review",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1093/ser/mwag062",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0473,
+   "max_author_h_index": 21
+  },
+  {
+   "id": "W7223184910",
+   "doi": "https://doi.org/10.1017/lar.2026.10176",
+   "title": "Mexico’s Unauthorized Exits: National Ideology and The Politization of Migration in Mid-Twentieth-Century Jalisco",
+   "abstract": "Abstract In the mid-twentieth century, terms such as avalanche , grave problem , and invasion were being used on both sides of the Mexico-US border to describe the labor-related migration of Mexicans. In postrevolutionary Mexico, intellectuals, artists, and politicians were discussing which path the nation should take and what it meant to be Mexican, and the growing flow of Mexican migrants seeking temporary agricultural jobs in the United States presented a political and ideological “problem.” This article examines the conservative discourses on this issue in Jalisco’s newspaper El Informador , with a special focus on the “exclusive contributions” of two ultraconservative, Catholic intellectuals: Jesús Guisa y Azevedo and Nemesio García Naranjo. In the context of postrevolutionary nation building in Mexico, conservative critiques and the vilification of migration to the United States were attempts to attack the revolutionary project that was trying to dismantle the power structures that had prevailed since Porfirian times, threatening conservatives’ privilege and, as a result, politicizing migration. This approach shows migration not merely as an economic adaptive strategy but also a political issue that continues to be deployed in discourses surrounding national integrity of both countries.",
+   "missing_abstract": false,
+   "authors": [
+    "Stephanie Cruz de Echeverria Loebell"
+   ],
+   "institutions": [
+    "The Graduate Center, CUNY"
+   ],
+   "author_ids": [
+    "A5159233405"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10176",
+   "cited_by_count": 0,
+   "prefilter_score": 0.046,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224876078",
+   "doi": "https://doi.org/10.1080/13501763.2026.2750197",
+   "title": "The populist contagion: how the mainstreaming of right-wing populist rhetoric reduces public support for international aid",
+   "abstract": "This article examines whether the diffusion of populist rhetoric from populist to mainstream parties reduces public support for international organisations (IOs) and multilateral aid. We argue that when mainstream parties adopt populist anti-IO rhetoric, support for aid decreases not just amongst citizens, which hold populist attitudes and support populist parties, but also among more moderate voters. To test this cueing argument, we ran a survey experiment in France, Germany, Poland, Spain, and Sweden (n = 10,513) in early 2026. Varying both the message and the messenger, the experiment reveals, first, that populist anti-IO cues, indeed, reduce support for multilateral aid. Second, the messenger matters – while populist cues from populist parties primarily affect ideologically like-minded citizens, populist rhetoric voiced by mainstream parties reduces support across the political spectrum. Third, anti-IO rhetoric specifically undermines multilateral forms of aid while leaving support for bilateral aid unchanged. In sum, our study demonstrates how the normalisation of populist rhetoric by mainstream parties jeopardises public support for multilateral responses to transboundary risks and crises. Moreover, our findings underline that the populist contestation of IOs and multilateral aid is conceptually distinct from deservingness perceptions of the global poor.",
+   "missing_abstract": false,
+   "authors": [
+    "Giada Pasquettaz",
+    "Max Heermann",
+    "Dirk Leuffen"
+   ],
+   "institutions": [
+    "ETH Zurich",
+    "University of Konstanz"
+   ],
+   "author_ids": [
+    "A5015603792",
+    "A5030773961",
+    "A5087016662"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of European Public Policy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13501763.2026.2750197",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0459,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W7224930453",
+   "doi": "https://doi.org/10.1080/09692290.2026.2750442",
+   "title": "Peripheral monopoly capital: business groups, class power, and the reproduction of dependency in Chile",
+   "abstract": "Although the past decade has seen renewed interest in theories of monopoly capital, debates have largely focused on the leading knowledge-intensive corporations of the Global North, paying far less attention to monopoly power in dependent economies. Addressing this gap, this paper develops the concept of Peripheral Monopoly Capital (PMC) to theorize concentration, centralization and class power in contemporary peripheral capitalism. We elaborate PMC through an analysis of diversified, pyramidal, and interlocking business groups in the reproduction of dependency in Chile, arguably a paradigmatic case of centralization under dependency. Focussing on four major business groups, each representing a distinct configuration of monopoly power, we show how these groups articulate circuits of rent-based accumulation in antagonistic cooperation with global capital. Our main contribution is to reconnect monopoly capital theory with dependency analysis and to locate the organizational foundations of dependency in the business group itself. By conceiving business groups as class projects that link global and domestic circuits of rent-based accumulation, PMC offers a new lens on monopoly power in the Global South.",
+   "missing_abstract": false,
+   "authors": [
+    "Michael Lukas",
+    "David Kornbluth"
+   ],
+   "institutions": [
+    "University of Chile"
+   ],
+   "author_ids": [
+    "A5061116740",
+    "A5030046223"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "Review of International Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/09692290.2026.2750442",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0457,
+   "max_author_h_index": 10
+  },
+  {
+   "id": "W4413079127",
+   "doi": "https://doi.org/10.1017/lar.2026.10167",
+   "title": "New Evidence on the Demographics of the Paraguayan War: Revisiting Competing Estimates with Archival Draft Records",
+   "abstract": "Abstract The demographic consequences of the Paraguayan War (1864–1870) remain among the most contested in Latin American history, with estimates of population loss ranging from under 20 percent to nearly 70 percent. This article revisits the debate by introducing newly digitized wartime administrative records from the Sección Nueva Encuadernación of the Archivo Nacional de Asunción, documenting draft-eligible males across forty-five districts in late 1867 and early 1868. Linking these records to prewar census benchmarks through a transparent projection methodology, I find that across the forty-two districts with a usable projected denominator, only 10,628 draft-eligible males aged twelve and older were observed against a projected male population of 100,692—roughly one in nine. The result is robust to alternative growth assumptions. Although male absence may reflect death, service, imprisonment, desertion, or displacement, the severity of late-war male scarcity is difficult to reconcile with low-loss interpretations and aligns closely with high-loss scenarios.",
+   "missing_abstract": false,
+   "authors": [
+    "Bárbara Boggiano"
+   ],
+   "institutions": [
+    "Universidad Alberto Hurtado"
+   ],
+   "author_ids": [
+    "A5033200015"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10167",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0449,
+   "max_author_h_index": 3
+  },
+  {
+   "id": "W7221027900",
+   "doi": "https://doi.org/10.1017/psrm.2026.10142",
+   "title": "Polity size and women’s representation: evidence from two large-scale boundary reforms",
+   "abstract": "Abstract Do larger polities hinder gender parity in elected office? We theorize that when populations grow faster than elected assemblies, a “seat congestion” effect intensifies competition for nominations, enabling men candidates to crowd out women. We test this argument using two nationwide natural experiments: Swedish municipal amalgamations in 1952 and 1973 that abruptly increased electorates. We track the effects in newly digitized historical panel data. Where electorate-per-seat ratios rose, growth in women’s representation slowed. Decomposition analyses show that expanding councils only partially offsets congestion. By identifying polity size as a systematic brake on descriptive representation, the study adds a demographic dimension to debates on institutional design and points to an overlooked cost of increasing jurisdictional size.",
+   "missing_abstract": false,
+   "authors": [
+    "Moa Frödin Gruneau",
+    "Jan Teorell",
+    "Kåre Vernby"
+   ],
+   "institutions": [
+    "Stockholm University",
+    "University of Gothenburg"
+   ],
+   "author_ids": [
+    "A5085307653",
+    "A5034131200",
+    "A5002225631"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Political Science Research and Methods",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/psrm.2026.10142",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0439,
+   "max_author_h_index": 56
+  },
+  {
+   "id": "W7224557706",
+   "doi": "https://doi.org/10.1017/lar.2026.10173",
+   "title": "Andean Glaciers in Times of Planetary Crisis",
+   "abstract": "Abstract This special dossier examines how understandings of Andean glaciers transform under the planetary crisis, defined by humanity’s impact on geophysical processes at a planetary scale. Once regarded as remnants of deep geological time, glaciers have become emblematic casualties of anthropogenic global warming, their accelerated melting compressing geological history into human timescales and raising urgent ethical and political questions about protection, mitigation, and loss. This interdisciplinary collection, including contributions focused on Argentina, Bolivia, Chile, and the wider region, calls for approaches that move beyond universalizing Anthropocene narratives and toward historically and territorially situated accounts of glacial change, challenging colonial and extractivist frameworks that have long shaped the governance of ice and nature. The introduction argues that dominant scientific and state-centered framings—rooted in objectivity, distant observation, and a physicochemical definition of ice—tend to abstract glaciers into universal, placeless indicators of global change, obscuring the local extractivist and colonial dynamics driving their destruction, particularly through mining of critical minerals for a green energy transition. Against this detached view, the dossier foregrounds situated, relational, and often Indigenous conceptions of glaciers as vital entities embedded in organic, social, and spiritual life.",
+   "missing_abstract": false,
+   "authors": [
+    "Cristián Simonetti",
+    "Javiera Barandiarán",
+    "José Ragas"
+   ],
+   "institutions": [
+    "Pontificia Universidad Católica de Chile",
+    "University of California, Santa Barbara"
+   ],
+   "author_ids": [
+    "A5008217597",
+    "A5045678619",
+    "A5159227992"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10173",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0433,
+   "max_author_h_index": 12
+  },
+  {
+   "id": "W7133344014",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751103",
+   "title": "Europe Adrift",
+   "abstract": "Europe is adrift in the face of great turmoil and transformation. The liberal international order that emerged after the Cold War has disintegrated and the EU lacks a coherent strategic vision for responding to – let alone shaping – the emergent world order. There has been a shift away from market liberalism and toward state interventionism, strategic autonomy and a more assertive EU internationally. Yet these efforts are haunted by legacies from the neoliberal era that continue to limit its capacity for effective action. Herein lies the challenge. Europe struggles to overcome internal challenges, namely internal rivalry and a seeming inability to implement much-needed reforms, while it simultaneously faces a security threat from Russia, erratic mercantilism from the US, a competitiveness challenge vis-à-vis China, and declining goodwill in the Global South, all in the context of ecological collapse. This special issue takes the dynamics of intensifying global inter-state competition as an entry point to survey the erosion of European security, growth and normative power whose foundations were laid in the neoliberal era, the contradictions contestations and constraints revealed in the responses from European actors in the face of this erosion, and how European power and prosperity is being reshaped in unexpected ways.",
+   "missing_abstract": false,
+   "authors": [
+    "Imogen Taotao Liu",
+    "Nicholas Jepson",
+    "Seth Schindler",
+    "Naná de Graaff"
+   ],
+   "institutions": [
+    "The University of Western Australia",
+    "University of Manchester",
+    "Vrije Universiteit Amsterdam"
+   ],
+   "author_ids": [
+    "A5048113026",
+    "A5061564660",
+    "A5086083702",
+    "A5041298995"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751103",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0424,
+   "max_author_h_index": 30
+  },
+  {
+   "id": "W7222506786",
+   "doi": "https://doi.org/10.1016/j.jinteco.2026.104348",
+   "title": "Offshoring and voting patterns in the US",
+   "abstract": "This paper studies the impact of offshoring by US firms on voting patterns in the US. Using county-level voting data combined with industry-level offshoring data, we ask whether an increase in employment at foreign affiliates of US multinationals in vertically oriented industries is associated with an increase in the vote share for the incumbent party candidate in Presidential, House, and Senate elections. We find that offshoring leads to an increase in the incumbent vote share for counties with more educated workers, and a decrease for counties with higher shares of workers in the manufacturing sector and in occupations that are more easily relocated abroad. These results are consistent with the labor market literature on offshoring, which shows that offshoring has heterogeneous effects on workers’ employment based on skill and occupational tasks. This suggests that voters respond to the economic effects of offshoring by rewarding or punishing incumbent party candidates.",
+   "missing_abstract": false,
+   "authors": [
+    "Anna Maria Mayda",
+    "Lindsay Oldenski",
+    "Walter Steingress"
+   ],
+   "institutions": [
+    "Bank of Canada",
+    "Center for Economic and Policy Research",
+    "Georgetown University"
+   ],
+   "author_ids": [
+    "A5055005713",
+    "A5035172192",
+    "A5019891827"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of International Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104348",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0418,
+   "max_author_h_index": 30
+  },
+  {
+   "id": "W7223168131",
+   "doi": "https://doi.org/10.1080/09692290.2026.2730217",
+   "title": "Segmented leadership: Chinese and American capital in South America’s renewable energy transition",
+   "abstract": "The rise of Chinese enterprises as technological competitors to established American firms represents a fundamental shift in global markets for strategic goods. This paper examines this competition through Chinese and American investments in South America’s renewable energy sector. Using 194 projects across wind, solar, hydroelectric, and biofuel technologies (2006–2024), we develop a framework for comparing investment patterns across technological segments, geographic markets, and value-chain positions. Our analysis reveals segmented leadership: complementary specialization across distinct niches rather than direct displacement. Chinese enterprises dominate capital-intensive technologies such as hydropower and wind energy, leveraging state-coordinated financing and high risk tolerance. American firms lead in specialized segments such as biodiesel and advanced solar, emphasizing innovation and market-based approaches. Geographically, China operates across a broader footprint, investing in ten countries and deploying more than twice the US investment volume, while American firms concentrate in fewer markets where they retain leadership in innovation-driven niches. Market entry is sequential, and grid functions complementary. This segmentation created parallel technological ecosystems rather than zero-sum competition, generating investment additionality for recipient countries: expanded access to financing and technologies that neither power would have provided on its own, though geopolitical tensions may alter these dynamics.",
+   "missing_abstract": false,
+   "authors": [
+    "Giovanni Agostinis",
+    "Andrea Freites",
+    "Diego Telias",
+    "Francisco Urdínez"
+   ],
+   "institutions": [
+    "Pontificia Universidad Católica de Chile",
+    "Universidad ORT Uruguay",
+    "University of Bologna"
+   ],
+   "author_ids": [
+    "A5013323104",
+    "A5106681487",
+    "A5004410363",
+    "A5004905752"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "Review of International Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/09692290.2026.2730217",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0417,
+   "max_author_h_index": 18
+  },
+  {
+   "id": "W7223475291",
+   "doi": "https://doi.org/10.1007/s11109-026-10213-z",
+   "title": "What Drives Voter Bias Against Muslim Politicians? An Experimental Examination",
+   "abstract": "Abstract Religious and ethnic minorities remain underrepresented in political office, but its reasons are debated. Using administrative data from Norwegian local elections, we show that candidates with Muslim names receive fewer personal votes, and propose that this is (partly) due to political beliefs about Muslims as politicians.To examine this claim, we identify salient political beliefs and implement a conjoint experiment that estimates anti-Muslim bias with and without information on these beliefs.In a low-information setting, respondents exhibit a substantial anti-Muslim bias, but providing belief-relevant information reduces this anti-Muslim bias by 2–5 percentage points. The largest reduction occurs when respondents learn candidates’ positions on minority-rights issues. This reduction is driven by right-wing voters and is large enough to eliminate the left-right gap in anti-Muslim bias. These findings show a strong political component in the anti-Muslim bias.",
+   "missing_abstract": false,
+   "authors": [
+    "Henning Finseraas",
+    "Rino Heim"
+   ],
+   "institutions": [
+    "Norwegian University of Science and Technology"
+   ],
+   "author_ids": [
+    "A5075707825",
+    "A5070280646"
+   ],
+   "date": "2026-10-24",
+   "type": "article",
+   "language": "en",
+   "source": "Political Behavior",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1007/s11109-026-10213-z",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0405,
+   "max_author_h_index": 27
+  },
+  {
+   "id": "W7223565948",
+   "doi": "https://doi.org/10.1007/s11127-026-01484-5",
+   "title": "Judicial performance and public procurement choice",
+   "abstract": "Abstract This paper investigates whether judicial performance influences the choice of procurement procedures adopted by public authorities. Using data on Italian municipal public works contracts between 2009 and 2012, it examines the choice between negotiated procedures and formal tendering mechanisms in a range where both options were legally available. Identification relies on a spatial discontinuity design that exploits exogenous variation in judicial delay across court jurisdictions, further refined through intra-regional border comparisons and coarsened exact matching. The results show that longer judicial delays significantly reduce the likelihood of using negotiated procedures and increase the use of formal auctions. Consistent with a growing body of literature showing that inefficient courts increase contractual uncertainty, we argue that poor judicial performance shifts procurement choices toward highly formalized procurement mechanisms rather than more discretionary and market-oriented forms of contracting. In this sense, formal procurement procedures may partially compensate for weak judicial enforcement by shifting transaction governance toward greater ex-ante specification, procedural control, and verifiability. More broadly, the paper suggests that judicial ineffectiveness may contribute to the expansion of bureaucratic controls, shifting governance away from market-based arrangements and toward increasingly proceduralized administrative structures.",
+   "missing_abstract": false,
+   "authors": [
+    "ALESSANDRO CAVALIERI",
+    "Alessandro Melcarne",
+    "Giovanni Battista Ramello"
+   ],
+   "institutions": [
+    "University of Padua",
+    "University of Turin"
+   ],
+   "author_ids": [
+    "A5156234689",
+    "A5089854113",
+    "A5057645981"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01484-5",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0399,
+   "max_author_h_index": 21
+  },
+  {
+   "id": "W7113383583",
+   "doi": "https://doi.org/10.1016/j.ejpoleco.2026.102913",
+   "title": "Contested elections and the power of new voters: The impact of extending voting rights to non-citizens",
+   "abstract": "This paper examines the redistributive consequences of extending voting rights to non-citizens. We hypothesize that the fiscal response to such reforms depends on their capacity to alter the political status quo, particularly in closely contested constituencies. Using municipal-level data, we study the 1975 Swedish electoral reform, which granted non-citizens the right to vote in local elections. Our analysis reveals a one-time spike in municipal income taxes following the reform, with larger rises in municipalities with higher foreign-voter ratios. This increase in taxes was concentrated in municipalities where the vote margin between the two traditional political blocs in the previous election was narrow. These results highlight the central role of electoral competition in shaping the fiscal consequences of suffrage extensions and contribute to our understanding of how immigration interacts with local governance.",
+   "missing_abstract": false,
+   "authors": [
+    "Iñigo Iturbe-Ormaetxe",
+    "Santiago Sánchez-Pagés",
+    "Ángel Solano García"
+   ],
+   "institutions": [
+    "King's College London",
+    "Universidad de Granada",
+    "University of Alicante"
+   ],
+   "author_ids": [
+    "A5090437205"
+   ],
+   "date": "2026-10-24",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Economy",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.ejpoleco.2026.102913",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0391,
+   "max_author_h_index": 6
+  },
+  {
+   "id": "W7203800467",
+   "doi": "https://doi.org/10.1177/00104140261500259",
+   "title": "Incubating Revolution: How Social Networks and the Built Environment Sustain Mobilization",
+   "abstract": "How do challengers sustain mobilization under conditions of extreme repression? Social networks and the built environment are critical, interacting at two time scales. Settlement, chain migration, and everyday cooperation produce dense relational environments that shape motivations and constitute latent resources. When contention erupts, those dense social networks can be repurposed to sustain high-risk collective action, providing shelter, escape routes, information, and support. But their efficacy is limited without the organic built environment in which they form; its proximity, limited visibility, and constrained access amplify the effect of dense social ties in facilitating challenge under threat. We substantiate these claims using disaggregated data on protest in Damascus during the 2011 Syrian uprising, finding that neighbourhoods with both dense networks and organic built form exhibit significantly more frequent and confrontational mobilization. By analytically separating the social from the spatial, this article illuminates the mechanisms through which urban neighbourhoods become incubators of rebellion.",
+   "missing_abstract": false,
+   "authors": [
+    "Motasem Abuzaid",
+    "Kevin Mazur"
+   ],
+   "institutions": [
+    "King's College London",
+    "University of Oxford"
+   ],
+   "author_ids": [
+    "A5143760156",
+    "A5059602371"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500259",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0388,
+   "max_author_h_index": 6
+  },
+  {
+   "id": "W7223234648",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751104",
+   "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
+   "abstract": "Existing studies of Europe’s geoeconomic turn focus on EU policy instruments while neglecting the role of national governments and the impacts on commercial actors on the ground. This article fills these gaps by examining how European states reduce their exposure to Chinese and Russian nuclear energy state-owned enterprises (SOEs) involved in financing and constructing European nuclear power plants, and how such derisking measures affect the operations of these SOEs in Europe. It offers two key findings. First, European states are derisking from Chinese and Russian nuclear energy SOEs through a combination of internal and external, governmental and market-based measures. Second, as a result of this derisking process, Chinese and Russian SOEs have failed to make equity investment, gain market access, or expand market share. Meanwhile, Europe’s derisking efforts introduce new dependence on capital and companies from the US and its non-European allies rather than enhancing European energy autonomy. These findings contribute to the study of Europe’s geoeconomic turn, the EU’s pursuit of strategic autonomy, transatlantic relations, and the reconfiguration of the global production system.",
+   "missing_abstract": false,
+   "authors": [
+    "Biao Zhang"
+   ],
+   "institutions": [
+    "China University of Political Science and Law"
+   ],
+   "author_ids": [
+    "A5081030509"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751104",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0387,
+   "max_author_h_index": 6
+  },
+  {
+   "id": "W7223702150",
+   "doi": "https://doi.org/10.1017/s1475676526101923",
+   "title": "Gender inclusivity and perceptions of party ideology: Observational and experimental evidence",
+   "abstract": "Abstract Do citizens use gender-based heuristics to infer political parties’ ideological positions? We posit that citizens view more ‘gender inclusive’ parties as more left-leaning than comparable male-dominated organizations. Cues about gender inclusivity, moreover, come not only from women’s presence in parties’ legislative delegations but also from other visible signals of women’s incorporation into parties – including as leaders and supporters – and through organizational rules promoting women’s inclusion. We present analyses of election survey data from 21 Western publics over time, which show that, controlling for the left–right tones of parties’ manifestos, citizens perceive more gender-inclusive parties as more left-wing and that the cumulative impact of the various dimensions of gender inclusivity is substantial. We next report experimental evidence from four countries, which provides further support for gender-based heuristics. Our findings highlight the importance of not just the message but also the messenger in shaping citizens’ assessments of parties’ ideological perceptions.",
+   "missing_abstract": false,
+   "authors": [
+    "James Adams",
+    "DAVID BRACKEN",
+    "Noam Gidron",
+    "Will Horne",
+    "Seonghui Lee",
+    "Diana O’Brien",
+    "Lie Philip Santoso",
+    "Kaitlin Senk",
+    "Randolph T. Stevenson"
+   ],
+   "institutions": [
+    "Academia Sinica",
+    "Clemson University",
+    "Duke Kunshan University",
+    "Hebrew University of Jerusalem",
+    "Pennsylvania State University",
+    "Rice University",
+    "University of Bath",
+    "University of California, Davis",
+    "Washington University in St. Louis"
+   ],
+   "author_ids": [
+    "A5055855173",
+    "A5029817478",
+    "A5042496469",
+    "A5030675089",
+    "A5065244482",
+    "A5159674583",
+    "A5087825369",
+    "A5058194856",
+    "A5077700776"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Research",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s1475676526101923",
+   "cited_by_count": 0,
+   "prefilter_score": 0.037,
+   "max_author_h_index": 42
+  },
+  {
+   "id": "W7223822419",
+   "doi": "https://doi.org/10.1177/00104140261500266",
+   "title": "Bulwarks or Enablers? Political Elites’ Attitudes to Political Candidates with Armed Group Linkages",
+   "abstract": "Many elections feature candidates with ties to violent groups, yet little is known about the nomination stage. To understand whether political elites serve as gatekeepers against such candidates or whether other desirable traits lead selectors to overlook violent linkages, we study selectors’ preferences in candidate selection. Using an experiment with 11,392 Colombian local political elites, we examine how alleged armed group collusion is weighed against experience, track-records, popular support, and endorsements. We find that candidates with rumored armed group ties face a significant penalty in selectors’ evaluations. Some attributes, particularly experience, reduce this penalty, but none fully offset it. Candidates with ties to armed groups are also less rewarded for strong performance, suggesting that violent linkages diminish returns to otherwise desirable qualities. These findings indicate that the prevalence of violence-linked candidates is not primarily driven by selectors’ willingness to accommodate them, redirecting attention toward concealed linkages and constrained candidate pools.",
+   "missing_abstract": false,
+   "authors": [
+    "Juan Diego Duque-Salazar",
+    "Hanne Fjelde",
+    "Sandra Håkansson"
+   ],
+   "institutions": [
+    "Uppsala University"
+   ],
+   "author_ids": [
+    "A5057914167",
+    "A5031676709",
+    "A5032536075"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500266",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0369,
+   "max_author_h_index": 29
+  },
+  {
+   "id": "W4414761356",
+   "doi": "https://doi.org/10.1086/744772",
+   "title": "How does Coethnicity with Refugees Shape their Reception? Evidence from Afghan Refugees in Pakistan",
+   "abstract": "How does coethnicity shape host attitudes toward refugees? Existing research often assumes that refugees who share the ethnic or cultural background of host populations will face less backlash. We test this assumption in Pakistan, where both refugee and host communities include substantial Pashtun populations. Drawing on original survey experimental, observational, and qualitative data, we find that while coethnicity increases refugee acceptance on average, this result masks sharp internal variation. Coethnic hosts who live in provinces where they are ethnic minorities are far more likely to express inclusive attitudes than those living in their ethnic homeland. The impact of coethnicity therefore depends on local context: in settings where ethnic identity is politically salient and shaped by marginalization, coethnicity with refugees can carry both instrumental and symbolic value. These findings complicate standard assumptions about the primacy of cultural threat and underscore the need to attend to subnational variation in refugee-host dynamics.",
+   "missing_abstract": false,
+   "authors": [
+    "Mashail Malik",
+    "Niloufer A. Siddiqui",
+    "Yang‐Yang Zhou"
+   ],
+   "institutions": [],
+   "author_ids": [
+    "A5088819521",
+    "A5038964322",
+    "A5035272423"
+   ],
+   "date": "2026-11-03",
+   "type": "article",
+   "language": "en",
+   "source": "The Journal of Politics",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1086/744772",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0367,
+   "max_author_h_index": 10
+  },
+  {
+   "id": "W4400222498",
+   "doi": "https://doi.org/10.1177/00104140261500255",
+   "title": "State-Building at What Cost? The Consequences of Military Control in Medieval China",
+   "abstract": "A key challenge to state-building in conflict-prone societies is the proliferation of autonomous armed groups. As governments seek to enhance their monopoly over violence, the consequences of military centralization deserve scholarly attention. We argue that centralization produces mixed impacts on state's coercive capacity: by weakening the leaders of armed groups, it improves (undermines) political order at the upper (grassroots) level, and erodes military efficiency and discipline. Empirically, we leverage a centralization reform in China's Tang Dynasty (618-907 CE) after a civil war, using unique data on soldier mutinies, rebellions by local generals, civilian uprisings, and battle outcomes. Difference-indifferences estimates reveal that centralization successfully reduced local generals' rebellions, but led to increased soldier-led mutinies against the generals and more civilian uprisings. It also worsened battlefield performance. While research on state capacity has focused on its extractive and administrative dimensions, these findings deepen our understanding about another important aspect: the coercive dimension.",
+   "missing_abstract": false,
+   "authors": [
+    "Joy Chen",
+    "Erik H. Wang"
+   ],
+   "institutions": [
+    "New York University",
+    "Renmin University of China"
+   ],
+   "author_ids": [
+    "A5045598417"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500255",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0365,
+   "max_author_h_index": 5
+  },
+  {
+   "id": "W7212108225",
+   "doi": "https://doi.org/10.1093/poq/nfag072",
+   "title": "Do Gender-of-Interviewer Effects Differ Across Immigrant Generations? Survey Evidence from Italy",
+   "abstract": "Abstract Interviewer gender has been shown to affect responses to survey questions on gender attitudes and norms, but does its influence vary across groups with different migration backgrounds? I study this question using the Between Origin and Destination (BOnD) survey, conducted in Lombardy, Italy, between 2024 and 2025. Consistent with gender-of-interviewer effects, a type of social desirability bias, female interviewers elicit more progressive responses on a summary index of gender norms and on an index of the acceptability of homosexuality, abortion, divorce, casual sex, and premarital sex. The effect is concentrated among natives and second-generation individuals; first-generation immigrants show little response to interviewer gender. One possible explanation is that social desirability pressure from a female interviewer operates through host-country social norms: Individuals more embedded in the Italian normative context are more responsive to cues from a female interviewer. These findings have implications for the design of surveys administered to mixed native-immigrant populations.",
+   "missing_abstract": false,
+   "authors": [
+    "Christina Sarah Hauser"
+   ],
+   "institutions": [
+    "University College Dublin"
+   ],
+   "author_ids": [
+    "A5051791898"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "Public Opinion Quarterly",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1093/poq/nfag072",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0363,
+   "max_author_h_index": 1
+  },
+  {
+   "id": "W7223258460",
+   "doi": "https://doi.org/10.1177/00104140261500263",
+   "title": "National Narratives in Comparative Politics: Theories, Methods, and Insights From Asia",
+   "abstract": "In this introduction to the special issue, we define and explore the concept of national narratives in East and Southeast Asia. First, we define national narratives as collectively shared stories about a nation’s origins, boundaries and purposes. Second, we discuss three undertheorized elements of the narrative: the identity of the storyteller, the content of the stories, and contestation over the dominant narrative. Finally, we assess some methodological and measurement challenges in the literature before introducing the papers in this special issue. Drawing on cases from China, Vietnam, Indonesia, South Korea, Taiwan, Myanmar and the Philippines, we address questions related to the construction of personality cults and colonial memory. We also discuss how democratization impacts the identity of the storytellers, and how this impacts views on national boundaries and political violence.",
+   "missing_abstract": false,
+   "authors": [
+    "Dean Dulay",
+    "Eun A Jo",
+    "Paul Schuler"
+   ],
+   "institutions": [
+    "National University of Singapore",
+    "University of Arizona",
+    "William & Mary"
+   ],
+   "author_ids": [
+    "A5003164052",
+    "A5087123137",
+    "A5072853267"
+   ],
+   "date": "2026-10-23",
+   "type": "article",
+   "language": "en",
+   "source": "Comparative Political Studies",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1177/00104140261500263",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0363,
+   "max_author_h_index": 15
+  },
+  {
+   "id": "W7224949431",
+   "doi": "https://doi.org/10.1257/aer.20241561",
+   "title": "Inequality and Racial Backlash: Evidence from the Reconstruction Era and the Freedmen's Bureau",
+   "abstract": "How do majority groups respond to narrowing inequality in racially polarized environments? We study this by examining the Freedmen's Bureau, an agency created after the US Civil War to aid former slaves and launch institutional reform in the South. Using new historical records and an event-study approach, we estimate the bureau's impact on political, social, and economic outcomes. Vote shares for Democrats, the party that previously championed slavery and opposed Black civil rights, initially eroded in bureau counties, but these impacts faded as federal oversight weakened. Racial backlash emerged rapidly and persisted, suggesting White majorities sought to offset Black progress. (JEL D63, D72, J15, N31, N41)",
+   "missing_abstract": false,
+   "authors": [
+    "Eric T. Chyn",
+    "Kareem Haggag",
+    "Bryan A. Stuart"
+   ],
+   "institutions": [
+    "Federal Reserve Bank of Philadelphia",
+    "National Bureau of Economic Research",
+    "The University of Texas at Austin"
+   ],
+   "author_ids": [
+    "A5057482746",
+    "A5007942998",
+    "A5010883297"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20241561",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0356,
+   "max_author_h_index": 16
+  },
+  {
+   "id": "W4411371011",
+   "doi": "https://doi.org/10.1016/j.jpubeco.2026.105805",
+   "title": "The impact of preference programs in public procurement: Evidence from veteran set-asides",
+   "abstract": "Veteran-owned businesses are given preferential treatment in the allocation of procurement contracts from the U.S. Department of Veterans Affairs – currently the largest civilian federal agency in terms of procurement spending. We exploit a 2016 Supreme Court ruling that significantly increased the scope of these set-asides, to study the impacts of preference programs on both the targeted businesses and procurement outcomes. The policy change increased the share of contracts awarded to the target population, service-disabled veteran-owned small businesses, and benefited not only preexisting vendors but also new entrants, including those who had previously failed to win contracts. We find no evidence of spillovers to awards by other federal agencies, no decline in competition for awards, and no deterioration of contract execution performance by vendors. These findings suggest that VA set-asides have successfully improved outcomes for the target population without imposing significant costs on the government.",
+   "missing_abstract": false,
+   "authors": [
+    "Rodrigo Carril",
+    "Audrey Guo"
+   ],
+   "institutions": [
+    "Santa Clara University",
+    "Universitat Pompeu Fabra"
+   ],
+   "author_ids": [
+    "A5070166638",
+    "A5054794003"
+   ],
+   "date": "2026-10-27",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Public Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105805",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0355,
+   "max_author_h_index": 6
+  },
+  {
+   "id": "W7225007951",
+   "doi": "https://doi.org/10.1016/j.jdeveco.2026.103956",
+   "title": "Increasing healthcare usage among the homeless: Evidence from Mobile Street Clinics in Brazil",
+   "abstract": "Homelessness is associated with an immense health burden and limited access to adequate healthcare. This paper studies the effects of Mobile Street Clinics on healthcare usage among people experiencing homelessness in Brazil. Exploiting unique administrative data in a staggered difference-in-differences setting, I find that Mobile Street Clinics strongly and persistently increase primary care usage and psycho-social care usage among people experiencing homelessness but do not improve tuberculosis treatment outcomes. These results suggest that MSCs expand healthcare access and utilization, but that expanding access alone is not sufficient to improve treatment continuity.",
+   "missing_abstract": false,
+   "authors": [
+    "Malte Becker"
+   ],
+   "institutions": [
+    "Heidelberg Institute of Global Health"
+   ],
+   "author_ids": [
+    "A5160277786"
+   ],
+   "date": "2026-10-31",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Development Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103956",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0344,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224756244",
+   "doi": "https://doi.org/10.1257/aer.20230448",
+   "title": "The Unequal Economic Consequences of Carbon Pricing",
+   "abstract": "This paper studies the economic impacts of carbon pricing. Exploiting institutional features of the European carbon market and high-frequency data, I identify carbon policy shocks and trace their dynamic effects. A restrictive carbon policy shock raises energy prices, reduces emissions, spurs green innovation, but decreases economic activity—disproportionately burdening poorer households. Not only are the poor more affected because of their higher energy spending, but they also experience larger income losses. These indirect, general equilibrium effects via income and employment play an important role in the transmission of carbon pricing policies, accounting for about two-thirds of the aggregate consumption response. (JEL E23, E24, O44, Q41, Q54, Q55, Q58)",
+   "missing_abstract": false,
+   "authors": [
+    "Diego R. Känzig"
+   ],
+   "institutions": [
+    "Northwestern University"
+   ],
+   "author_ids": [
+    "A5029764335"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20230448",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0341,
+   "max_author_h_index": 13
+  },
+  {
+   "id": "W7223699413",
+   "doi": "https://doi.org/10.1017/s1475676526101935",
+   "title": "Contested terrain: How attitudes toward gender issues relate to voting behavior",
+   "abstract": "Abstract While research increasingly links sexist attitudes to far-right support, public debates have moved well beyond women’s equality to encompass LGBTIQ+ rights. Yet studies have been slow to follow, leaving a significant gap in our understanding of attitudes toward trans, intersex, and non-binary people and how they associate with party choice, especially beyond far-right support. Drawing on original data from the German Social Cohesion Panel (2022/23), we are, to our knowledge, among the first to investigate a broader range of gender-related attitudes and find, first, that these constitute two empirically distinct dimensions, binary and non-heteronormative gender issues , that while conceptually intertwined, warrant separate examination. Second, while support for binary gender issues is widespread, non-heteronormative issues remain highly contested. Third, these dimensions relate differently to vote choice: attitudes toward binary gender issues show partisan sorting across the left-right spectrum, while attitudes toward non-heteronormative gender issues reveal a specific antagonism between the Greens and (center-)right parties. Finally, considering both dimensions together uncovers an asymmetry: voters of (center-)right parties form a cohesive conservative bloc, while supportive voters with different attitudinal profiles disperse across (center-)left parties.",
+   "missing_abstract": false,
+   "authors": [
+    "Melanie Maria Dietz",
+    "Sigrid Roßteutscher"
+   ],
+   "institutions": [
+    "Goethe University Frankfurt"
+   ],
+   "author_ids": [
+    "A5079592350",
+    "A5039187227"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Research",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s1475676526101935",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0336,
+   "max_author_h_index": 24
+  },
+  {
+   "id": "W7224821017",
+   "doi": "https://doi.org/10.1017/s0003055426101865",
+   "title": "When Business Speaks, Legislators Listen: Experimental and Qualitative Evidence from Brazil",
+   "abstract": "The influence of interest groups on policy making is a central concern in representative democracies, yet identifying causal effects remains a significant challenge. This article argues that legislators respond to informational cues about the economic importance and coalition breadth of interest groups. A field experiment in Brazil, which randomized the receipt of printed and WhatsApp messages from a pro-reform business organization, reveals that legislators are more likely to vote in favor of the group’s position when its membership size, economic importance, and sectoral reach are emphasized. A survey experiment with lobbyists supports this mechanism, showing that messages highlighting group characteristics increase legislators’ expected engagement and support. In-depth interviews with key political figures—including a former president, ministers, and deputies—further corroborate these findings. This study contributes to the literature on informational lobbying and cue-based persuasion by employing realistic experimental treatments and mixed-methods evidence.",
+   "missing_abstract": false,
+   "authors": [
+    "Fernando Mello"
+   ],
+   "institutions": [
+    "Universidad Carlos III de Madrid"
+   ],
+   "author_ids": [
+    "A5102886941"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055426101865",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0326,
+   "max_author_h_index": 2
+  },
+  {
+   "id": "W7224819764",
+   "doi": "https://doi.org/10.1080/13501763.2026.2749490",
+   "title": "Rebuilding the ship at sea: crisis politics and EU polity formation since 2008",
+   "abstract": "The European Union has been in crisis on an ongoing basis since 2008. A wealth of scholarship has charted the contours of the crisis period, often emphasising the EU’s institutional weaknesses and tendency towards sub-optimal or incomplete solutions. Yet the EU has also proven capable of resilience, marshalling both policy and political resources to ‘rebuild the ship at sea’. To understand the cumulative consequences of the post-2008 period for the EU we must understand it as a compound polity, bringing together analyses of both fragility and resilience into a coherent account. The EU polity is characterised by flexible bounding, dispersed binding authority, and second-order bonding, features that can explain its vulnerability to crisis. Yet the same three features can also become sources of adaptability and staying power. This collection presents evidence that Europe’s polity resilience is an established tendency, not just a series of lucky escapes. Crisis politics remains highly contingent, and we cannot assume the EU will always be ‘forged in crisis’ in the sense of progress towards becoming another kind of ideal-type polity. Rather, EU resilience stems from its ability, in a crisis, to hone its apparent weaknesses and turn them into political strengths of collective polity maintenance.",
+   "missing_abstract": false,
+   "authors": [
+    "Kate Alexander-Shaw",
+    "Marcello Natili",
+    "Ioana‐Elena Oana",
+    "Waltraud Schelkle",
+    "Zbigniew Truchlewski"
+   ],
+   "institutions": [
+    "European University Institute",
+    "London School of Economics and Political Science",
+    "University of Amsterdam",
+    "University of Geneva",
+    "University of Milan"
+   ],
+   "author_ids": [
+    "A5160221314",
+    "A5035509800",
+    "A5015472333",
+    "A5026605736",
+    "A5085337052"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of European Public Policy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13501763.2026.2749490",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0315,
+   "max_author_h_index": 26
+  },
+  {
+   "id": "W4410032443",
+   "doi": "https://doi.org/10.1016/j.jinteco.2026.104347",
+   "title": "Input sourcing, trade liberalization, and diversifying mergers",
+   "abstract": "Extensive research has documented how trade liberalization enhances firms’ input-sourcing capabilities and boosts firm performances. Drawing on the resource-based view of firms, this study investigates whether trade liberalization enables firms to expand into industries that use similar inputs. We uncover a novel driver of diversifying mergers: firms strategically leverage their input capabilities. Using China’s WTO entry a natural experiment, which exogenously affects firms’ input sourcing and enhances their input capabilities, we show that firms are more likely to acquire targets from other industries experiencing higher tariff reductions in their common inputs. This effect is more pronounced when the affected inputs are differentiated or innovation-intensive. The main result holds in a global sample covering 73 countries. Our findings extend the core competence theory by highlighting how input-related capabilities shape firm boundaries across industries.",
+   "missing_abstract": false,
+   "authors": [
+    "Qing Liu",
+    "Larry Dongxiao Qiu",
+    "Stephen Teng Sun",
+    "Chaoqun Zhan"
+   ],
+   "institutions": [
+    "City University of Hong Kong",
+    "Hong Kong Baptist University",
+    "Lingnan University",
+    "Renmin University of China"
+   ],
+   "author_ids": [
+    "A5102935762",
+    "A5081545975",
+    "A5001544847",
+    "A5083740727"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of International Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104347",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0314,
+   "max_author_h_index": 27
+  },
+  {
+   "id": "W7224853786",
+   "doi": "https://doi.org/10.1093/qje/qjag050",
+   "title": "The Effects of School Phone Bans: National Evidence from Lockable Pouches",
+   "abstract": "Abstract Schools across the U.S. have sharply restricted student use of phones during the school day. We evaluate one type of restriction—lockable phone pouches—using nationwide data combining a large-scale teacher survey, GPS pings, standardized test scores, and school administrative records, along with sales records from the largest pouch provider. Using a staggered difference-in-differences design, we find that pouch adoption substantially reduces phone use as measured by GPS pings and teacher reports. In the first year after adoption, disciplinary incidents increase, and we find suggestive evidence that student subjective well-being falls, consistent with short-term disruption. However, disciplinary effects fade, while the estimated effects on well-being appear to recover and become positive in later years. For academic achievement, average effects on test scores are consistently close to zero. High schools see modest positive effects, particularly in math, while middle schools see small negative effects. We find little evidence of effects on school attendance and no clear evidence of improvements in self-reported classroom attention or perceived online bullying.",
+   "missing_abstract": false,
+   "authors": [
+    "Hunt Allcott",
+    "Jason Baron",
+    "Thomas Sean Dee",
+    "Angela Lee Duckworth",
+    "Matthew Aaron Gentzkow",
+    "Brian Aaron Jacob"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "University of Michigan",
+    "University of Pennsylvania"
+   ],
+   "author_ids": [
+    "A5069987310",
+    "A5160225489",
+    "A5042131990",
+    "A5034664324",
+    "A5008542297",
+    "A5002135064"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "The Quarterly Journal of Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1093/qje/qjag050",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0313,
+   "max_author_h_index": 76
+  },
+  {
+   "id": "W7202065485",
+   "doi": "https://doi.org/10.1007/s11109-026-10212-0",
+   "title": "Do Political Elites Evaluate Election Outcomes More Favourably than Citizens? Evidence from Parallel Surveys",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [
+    "Henrik Bech Seeberg",
+    "Martin Bækgaard"
+   ],
+   "institutions": [
+    "Aarhus University"
+   ],
+   "author_ids": [
+    "A5001832073",
+    "A5032999506"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Political Behavior",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1007/s11109-026-10212-0",
+   "cited_by_count": 0,
+   "prefilter_score": 0.031,
+   "max_author_h_index": 31
+  },
+  {
+   "id": "W7223569306",
+   "doi": "https://doi.org/10.1007/s11127-026-01474-7",
+   "title": "The cultural roots of state-owned enterprises: evidence from Europe",
+   "abstract": "Abstract This paper examines the cultural roots of state ownership of enterprises. Drawing on data for European countries, we show that the scale of state ownership of enterprises is smaller in individualist societies than in collectivist ones. This relationship is robust to a broad set of cultural, economic, and historical controls. We address endogeneity concerns by using genetic, epidemiological, and linguistic data as instruments for individualism. We propose several political economy mechanisms underlying this relationship. First, in collectivist societies, voter preferences are tilted toward more extensive state ownership of enterprises. Second, in collectivist societies, interest groups may be stronger and democracy may be weaker, both of which can result in a larger share of state-owned enterprises in the economy. We provide empirical evidence supporting these channels. Finally, we show that the negative relationship between individualism and the scale of state ownership also holds in non-European countries.",
+   "missing_abstract": false,
+   "authors": [
+    "Ákos Dombi",
+    "Piotr Matuszak",
+    "Katarzyna Szarzec"
+   ],
+   "institutions": [
+    "Eötvös Loránd University",
+    "Instytut Nauk Ekonomicznych",
+    "Poznań University of Economics and Business"
+   ],
+   "author_ids": [
+    "A5085792602",
+    "A5046297656",
+    "A5023024508"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01474-7",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0308,
+   "max_author_h_index": 9
+  },
+  {
+   "id": "W7224119612",
+   "doi": "https://doi.org/10.1080/13563467.2026.2751108",
+   "title": "Reconfiguring labour regimes in the Eastern industrial peripheries of the EU: a labour perspective on European industrial reorganisation within geoeconomic rivalry",
+   "abstract": "This paper foregrounds the question of labour in European reindustrialisation, asking how cost-cutting requirements that drove neoliberal deindustrialisation combine with current efforts towards industrial onshoring. We propose the EU’s Eastern industrial peripheries as an analytical angle on this question, given the region’s role as a site of automotive outsourcing, undergoing an intense shift towards reindustrialisation driven by interconnected yet competing investments by German and East Asian manufacturers in the EV battery sector. We argue that while the industrial labour regimes emerging under current conditions exhibit long-term trends by absorbing the cost-cutting and flexibilisation needs of their European industrial core, a qualitative shift is also apparent. Surveying regional trends and presenting an original case study from Hungary’s new battery sector, we claim that currently emerging highly flexible, disciplinary regimes of labour arbitrage reliant on private intermediators of global temporary labour signal the localisation of labour regimes characteristic to East Asian flexible production systems – a development coherent with competitiveness pressures from global industries shaped by neoliberal cost-cutting, but contradicting hopes that reindustrialisation can produce economic and social sustainability in Europe.",
+   "missing_abstract": false,
+   "authors": [
+    "Ágnes Gagyi",
+    "Tamás Gerőcs",
+    "Tibor T. Meszmann",
+    "Linda Szabó"
+   ],
+   "institutions": [
+    "Binghamton University",
+    "Central European University",
+    "Periféria Policy and Research Center",
+    "University of Gothenburg"
+   ],
+   "author_ids": [
+    "A5062835013",
+    "A5089192226",
+    "A5060540868",
+    "A5047563392"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "New Political Economy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13563467.2026.2751108",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0308,
+   "max_author_h_index": 10
+  },
+  {
+   "id": "W4413931385",
+   "doi": "https://doi.org/10.1257/aer.20240766",
+   "title": "Union Bargaining Power and the Amenity-Wage Trade-Off",
+   "abstract": "This paper studies how collective bargaining affects both wages and amenities. By merging collective bargaining agreements (CBAs) to linked employer-employee data in Brazil, I combine rich contracted amenities with wage information. I implement a difference-in-difference strategy that exploits a court ruling enforcing CBA continuation (i.e., ultractivity) to estimate the effects of union bargaining power. Strengthening unions raises wages and amenities without reducing employment—increasing retention despite some labor-labor substitution. A revealed preference approach shows that amenities account for 45% of total compensation gains. These findings suggest that collective bargaining can offset monopsony power, but employers retain the right-to-manage workforce composition. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
+   "missing_abstract": false,
+   "authors": [
+    "Lorenzo Lagos"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research"
+   ],
+   "author_ids": [
+    "A5027273208"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20240766",
+   "cited_by_count": 2,
+   "prefilter_score": 0.0301,
+   "max_author_h_index": 5
+  },
+  {
+   "id": "W7224134337",
+   "doi": "https://doi.org/10.1017/s0020818326101507",
+   "title": "When Firms Lead States: Financial Intermediaries and the Politics of Sovereign Green Bond Issuance",
+   "abstract": "Abstract Sovereign green bonds typically appear only after corporate green bond issuance has accumulated—a sequence at odds with the policy consensus that sovereign borrowing anchors debt market development. I argue that the inversion reflects market building by global investment banks. The four banks that authored the Green Bond Principles in 2014 used early private corporate transactions to build the verification practices, pricing conventions, and investor networks needed for a functioning market, then served as lead managers when sovereigns entered, transferring accumulated expertise across the public–private divide. States entered a market whose institutional infrastructure they did not design. The Cox proportional hazards model shows that accumulated corporate issuance significantly accelerates sovereign entry, while government agency issuance delays it by substituting for direct sovereign participation. A bank-level triangulation shows that founding-bank presence at sovereign entry reflects green-bond-specific expertise transfer rather than general dominance in sovereign debt underwriting. The findings identify financial intermediaries as a distinct channel through which sustainable finance reaches sovereign borrowers and show how privately constructed market conditions shape the terms on which states engage with global climate finance.",
+   "missing_abstract": false,
+   "authors": [
+    "Monica Widmann"
+   ],
+   "institutions": [
+    "Seton Hall University"
+   ],
+   "author_ids": [
+    "A5133479785"
+   ],
+   "date": "2026-10-28",
+   "type": "article",
+   "language": "en",
+   "source": "International Organization",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1017/s0020818326101507",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0296,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W7224757465",
+   "doi": "https://doi.org/10.1257/aer.20250081",
+   "title": "The Causal Effects of Global Supply Chain Disruptions on Macroeconomic Outcomes: Evidence and Theory",
+   "abstract": "We study the causal effects of global supply chain disruptions by constructing a new index of real-time port congestion using Automatic Identification System data from container ships and a spatial clustering algorithm. We develop a model with search frictions between producers and retailers that links upstream production slack to downstream supply shortages and captures output and price responses to supply chain shocks. The co-movements of output, prices, spare capacity, and market tightness provide novel identification restrictions. We find that demand and supply shocks drove US disinflation in 2020, while the inflation surge in 2021 was driven mainly by supply chain shocks. (JEL C43, E31, F14, F23, L14, L92)",
+   "missing_abstract": false,
+   "authors": [
+    "Xiwen Bai",
+    "Jesús Fernández‐Villaverde",
+    "Yiliang Li",
+    "Francesco Zanetti"
+   ],
+   "institutions": [
+    "Tsinghua University",
+    "University of International Business and Economics",
+    "University of Oxford",
+    "University of Pennsylvania"
+   ],
+   "author_ids": [
+    "A5160214609",
+    "A5005262715",
+    "A5160165345",
+    "A5082656398"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20250081",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0296,
+   "max_author_h_index": 55
+  },
+  {
+   "id": "W7221837715",
+   "doi": "https://doi.org/10.1093/ser/mwag070",
+   "title": "Client-focused software development: cooperation, control and resistance in a high-skill service triangle",
+   "abstract": "Abstract We present a comparative case study of software development teams in 14 firms, based on 50 semi-structured interviews with 39 people, plus non-participant observation. Our theory proposes that an inherent contradiction of labour management—conflicting pressures to empower workers (to enhance capabilities) and to control workers (to ensure labour discipline)—becomes refracted in distinct ways through the service triangle between customers, managers, and workers. We ask how do software managers deal with competing pressures to simultaneously (1) generate high-quality, creative output, (2) ensure efficiency and workforce discipline, and (3) mediate between clients and workers? Most managers in our study primarily focused on empowering their software developers while the latter experienced client attempts to establish detailed control of their work. In these cases, the managers attempted to control the clients by buffering developers from client demands or pushing back against them.",
+   "missing_abstract": false,
+   "authors": [
+    "Ian Hill (1915519)",
+    "Clive Trusson",
+    "Matt Vidal (4514008)"
+   ],
+   "institutions": [
+    "King's College London",
+    "Loughborough University"
+   ],
+   "author_ids": [
+    "A5158739007",
+    "A5064166695",
+    "A5158723536"
+   ],
+   "date": "2026-11-02",
+   "type": "article",
+   "language": "en",
+   "source": "Socio-Economic Review",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1093/ser/mwag070",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0291,
+   "max_author_h_index": 9
+  },
+  {
+   "id": "W7224293718",
+   "doi": "https://doi.org/10.1016/j.jpubeco.2026.105814",
+   "title": "State capacity and wildfire mitigation: Evidence from state-led forest conservation in China",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [
+    "Rong Ma",
+    "Wenhui Chen",
+    "Zhang Bo"
+   ],
+   "institutions": [
+    "Beijing Forestry University",
+    "China Agricultural University",
+    "Xiamen University"
+   ],
+   "author_ids": [
+    "A5101300956",
+    "A5122759241",
+    "A5100700424"
+   ],
+   "date": "2026-10-29",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Public Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105814",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0256,
+   "max_author_h_index": 16
+  },
+  {
+   "id": "W7223564671",
+   "doi": "https://doi.org/10.1017/lar.2026.10165",
+   "title": "Gay Rights in the Age of Democratic Backsliding: Bolsonaro’s Brazil with Reflections on the United States",
+   "abstract": "Abstract Democratic backsliding is widely recognized as a threat to gay rights, but it is far from clear why the impact of this political malaise varies from country to country. This article makes the case for two variables as the key factors shaping the fate of gay rights in backsliding democracies: democratic resilience and the grounding of gay rights. It shows how under the illiberal and homophobic administration of Jair Bolsonaro (2019–2022), gay rights in Brazil not only survived but also thrived. The country’s biggest gay rights victory—the criminalization of homophobia and transphobia—came under Bolsonaro’s watch. The analysis shows that gay rights in Brazil (and in contrast to the United States) were protected by the capacity of political institutions to defend democracy and a robust civic response to democratic threats. Less apparent is the firm grounding of gay rights in Brazil, which this article argues is owed to the framing of gay rights as a human rights matter rather than as a legal issue.",
+   "missing_abstract": false,
+   "authors": [
+    "Omar G. Encarnación"
+   ],
+   "institutions": [
+    "Bard College"
+   ],
+   "author_ids": [
+    "A5088860727"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10165",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0247,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W7223235828",
+   "doi": "https://doi.org/10.1111/ajps.70090",
+   "title": "Structure and agency in emancipatory reform: A blueprint from a Black union",
+   "abstract": "Abstract The National Labor Convention of 1869, the first of its kind for African American workers, yielded a grand strategy for achieving full emancipation, in which those long subjected to domination might attain durable independence. Drawing upon decades of Black republican thought, this agenda combined macro‐level reforms targeting agrarian and industrial monopolies with micro‐level interventions into the habits of the working class. While the project fell short, its multivalent approach nevertheless offers republican theorists today a framework for better understanding the structural dynamics of domination and how to overcome them.",
+   "missing_abstract": false,
+   "authors": [
+    "Benjamin T. Lynerd"
+   ],
+   "institutions": [
+    "Christopher Newport University"
+   ],
+   "author_ids": [
+    "A5059434445"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "American Journal of Political Science",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1111/ajps.70090",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0239,
+   "max_author_h_index": 3
+  },
+  {
+   "id": "W7223577846",
+   "doi": "https://doi.org/10.1007/s11127-026-01485-4",
+   "title": "Nonviolent protest and ideological change in education: a public choice approach",
+   "abstract": "Abstract This paper applies a public choice framework to examine how successful nonviolent protest campaigns are associated with changes in the ideological orientation of state education systems. We conceptualize education as a site of political bargaining in which organized interests shape educational governance and classroom political socialization. Using cross-national data on political mobilization and educational ideology, we estimate the effects of successful nonviolent campaigns on nationalist, socialist-communist, and democratic ideological emphasis within classroom instruction. We find that successful nonviolent campaigns are associated with declines in nationalist and socialist-communist ideological emphasis alongside increased emphasis on democratic norms and democratic institutions. We do not interpret these shifts as movement from indoctrination to ideological neutrality. Rather, following recent work on political socialization and educational ideology, we treat all educational systems as engaged in ideological transmission and interpret the findings as shifts in the ideological orientation emphasized within educational practice. The results suggest that successful nonviolent mobilization is associated with broader political and institutional realignment that reshapes educational political socialization. Parallel estimates for successful violent campaigns do not display the same consistent pattern, although this contrast is descriptive rather than a direct test of the difference between campaign types.",
+   "missing_abstract": false,
+   "authors": [
+    "Joshua Ammons",
+    "Ali Palida",
+    "Ilia Murtazashvili"
+   ],
+   "institutions": [
+    "Institute for Humane Studies",
+    "University of Pittsburgh",
+    "University of Tennessee at Chattanooga"
+   ],
+   "author_ids": [
+    "A5050816381",
+    "A5037109466",
+    "A5085259728"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01485-4",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0237,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W4327849999",
+   "doi": "https://doi.org/10.1007/s11127-026-01478-3",
+   "title": "Does policy advocacy generate good PR? Evidence from labor unions and minimum wages",
+   "abstract": "Abstract We develop a new dataset for analyzing linkages between news coverage, labor unions, and minimum wage increases. After validating our news coverage database, we demonstrate that events associated with minimum wage increases lead news coverage of organized labor to shift towards articles about minimum wages, and in particular to articles that reference high-profile interest groups. Through further analysis of the sentiment of articles about organized labor, we validate that, consistent with the minimum wage’s popularity with the public, this shift in news coverage is “good PR.” This public relations channel can thus rationalize why interest groups engage in policy advocacy.",
+   "missing_abstract": false,
+   "authors": [
+    "Jeffrey P. Clemens",
+    "Michael R. Strain"
+   ],
+   "institutions": [
+    "American Enterprise Institute",
+    "University of California San Diego"
+   ],
+   "author_ids": [
+    "A5088133556",
+    "A5001203624"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01478-3",
+   "cited_by_count": 1,
+   "prefilter_score": 0.0233,
+   "max_author_h_index": 26
+  },
+  {
+   "id": "W7169823575",
+   "doi": "https://doi.org/10.1017/s1475676526101832",
+   "title": "Learning democracy: The lasting effects of political education on democratic support",
+   "abstract": "Abstract Do citizens need to grow up in a democracy to value it? We examine how school education – democratic or authoritarian – shapes long-term support for democracy. Leveraging a quasi-natural experiment in the former German Democratic Republic, where rigid school entry rules and abrupt reforms after reunification created exogenous variation in exposure to socialist schooling, we show that an additional year of such education significantly reduced democratic support in adulthood. To test generalizability, we analyze harmonized survey data from 106 countries alongside new expert-coded measures of educational content and state effort. The results reveal that democratic attitudes are shaped not only by the negative imprint of authoritarian schooling but crucially by the positive imprint of democratic civic education, especially when democracies invest heavily in it. Our findings demonstrate that democracy must be learned to be valued, underscoring the central role of education in democratic consolidation and resilience.",
+   "missing_abstract": false,
+   "authors": [
+    "Anja Neundorf",
+    "Roman-Gabriel Olar",
+    "Johannes Gerschewski",
+    "Rosalind Shorrocks",
+    "Natasha Lindstaedt"
+   ],
+   "institutions": [
+    "Dublin City University",
+    "University of Essex",
+    "University of Glasgow",
+    "University of Manchester",
+    "WZB Berlin Social Science Center"
+   ],
+   "author_ids": [
+    "A5057708902",
+    "A5041563087",
+    "A5038093748",
+    "A5034038017",
+    "A5070320863"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Research",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s1475676526101832",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0231,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W4409479727",
+   "doi": "https://doi.org/10.1016/j.jdeveco.2026.103957",
+   "title": "Do black politicians matter? Political leadership and racial composition in top public sector positions",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [
+    "Fernanda Estevan",
+    "Thiago de Lucena",
+    "Marcos Yamada Nakaguma",
+    "Alexandre Rabelo"
+   ],
+   "institutions": [
+    "Escola de Economia de São Paulo",
+    "Universidade Presbiteriana Mackenzie"
+   ],
+   "author_ids": [
+    "A5028004945",
+    "A5159732818",
+    "A5048193946",
+    "A5024732770"
+   ],
+   "date": "2026-10-26",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Development Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103957",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0222,
+   "max_author_h_index": 9
+  },
+  {
+   "id": "W7223549484",
+   "doi": "https://doi.org/10.1007/s11127-026-01480-9",
+   "title": "Picture book of apportionment and voting difficulties",
+   "abstract": "Abstract The geometry associated with apportionment and voting methods enables us to “see\" what difficulties will arise, why certain complexities are inevitable, how to create supporting examples, and identify similarities of the problems afflicting both areas. Although several new results become apparent, such as the harsh consequences for a method satisfying IIA and a replacement for the modified divisors that are used with monotone apportionment approaches, the emphasis is to use this picture book approach to explain why certain behaviors must happen.",
+   "missing_abstract": false,
+   "authors": [
+    "Donald Gene Saari"
+   ],
+   "institutions": [
+    "University of California, Irvine"
+   ],
+   "author_ids": [
+    "A5104142023"
+   ],
+   "date": "2026-10-25",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01480-9",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0219,
+   "max_author_h_index": 44
+  },
+  {
+   "id": "W7224754649",
+   "doi": "https://doi.org/10.1257/aer.20240666",
+   "title": "Durables and the Marginal Propensity to Spend",
+   "abstract": "Durables represent a large share of households' marginal propensity to spend (MPX). We develop a quantitative model of spending that takes durables into account and matches a rich set of empirical regularities simultaneously. Scaling the response of nondurables provides a poor approximation of the MPX on durables when it comes to its distribution in the population, its persistence over time, and its cyclicality. As an application, we study how the MPX varies with the size of stimulus checks and find that it declines more slowly compared to a model of purely nondurable spending. (JEL D11, E21, E32, E62, G51)",
+   "missing_abstract": false,
+   "authors": [
+    "Nathan Zorzi",
+    "Martin Beraja"
+   ],
+   "institutions": [
+    "Dartmouth College",
+    "University of California, Berkeley"
+   ],
+   "author_ids": [
+    "A5073579792",
+    "A5071876735"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20240666",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0219,
+   "max_author_h_index": 14
+  },
+  {
+   "id": "W7224899425",
+   "doi": "https://doi.org/10.1257/aer.20240179",
+   "title": "Residential Segregation and Unequal Access to Local Public Services in India: Evidence from 1.5 Million Neighborhoods",
+   "abstract": "We study residential segregation and access to public services across 1.5 million urban and rural neighborhoods in India. Muslim and Scheduled Caste segregation in India is high by global standards and only slightly lower than Black-White segregation in the United States. Within cities, public facilities and infrastructure are systematically less available in Muslim and Scheduled Caste neighborhoods. Nearly all regressive allocation is across neighborhoods within cities—at the most informal and least studied form of government. These inequalities are not visible in the aggregate data typically used for research and policy. (JEL H76, J15, O15, O17, O18, R23)",
+   "missing_abstract": false,
+   "authors": [
+    "Sam Asher",
+    "Kritarth Jha",
+    "Paul Michael Novosad",
+    "Anjali Adukia",
+    "Brandon Tan"
+   ],
+   "institutions": [
+    "Dartmouth College",
+    "Imperial College London"
+   ],
+   "author_ids": [
+    "A5001234997",
+    "A5038611304",
+    "A5074780652",
+    "A5085041251",
+    "A5125385010"
+   ],
+   "date": "2026-10-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20240179",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0219,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W7223151050",
+   "doi": "https://doi.org/10.1017/s0003055426102019",
+   "title": "The Symbolic Politics of Housing",
+   "abstract": "Voter opposition to development contributes to America’s housing shortage. Prevailing explanations emphasize NIMBYism (opposition to housing nearby) and homeowners’ self-interest. However, homeownership often fails to predict housing policy views, while NIMBYism offers little insight into support for policies that do not concern specific proposed housing projects—the focus of much recent policymaking. Drawing on symbolic politics theory, we argue that voters’ affect toward groups that housing policies make salient powerfully shapes their judgments about housing policies. We present evidence supporting this theory. Experiments show that affect toward developers and investors who build housing, government actors who approve it, and residents who move into it explain anti-development preferences when policies make these groups salient. Providing further causal evidence, short-form videos that manipulate affect toward developers have meaningful downstream effects on support for new development and permitting reforms. Ironically, voter dislike of the very actors who could ameliorate the housing shortage further exacerbates it.",
+   "missing_abstract": false,
+   "authors": [
+    "David Broockman",
+    "Christopher Elmendorf",
+    "Joshua Kalla"
+   ],
+   "institutions": [
+    "University of California, Berkeley",
+    "University of California, Davis",
+    "Yale University"
+   ],
+   "author_ids": [
+    "A5081350253",
+    "A5061869283",
+    "A5056605864"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "American Political Science Review",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055426102019",
+   "cited_by_count": 0,
+   "prefilter_score": 0.0212,
+   "max_author_h_index": 33
+  },
+  {
+   "id": "W7223170333",
+   "doi": "https://doi.org/10.1017/lar.2026.10166",
+   "title": "Fontes para uma terceira margem: Luiza do Valle e a multiplicidade do ser indígena na Ditadura Militar",
+   "abstract": "Resumen Este artigo analisa a carta enviada em 1975 por Luiza do Valle, indígena Tupi e funcionária da FUNAI, ao Comando da 4ª Brigada de Infantaria, arquivada pela Assessoria de Segurança e Informações da FUNAI (ASI-FUNAI). A partir desse documento e de fontes complementares do Arquivo Nacional, do Museu do Índio e do Armazém Memória, reconstrói-se a trajetória de uma família indígena que atuou durante décadas dentro do aparato indigenista estatal, entre o Serviço de Proteção aos Índios e a Fundação Nacional do Índio. Mobilizando o conceito de “terceira margem”, inspirado em Guimarães Rosa, o estudo questiona as interpretações dicotômicas (resistência/colaboração) que dominam a historiografia sobre a história indígena na Ditadura Militar brasileira (1964–1985). A análise revela a dependência estrutural do indigenismo em relação a agentes indígenas, a continuidade da violência fundiária sobre populações racializadas e as formas de agência exercidas por uma mulher indígena dentro do sistema que a subordinava.",
+   "missing_abstract": false,
+   "authors": [
+    "Carlos Benítez Trinidad",
+    "Hygor Mesquita Faria"
+   ],
+   "institutions": [
+    "Universidad de Salamanca",
+    "Universidade Federal de Juiz de Fora"
+   ],
+   "author_ids": [
+    "A5053727337",
+    "A5008566124"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10166",
+   "cited_by_count": 0,
+   "prefilter_score": 0.02,
+   "max_author_h_index": 3
+  },
+  {
+   "id": "W7223183015",
+   "doi": "https://doi.org/10.1017/lar.2026.10177",
+   "title": "La historia como palimpsesto: Mendigos y criminales en la narrativa de Francisco Calcagno",
+   "abstract": "Resumen Este artículo examina la obra narrativa del escritor cubano Francisco Calcagno (1827–1903) y destaca su distanciamiento ideológico respecto de la novela antiesclavista cubana. A partir del análisis de su primera novela, Los crímenes de Concha , y de la última publicada, Aponte , sin perder de vista los personajes esclavizados presentes en el resto de su producción narrativa, es posible identificar la persistente recurrencia de las figuras del mendigo y del criminal. En una narrativa que se propone como histórica, Calcagno construye visiones simplificadas, dotadas de un notable poder de persuasión, que ocultan, tras un palimpsesto de imágenes nefastas, el surgimiento de la prensa negra y el protagonismo de líderes afrodescendientes. La reiterada configuración de estas figuras busca controlar la movilidad histórica y mantener a los hombres y mujeres de ascendencia africana detenidos entre el servilismo y el cimarronaje.",
+   "missing_abstract": false,
+   "authors": [
+    "María Alejandra Aguilar Dornelles"
+   ],
+   "institutions": [
+    "Florida Atlantic University"
+   ],
+   "author_ids": [
+    "A5010937044"
+   ],
+   "date": "2026-10-22",
+   "type": "article",
+   "language": "en",
+   "source": "Latin American Research Review",
+   "source_kind": "journal",
+   "tier": 3,
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/lar.2026.10177",
+   "cited_by_count": 0,
+   "prefilter_score": 0.02,
+   "max_author_h_index": 2
+  }
+ ],
+ "rising": [
+  {
+   "id": "W4416702294",
+   "doi": "https://doi.org/10.1016/j.jinteco.2025.104188",
+   "title": "Do geopolitical risks raise or lower inflation?",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [
+    "Dario Caldara",
+    "Sarah Conlisk",
+    "Matteo M. Iacoviello",
+    "Maddie Penn"
+   ],
+   "institutions": [
+    "Federal Reserve Board of Governors",
+    "Lyft (United States)",
+    "Yale University"
+   ],
+   "author_ids": [
+    "A5002906386",
+    "A5078120468",
+    "A5041823610",
+    "A5053670939"
+   ],
+   "date": "2025-11-26",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of International Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2025.104188",
+   "cited_by_count": 131,
+   "velocity_per_month": 11.58,
+   "max_author_h_index": 38
+  },
+  {
+   "id": "W3013810004",
+   "doi": "https://doi.org/10.1016/j.jinteco.2026.104259",
+   "title": "The global transmission of U.S. monetary policy",
+   "abstract": "",
+   "missing_abstract": true,
+   "authors": [
+    "Riccardo Degasperi",
+    "Seokki Simon Hong",
+    "G. Ricco"
+   ],
+   "institutions": [
+    "Bank of England",
+    "Bank of Italy",
+    "École Polytechnique"
+   ],
+   "author_ids": [
+    "A5031425755",
+    "A5033942466",
+    "A5063187438"
+   ],
+   "date": "2026-04-03",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of International Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104259",
+   "cited_by_count": 81,
+   "velocity_per_month": 11.4,
+   "max_author_h_index": 53
+  },
+  {
+   "id": "W4416154665",
+   "doi": "https://doi.org/10.1016/j.jpubeco.2025.105512",
+   "title": "Accounting for the profits of multinational enterprises: Double counting and misattribution of foreign affiliate income",
+   "abstract": "Given the perception that multinational enterprises (MNEs) engage in extensive tax planning, ending base erosion and profit shifting activity is a priority on many national agendas. Yet the actual level of such activity is subject to debate. In this paper, we provide guidance on how to accurately measure country-level MNE income using the datasets commonly used in research on profit shifting. This issue is of global concern, as any economic data that reports profits by jurisdiction must use an established accounting method to report the activity of the MNEs’ indirectly owned foreign affiliates. We explain how the accounting method used could lead a researcher to double count income or to attribute it to the wrong jurisdiction. Such errors not only affect measures of the MNEs’ country-level profits, but also bias researchers’ estimates of the sensitivity of income to taxes. Although we focus our analysis on data from the U.S. Bureau of Economic Analysis (BEA), we illustrate the consequences of such mismeasurement across a variety of studies relying on a variety of data sources.",
+   "missing_abstract": false,
+   "authors": [
+    "Jennifer L. Blouin",
+    "Leslie A. Robinson"
+   ],
+   "institutions": [
+    "Dartmouth College",
+    "University of Pennsylvania"
+   ],
+   "author_ids": [
+    "A5077000272",
+    "A5082197410"
+   ],
+   "date": "2025-11-12",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of Public Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2025.105512",
+   "cited_by_count": 123,
+   "velocity_per_month": 10.44,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W4289598398",
+   "doi": "https://doi.org/10.1257/aer.20230242",
+   "title": "The Effect of Omitted Variables on the Sign of Regression Coefficients",
+   "abstract": "We show that, depending on how the impact of omitted variables is measured, it can be substantially easier for omitted variables to flip coefficient signs than to drive them to zero. This behavior occurs with “Oster's delta” (Oster 2019a), a widely reported robustness measure. Consequently, any time this measure is large—suggesting omitted variables may be unimportant—a much smaller value reverses the sign of the parameter of interest. We propose a modified measure of robustness to address this concern. We illustrate our results in four empirical applications and two meta-analyses. We implement our methods in the companion Stata module “regsensitivity.” (JEL C18, C21, C52)",
+   "missing_abstract": false,
+   "authors": [
+    "Matthew A. Masten",
+    "Alexandre Poirier"
+   ],
+   "institutions": [
+    "Duke University",
+    "Georgetown University"
+   ],
+   "author_ids": [
+    "A5068862785"
+   ],
+   "date": "2026-06-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20230242",
+   "cited_by_count": 30,
+   "velocity_per_month": 7.12,
+   "max_author_h_index": 12
+  },
+  {
+   "id": "W7130535590",
+   "doi": "https://doi.org/10.1093/qje/qjag011",
+   "title": "The Macroeconomic Impact of Climate Change: Global Versus Local Temperature",
+   "abstract": "Abstract This article estimates that the macroeconomic damages from climate change are an order of magnitude larger than previously thought. Exploiting natural global temperature variability, we find that 1ºC warming reduces world GDP by over 20% in the long run. Global temperature correlates strongly with extreme climatic events, unlike country-level temperature used in previous work, explaining our larger estimate. We use this evidence to estimate damage functions in a neoclassical growth model. Business-as-usual warming implies a present welfare loss of more than 30%, and a social cost of carbon in excess of $1,200 per ton. These impacts suggest that unilateral decarbonization policy is cost-effective for large countries such as the United States.",
+   "missing_abstract": false,
+   "authors": [
+    "Adrien Bilal",
+    "Diego R. Känzig"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "Northwestern University"
+   ],
+   "author_ids": [
+    "A5079862293",
+    "A5029764335"
+   ],
+   "date": "2026-02-17",
+   "type": "article",
+   "language": "en",
+   "source": "The Quarterly Journal of Economics",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1093/qje/qjag011",
+   "cited_by_count": 51,
+   "velocity_per_month": 5.94,
+   "max_author_h_index": 13
+  },
+  {
+   "id": "W4385152182",
+   "doi": "https://doi.org/10.1086/743456",
+   "title": "Attacking Women or their Policies? Understanding Violence against Women in Politics",
+   "abstract": "We present the first causal evidence that female politicians are more likely to face political violence. Using fourteen years of data on attacks against Italian politicians, we show that marginally elected female mayors—similar to men and elected in comparable towns—are three times as likely to be attacked. We find no gender differences in policy platforms, policymaking, performance, or corruption. Instead, violence emerges independently on women's choices, consistently with discrimination - rather than political influence - driving the gap in violence. Female mayors are less likely to seek re-election after attacks, highlighting violence’s role in perpetuating the gender gap.",
+   "missing_abstract": false,
+   "authors": [
+    "Gianmarco Daniele",
+    "Gemma Dipoppa",
+    "Massimo Pulejo"
+   ],
+   "institutions": [
+    "Stanford University",
+    "University of Milan"
+   ],
+   "author_ids": [
+    "A5029394668",
+    "A5055471203",
+    "A5075148239"
+   ],
+   "date": "2026-08-03",
+   "type": "article",
+   "language": "en",
+   "source": "The Journal of Politics",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1086/743456",
+   "cited_by_count": 17,
+   "velocity_per_month": 5.5,
+   "max_author_h_index": 17
+  },
+  {
+   "id": "W7126269175",
+   "doi": "https://doi.org/10.1257/aer.20220831",
+   "title": "“Potential” and the Gender Promotion Gap",
+   "abstract": "We show that subjective assessments of employee \"potential\" contribute to gender gaps in promotion and pay. Using data on 29,809 management-track employees from a large retail chain, we find that women receive substantially lower potential ratings despite receiving higher performance ratings. Differences in potential ratings account for approximately half of the gender promotion gap. Women's lower potential ratings do not reflect accurate forecasts of future performance: Women subsequently outperform male colleagues, both on average and on the margin of promotion. We highlight two mechanisms driving the gender potential gap: strategic retention and stereotyping.",
+   "missing_abstract": false,
+   "authors": [
+    "Alan M. Benson",
+    "Danielle Li",
+    "Kelly Shue"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "University of Minnesota"
+   ],
+   "author_ids": [
+    "A5071664762",
+    "A5090841852",
+    "A5034562806"
+   ],
+   "date": "2026-01-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20220831",
+   "cited_by_count": 50,
+   "velocity_per_month": 5.45,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W4414770260",
+   "doi": "https://doi.org/10.1080/13501763.2026.2696304",
+   "title": "Artificial intelligence in government: why people feel they lose control",
+   "abstract": "The use of Artificial Intelligence (AI) in public administration is expanding rapidly. While AI promises greater efficiency and responsiveness, its integration into government and administration raises concerns about fairness, transparency, and accountability. Relying on principal-agent theory and related frameworks, we conceptualize AI adoption as a case of algorithmic delegation involving power and information asymmetries. This perspective highlights three core tensions: assessability (can the delegate’s decisions be understood?), dependency (can the delegation be reversed?), and contestability (can the delegate’s decisions be challenged?). These structural challenges may lead to a ‘failure-by-success’ dynamic, where early functional gains obscure long-term risks to democratic legitimacy. We conducted a pre-registered factorial survey experiment across tax, welfare, and law enforcement domains. Our findings show that although providing information about efficiency gains initially bolsters trust, it simultaneously reduces citizens’ perceived control. When the structural risks come to the foreground institutional trust and perceived control both drop sharply, suggesting that hidden costs of AI adoption significantly shape public attitudes. The study demonstrates that delegation theory offers a powerful lens for understanding the institutional and political implications of AI in government, emphasizing the need for policymakers to address delegation risks transparently to maintain public trust.",
+   "missing_abstract": false,
+   "authors": [
+    "Alexander Wuttke",
+    "Andreas Jungherr",
+    "Adrian Rauchfleisch"
+   ],
+   "institutions": [
+    "Ludwig-Maximilians-Universität München",
+    "National Taiwan University",
+    "University of Bamberg"
+   ],
+   "author_ids": [
+    "A5004036470",
+    "A5056587560"
+   ],
+   "date": "2026-07-16",
+   "type": "article",
+   "language": "en",
+   "source": "Journal of European Public Policy",
+   "source_kind": "journal",
+   "tier": 1,
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13501763.2026.2696304",
+   "cited_by_count": 20,
+   "velocity_per_month": 5.43,
+   "max_author_h_index": 27
+  },
+  {
+   "id": "W7126217556",
+   "doi": "https://doi.org/10.1257/aer.20231619",
+   "title": "Work from Home and the Office Real Estate Apocalypse",
+   "abstract": "We show remote work led to large drops in lease revenues, occupancy, and market rents in the commercial office sector. We revalue New York City office buildings, taking into account both the cash flow and discount rate implications of these shocks, and find a 46 percent decline in long-run value. For all US office markets combined, we find a $556.8 billion value destruction. Higher-quality buildings were buffered against these trends due to a flight to quality, while lower-quality offices are at risk of becoming a stranded asset. These valuation changes have repercussions for financial stability and local public finances. (JEL E31, E32, G12, J22, M51, R33)",
+   "missing_abstract": false,
+   "authors": [
+    "Arpit Gupta",
+    "Vrinda Mittal",
+    "Stijn Van Nieuwerburgh"
+   ],
+   "institutions": [
+    "Center for Economic and Policy Research",
+    "New York University",
+    "University of North Carolina at Chapel Hill"
+   ],
+   "author_ids": [],
+   "date": "2026-01-30",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20231619",
+   "cited_by_count": 42,
+   "velocity_per_month": 4.58,
+   "max_author_h_index": 0
+  },
+  {
+   "id": "W4416694477",
+   "doi": "https://doi.org/10.1257/aer.20201293",
+   "title": "Supply, Demand, Institutions, and Firms: A Theory of Labor Market Sorting and the Wage Distribution",
+   "abstract": "This paper examines how workforce composition, labor demand, and minimum wage jointly determine wages through their effects on worker-task assignments, firm wage premiums, and firm-worker sorting. Using an estimated model of monopsonistic local labor markets, it finds that minimum wage hikes and labor demand shocks drove the decline in Brazilian wage inequality from 1998 to 2012. While rising educational attainment compressed skill premiums within firms, it also reallocated skilled workers to high-wage firms, limiting that shock’s effect on inequality. The analysis highlights interactions among exogenous factors, showing that concurrent supply and demand changes attenuated minimum wage impacts. (JEL J22, J23, J24, J31, J38, J42, R23)",
+   "missing_abstract": false,
+   "authors": [
+    "Daniel Haanwinckel"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research"
+   ],
+   "author_ids": [
+    "A5053012091"
+   ],
+   "date": "2025-11-26",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20201293",
+   "cited_by_count": 39,
+   "velocity_per_month": 3.45,
+   "max_author_h_index": 7
+  },
+  {
+   "id": "W7133642528",
+   "doi": "https://doi.org/10.1007/s11127-026-01375-9",
+   "title": "“Congruence” and “Responsiveness” in the study of representation",
+   "abstract": "This paper compares two common methods used to measure representation in empirical research: “congruence,” whether a roll-call vote is aligned with constituent opinion; and “responsiveness,” the correlation between roll-call votes and constituent opinion. While sometimes viewed as different ways of capturing the same underlying concept of “representation,” theoretically the measures are not connected. This paper assesses to what extent responsiveness and congruence capture the same thing empirically. Using 4,192 roll-call votes on 33 state laws that were subsequently challenged in referendums, I calculate both congruence and responsiveness for the same set of votes. The main finding is that responsiveness is an unreliable predictor of congruence, and therefore cannot be taken as a proxy for congruence.",
+   "missing_abstract": false,
+   "authors": [
+    "John G. Matsusaka"
+   ],
+   "institutions": [
+    "University of Southern California"
+   ],
+   "author_ids": [
+    "A5065381917"
+   ],
+   "date": "2026-03-05",
+   "type": "article",
+   "language": "en",
+   "source": "Public Choice",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01375-9",
+   "cited_by_count": 27,
+   "velocity_per_month": 3.35,
+   "max_author_h_index": 36
+  },
+  {
+   "id": "W4300003029",
+   "doi": "https://doi.org/10.1017/s1475676526101273",
+   "title": "The (alleged) consequences of affective polarization: A survey experiment in nine democracies",
+   "abstract": "Abstract Affective polarization (or antipathy between supporters of opposing political camps) is considered a threat to societal cohesion and democratic stability worldwide. However, causal evidence of its impact remains scarce, especially outside the United States. Our study examines the individual-level consequences of affective polarization by manipulating it in a survey experiment in nine countries (Brazil, France, Germany, Italy, Poland, Spain, Sweden, the United Kingdom, and the United States; N ≈ 18,000) and subsequently assessing the downstream consequences for social avoidance and discrimination of opponents, support for aggression, aversion to political compromise, democratic norms, democratic dissatisfaction, and political engagement. Our intervention successfully reduced participants’ affective polarization in six out of nine countries. In turn, this was associated with significant improvement in interpersonal relations and (in contrast to recent US studies) support for democratic norms. Importantly, the impact varied between societies, suggesting that the consequences of affective polarization may be more context-dependent than previously understood.",
+   "missing_abstract": false,
+   "authors": [
+    "Eelco Harteveld",
+    "Lars Erik Berntzen",
+    "Andrej Kokkonen",
+    "Haylee Kelsall",
+    "Jonas Linde",
+    "Stefan Dahlberg"
+   ],
+   "institutions": [
+    "Mid Sweden University",
+    "University of Amsterdam",
+    "University of Bergen",
+    "University of Gothenburg"
+   ],
+   "author_ids": [
+    "A5084278401",
+    "A5082091413",
+    "A5025540239",
+    "A5000315857",
+    "A5040999966",
+    "A5069047115"
+   ],
+   "date": "2026-05-22",
+   "type": "article",
+   "language": "en",
+   "source": "European Journal of Political Research",
+   "source_kind": "journal",
+   "tier": 2,
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s1475676526101273",
+   "cited_by_count": 18,
+   "velocity_per_month": 3.28,
+   "max_author_h_index": 25
+  },
+  {
+   "id": "W7143761501",
+   "doi": "https://doi.org/10.1257/aer.20240636",
+   "title": "Negative Control Falsification Tests for Instrumental Variable Designs",
+   "abstract": "The validity of instrumental variable (IV) designs is typically tested using two types of falsification tests. We characterize these tests as conditional independence tests between negative control variables—proxies for unobserved variables posing a threat to the identification—and the IV or the outcome. We describe the conditions variables must satisfy in order to serve as negative controls. We show these falsification tests examine not only independence and the exclusion restriction but also functional form assumptions. Our analysis reveals conventional applications of these tests may flag problems even in valid IV designs. We offer implementation guidance to address these issues. (JEL C12, C18, C26, C52)",
+   "missing_abstract": false,
+   "authors": [
+    "Oren Danieli",
+    "Daniel Nevo",
+    "Itai Walk",
+    "Bar Weinstein",
+    "Dan Zeltzer"
+   ],
+   "institutions": [
+    "Tel Aviv University"
+   ],
+   "author_ids": [
+    "A5060335126",
+    "A5006250978",
+    "A5093598351",
+    "A5061426614",
+    "A5007625630"
+   ],
+   "date": "2026-03-31",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20240636",
+   "cited_by_count": 22,
+   "velocity_per_month": 3.05,
+   "max_author_h_index": 22
+  },
+  {
+   "id": "W7131826288",
+   "doi": "https://doi.org/10.1257/aer.20241355",
+   "title": "The Price of War",
+   "abstract": "We assemble a new data set spanning more than 150 years and 60 countries to study the economic impact of interstate war. The economic costs of war are not confined to the war site, where output on average declines by 20 percent and inflation increases persistently by almost 10 percentage points. There are strong spillovers to nearby countries which decline with geographic distance - both for belligerent and third countries. We rationalize these patterns in an international business cycle model: As war destroys the productive capacity of the war site, trade with nearby economies collapses, generating an endogenous supply-side contraction abroad.",
+   "missing_abstract": false,
+   "authors": [
+    "Jonathan Federle",
+    "André Meier",
+    "Gernot J. Müller",
+    "Willi Mutschler",
+    "Moritz HP. Schularick"
+   ],
+   "institutions": [
+    "Center for Economic and Policy Research",
+    "Centre for Economic Policy Research",
+    "University of Tübingen"
+   ],
+   "author_ids": [
+    "A5046648498",
+    "A5123454213",
+    "A5102920156",
+    "A5003610996",
+    "A5073446068"
+   ],
+   "date": "2026-02-27",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20241355",
+   "cited_by_count": 24,
+   "velocity_per_month": 2.91,
+   "max_author_h_index": 48
+  },
+  {
+   "id": "W3134434737",
+   "doi": "https://doi.org/10.1257/aer.20200108",
+   "title": "The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility",
+   "abstract": "We construct a public atlas of mean outcomes in adulthood by childhood census tract. Outcomes vary sharply across neighborhoods: For children whose parents earn $27,000, the standard deviation of mean household income in adulthood is $10,420 across tracts within counties. Only half the variation in outcomes is explained by traditional measures of neighborhood opportunity like poverty rates. Experimental and quasi-experimental estimates indicate 60 percent of the variation in outcomes across neighborhoods is driven by causal effects. We demonstrate how our statistics can be applied to better target policies to improve low-opportunity areas and help families move to affordable high-opportunity areas. (JEL G51, I32, I38, J12, R23)",
+   "missing_abstract": false,
+   "authors": [
+    "Raj Chetty",
+    "John Norton Friedman",
+    "Nathaniel Hendren",
+    "Maggie R. Jones",
+    "Sonya R. Porter"
+   ],
+   "institutions": [
+    "National Bureau of Economic Research",
+    "United States Census Bureau"
+   ],
+   "author_ids": [
+    "A5051484328",
+    "A5080908193",
+    "A5008884407",
+    "A5108262437",
+    "A5077336504"
+   ],
+   "date": "2025-12-31",
+   "type": "article",
+   "language": "en",
+   "source": "American Economic Review",
+   "source_kind": "journal",
+   "tier": 4,
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20200108",
+   "cited_by_count": 29,
+   "velocity_per_month": 2.85,
+   "max_author_h_index": 79
+  }
+ ],
+ "other": [
+  {
+   "id": "W7223691435",
+   "title": "Fixing the cryptofinance conundrum: the politics of crypto-assets regulation in the EU",
+   "authors": [
+    "Giuseppe Montalbano"
+   ],
+   "source": "Review of International Political Economy",
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/09692290.2026.2739389",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "W7224345507",
+   "title": "Capacity building in EU boundary governance: from rules to resources?",
+   "authors": [
+    "Alessia Invernizzi",
+    "Frank Schimmelfennig"
+   ],
+   "source": "Journal of European Public Policy",
+   "tier_label": "Core PE",
+   "url": "https://doi.org/10.1080/13501763.2026.2746004",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "W7225159623",
+   "title": "Francisco Longa, Historia del Movimiento Piquetero (Buenos Aires: Siglo XXI Editores, 2026), pp. 225.",
+   "authors": [
+    "Agustín Santella"
+   ],
+   "source": "Journal of Latin American Studies",
+   "tier_label": "Latin America",
+   "url": "https://doi.org/10.1017/s0022216x26101771",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "W7218798802",
+   "title": "Do felon voting rules affect criminal prosecutions?",
+   "authors": [
+    "Hannah Simpson",
+    "Sidak Yntiso"
+   ],
+   "source": "Political Science Research and Methods",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/psrm.2026.10139",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "W7224863714",
+   "title": "Councils and Indirect Rule in British Africa",
+   "authors": [
+    "Jutta Bolt",
+    "Leigh A. Gardner",
+    "Jennifer Kohler",
+    "Jack Paine",
+    "James A. Robinson"
+   ],
+   "source": "American Political Science Review",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s000305542610183x",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W7223374654",
+   "title": "Crime and Prices:Thefts of expensive precious metals from cars",
+   "authors": [
+    "Gerald Foong",
+    "Stephen J. Machin",
+    "Matteo Sandi"
+   ],
+   "source": "Journal of Public Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105807",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "W7225149788",
+   "title": "The Price of Incompetence: Security Failures and Selective Accountability in Autocracies",
+   "authors": [
+    "Austin S. Matthews",
+    "Jonas Willibald Schmid"
+   ],
+   "source": "Journal of Conflict Resolution",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1177/00220027261499221",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "W7225158909",
+   "title": "Government ideology and gender equality in public sector career progression",
+   "authors": [
+    "Lasse Aaskoven",
+    "Benjamin C. K. Egerod",
+    "Frederik Klaaborg Kjøller"
+   ],
+   "source": "Political Science Research and Methods",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/psrm.2026.10129",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "W4386043954",
+   "title": "The Inflation Attention Threshold and Inflation Surges",
+   "authors": [
+    "Oliver Pfäuti"
+   ],
+   "source": "American Economic Review",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20250051",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W7223573904",
+   "title": "Learning from Coalition Politics: How Episodes of Increased Complexity Can Enhance Citizens’ Political Efficacy",
+   "authors": [
+    "Christoffer Green‐Pedersen",
+    "Ida Bæk Hjermitslev",
+    "Mathias Wessel Tromborg"
+   ],
+   "source": "Political Behavior",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1007/s11109-026-10220-0",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "W7223878574",
+   "title": "Presenting the Updated Non-State Actor Dataset",
+   "authors": [
+    "David E. Cunningham",
+    "Leo Bauer",
+    "Olivia Bauer",
+    "Kristian Skrede Gleditsch",
+    "Idean Salehyan"
+   ],
+   "source": "Journal of Conflict Resolution",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1177/00220027261495531",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "W7113119637",
+   "title": "The Returns to Government R&D: Evidence from US Appropriations Shocks",
+   "authors": [
+    "Andrew J. Fieldhouse",
+    "Karel Mertens"
+   ],
+   "source": "American Economic Review",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20231684",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W7223681658",
+   "title": "The threat‐enhancing effect of authoritarian power sharing",
+   "authors": [
+    "Jack Paine"
+   ],
+   "source": "American Journal of Political Science",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1111/ajps.70089",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "W4410057134",
+   "title": "Pricing climate risks: Evidence from wildfires and municipal bonds",
+   "authors": [
+    "Woongchan Jeon",
+    "Lint Barrage",
+    "Kieran James Walsh"
+   ],
+   "source": "Journal of Public Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105810",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "W7128104184",
+   "title": "Firm Adaptation in Production Networks: Evidence from Extreme Weather Events in Pakistan",
+   "authors": [
+    "Clare Balboni",
+    "Johannes Boehm",
+    "Mazhar Waseem"
+   ],
+   "source": "American Economic Review",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1257/aer.20241027",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W7223670567",
+   "title": "When Politics Enters the Waiting Room: Far-Right Electoral Victories Exacerbate Discrimination in Access to Healthcare",
+   "authors": [
+    "Merlin Schaeffer",
+    "Alessio Romarri",
+    "Dina Y. Rosenberg",
+    "Krzysztof Krakowski"
+   ],
+   "source": "American Political Science Review",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1017/s0003055426101907",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "W7225147155",
+   "title": "Women and the double standard of ambition",
+   "authors": [
+    "Geertje J. Bol"
+   ],
+   "source": "American Journal of Political Science",
+   "tier_label": "Generalist",
+   "url": "https://doi.org/10.1111/ajps.70091",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "W4392567445",
+   "title": "Does ridesharing affect external-cause mortality? Evidence from U.S. Vital Statistics Data",
+   "authors": [
+    "Conor Lennon",
+    "Christian Saenz",
+    "Keith Teltser"
+   ],
+   "source": "Journal of Public Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105813",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W7223285452",
+   "title": "Rising inequality, declining mobility: The evolution of intergenerational mobility in Germany",
+   "authors": [
+    "Julia Baarck",
+    "Moritz Bode",
+    "Andreas Peichl"
+   ],
+   "source": "Journal of Public Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105811",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "W4411363581",
+   "title": "Liquidity constraints and staggered income disbursement: evidence from TANF, SNAP, and medicaid",
+   "authors": [
+    "Alicia Atwood",
+    "Lindsay Allen",
+    "Sabrina K. Young"
+   ],
+   "source": "Journal of Public Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105785",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "W4416574064",
+   "title": "Middlemen as an exchange technology in international production networks",
+   "authors": [
+    "Bernardo S. Blum",
+    "Sebastián Claro",
+    "Kunal Dasgupta",
+    "Ignatius J. Horstmann",
+    "Marcos A. Rangel"
+   ],
+   "source": "Journal of Development Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103959",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "W7223246620",
+   "title": "Relative affluence and mental health: Evidence from quasi-random class assignments",
+   "authors": [
+    "Huajun Wu",
+    "Ning Neil Yu"
+   ],
+   "source": "Journal of Development Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103954",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "W7223557123",
+   "title": "When does artificial intelligence strengthen the case for markets? Revisiting the socialist calculation debate",
+   "authors": [
+    "Niclas Berggren"
+   ],
+   "source": "Public Choice",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1007/s11127-026-01487-2",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "W7225266834",
+   "title": "The price of geoeconomic dependence: Sanction intensity and corporate credit spreads",
+   "authors": [
+    "Benedikt Kagerer"
+   ],
+   "source": "Journal of International Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104349",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "W7225268031",
+   "title": "The long-run returns to rural electrification: Evidence from a randomized experiment",
+   "authors": [
+    "Matthieu Chemin",
+    "Thomas Kokossou"
+   ],
+   "source": "Journal of Development Economics",
+   "tier_label": "Economics",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103960",
+   "date": "2026-11-01"
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+  "International Organization": {
+    "ok": true,
+    "openalex_id": "S160686149",
+    "display_name": "International Organization",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Review of International Political Economy": {
+    "ok": true,
+    "openalex_id": "S2875300",
+    "display_name": "Review of International Political Economy",
+    "method": "issn",
+    "score": 1.0
+  },
+  "The Review of International Organizations": {
+    "ok": true,
+    "openalex_id": "S71858213",
+    "display_name": "The Review of International Organizations",
+    "method": "issn",
+    "score": 1.0
+  },
+  "New Political Economy": {
+    "ok": true,
+    "openalex_id": "S146242404",
+    "display_name": "New Political Economy",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Socio-Economic Review": {
+    "ok": true,
+    "openalex_id": "S147547362",
+    "display_name": "Socio-Economic Review",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of European Public Policy": {
+    "ok": true,
+    "openalex_id": "S22371039",
+    "display_name": "Journal of European Public Policy",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Economics & Politics": {
+    "ok": true,
+    "openalex_id": "S197981039",
+    "display_name": "Economics and Politics",
+    "method": "issn",
+    "score": 0.9
+  },
+  "Business and Politics": {
+    "ok": true,
+    "openalex_id": "S99707577",
+    "display_name": "Business and Politics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "The Journal of Politics": {
+    "ok": true,
+    "openalex_id": "S95650557",
+    "display_name": "The Journal of Politics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Comparative Political Studies": {
+    "ok": true,
+    "openalex_id": "S105556297",
+    "display_name": "Comparative Political Studies",
+    "method": "issn",
+    "score": 1.0
+  },
+  "World Politics": {
+    "ok": true,
+    "openalex_id": "S143110675",
+    "display_name": "World Politics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "American Political Science Review": {
+    "ok": true,
+    "openalex_id": "S176007004",
+    "display_name": "American Political Science Review",
+    "method": "issn",
+    "score": 1.0
+  },
+  "American Journal of Political Science": {
+    "ok": true,
+    "openalex_id": "S90314269",
+    "display_name": "American Journal of Political Science",
+    "method": "issn",
+    "score": 1.0
+  },
+  "British Journal of Political Science": {
+    "ok": true,
+    "openalex_id": "S95691132",
+    "display_name": "British Journal of Political Science",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Political Science Research and Methods": {
+    "ok": true,
+    "openalex_id": "S2764571748",
+    "display_name": "Political Science Research and Methods",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Experimental Political Science": {
+    "ok": true,
+    "openalex_id": "S4210184980",
+    "display_name": "Journal of Experimental Political Science",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Political Behavior": {
+    "ok": true,
+    "openalex_id": "S110036823",
+    "display_name": "Political Behavior",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Public Opinion Quarterly": {
+    "ok": true,
+    "openalex_id": "S135539873",
+    "display_name": "Public Opinion Quarterly",
+    "method": "issn",
+    "score": 1.0
+  },
+  "European Journal of Political Research": {
+    "ok": true,
+    "openalex_id": "S135158421",
+    "display_name": "European Journal of Political Research",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Comparative Politics": {
+    "ok": true,
+    "openalex_id": "S2764871768",
+    "display_name": "Comparative Politics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "International Studies Quarterly": {
+    "ok": true,
+    "openalex_id": "S91639875",
+    "display_name": "International Studies Quarterly",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Conflict Resolution": {
+    "ok": true,
+    "openalex_id": "S20177303",
+    "display_name": "Journal of Conflict Resolution",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Latin American Politics and Society": {
+    "ok": true,
+    "openalex_id": "S195250056",
+    "display_name": "Latin American Politics and Society",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Latin American Research Review": {
+    "ok": true,
+    "openalex_id": "S59607649",
+    "display_name": "Latin American Research Review",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Latin American Studies": {
+    "ok": true,
+    "openalex_id": "S169672611",
+    "display_name": "Journal of Latin American Studies",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Revista de Ciencia Política": {
+    "ok": true,
+    "openalex_id": "S4210231868",
+    "display_name": "Revista de ciencia política",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Política y Gobierno": {
+    "ok": true,
+    "openalex_id": "S955509732",
+    "display_name": "Politica Y Gobierno",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Latin American Economic Review": {
+    "ok": true,
+    "openalex_id": "S2737251658",
+    "display_name": "Latin American Economic Review",
+    "method": "search",
+    "score": 1.0
+  },
+  "American Economic Review": {
+    "ok": true,
+    "openalex_id": "S23254222",
+    "display_name": "American Economic Review",
+    "method": "issn",
+    "score": 1.0
+  },
+  "The Quarterly Journal of Economics": {
+    "ok": true,
+    "openalex_id": "S203860005",
+    "display_name": "The Quarterly Journal of Economics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of International Economics": {
+    "ok": true,
+    "openalex_id": "S198098467",
+    "display_name": "Journal of International Economics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Public Economics": {
+    "ok": true,
+    "openalex_id": "S199447588",
+    "display_name": "Journal of Public Economics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Development Economics": {
+    "ok": true,
+    "openalex_id": "S101209419",
+    "display_name": "Journal of Development Economics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "European Journal of Political Economy": {
+    "ok": true,
+    "openalex_id": "S100134864",
+    "display_name": "European Journal of Political Economy",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Public Choice": {
+    "ok": true,
+    "openalex_id": "S7424199",
+    "display_name": "Public Choice",
+    "method": "issn",
+    "score": 1.0
+  },
+  "Journal of Comparative Economics": {
+    "ok": true,
+    "openalex_id": "S138645024",
+    "display_name": "Journal of Comparative Economics",
+    "method": "issn",
+    "score": 1.0
+  },
+  "National Bureau of Economic Research": {
+    "ok": true,
+    "openalex_id": "S4393916240",
+    "display_name": "NBER working paper series",
+    "method": "search",
+    "score": 0.84
+  },
+  "CEPR Discussion Papers": {
+    "ok": false,
+    "openalex_id": null,
+    "display_name": null,
+    "method": "search",
+    "score": 0.0
+  },
+  "IZA Discussion Papers": {
+    "ok": false,
+    "openalex_id": null,
+    "display_name": null,
+    "method": "search",
+    "score": 0.0
+  },
+  "CESifo Working Papers": {
+    "ok": false,
+    "openalex_id": null,
+    "display_name": null,
+    "method": "search",
+    "score": 0.0
+  },
+  "IMF Working Papers": {
+    "ok": true,
+    "openalex_id": "S5407031312",
+    "display_name": "IMF Working Papers",
+    "method": "search",
+    "score": 1.0
+  },
+  "World Bank Policy Research Working Papers": {
+    "ok": true,
+    "openalex_id": "S4306489184",
+    "display_name": "Policy Research Working Paper eBooks",
+    "method": "search",
+    "score": 0.89
+  },
+  "IDB Working Papers": {
+    "ok": false,
+    "openalex_id": null,
+    "display_name": null,
+    "method": "search",
+    "score": 0.0
+  },
+  "SocArXiv": {
+    "ok": true,
+    "openalex_id": "S3006283864",
+    "display_name": "SocArXiv",
+    "method": "search",
+    "score": 1.0
+  },
+  "SSRN": {
+    "ok": true,
+    "openalex_id": "S4210172589",
+    "display_name": "SSRN Electronic Journal",
+    "method": "search",
+    "score": 1.01
+  },
+  "arXiv": {
+    "ok": true,
+    "openalex_id": "S4404677083",
+    "display_name": "AI-EDU arxiv.",
+    "method": "search",
+    "score": 0.59
+  }
+}
