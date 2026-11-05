@@ -1,0 +1,73 @@
+# Sources pulled weekly from OpenAlex.
+# Journals are resolved by ISSN first, then by name if the ISSN lookup fails or
+# returns a different title. The resolution is cached in config/resolved_sources.json
+# and reported in data/resolution_report.md. Check that report after the first run.
+
+lookback_days: 14          # window for new items; dedupe against data/seen.json handles overlap
+rising_window_days: [90, 365]
+rising_top_n: 15
+prefilter_keep: 80         # max candidates handed to the scorer each week
+
+journals:
+  # Tier 1: Core PE
+  - {name: "International Organization", issn: "0020-8183", tier: 1}
+  - {name: "Review of International Political Economy", issn: "0969-2290", tier: 1}
+  - {name: "The Review of International Organizations", issn: "1559-7431", tier: 1}
+  - {name: "New Political Economy", issn: "1356-3467", tier: 1}
+  - {name: "Socio-Economic Review", issn: "1475-1461", tier: 1}
+  - {name: "Journal of European Public Policy", issn: "1350-1763", tier: 1}
+  - {name: "Economics & Politics", issn: "0954-1985", tier: 1}
+  - {name: "Business and Politics", issn: "1469-3569", tier: 1}
+  - {name: "The Journal of Politics", issn: "0022-3816", tier: 1}
+  - {name: "Comparative Political Studies", issn: "0010-4140", tier: 1}
+  - {name: "World Politics", issn: "0043-8871", tier: 1}
+  # Tier 2: Generalist
+  - {name: "American Political Science Review", issn: "0003-0554", tier: 2}
+  - {name: "American Journal of Political Science", issn: "0092-5853", tier: 2}
+  - {name: "British Journal of Political Science", issn: "0007-1234", tier: 2}
+  - {name: "Political Science Research and Methods", issn: "2049-8470", tier: 2}
+  - {name: "Journal of Experimental Political Science", issn: "2052-2630", tier: 2}
+  - {name: "Political Behavior", issn: "0190-9320", tier: 2}
+  - {name: "Public Opinion Quarterly", issn: "0033-362X", tier: 2}
+  - {name: "European Journal of Political Research", issn: "0304-4130", tier: 2}
+  - {name: "Comparative Politics", issn: "0010-4159", tier: 2}
+  - {name: "International Studies Quarterly", issn: "0020-8833", tier: 2}
+  - {name: "Journal of Conflict Resolution", issn: "0022-0027", tier: 2}
+  # Tier 3: Latin America
+  - {name: "Latin American Politics and Society", issn: "1531-426X", tier: 3}
+  - {name: "Latin American Research Review", issn: "0023-8791", tier: 3}
+  - {name: "Journal of Latin American Studies", issn: "0022-216X", tier: 3}
+  - {name: "Revista de Ciencia Política", issn: "0718-090X", tier: 3}
+  - {name: "Política y Gobierno", issn: "1665-2037", tier: 3}
+  - {name: "Latin American Economic Review", issn: null, tier: 3}
+  # Tier 4: Economics
+  - {name: "American Economic Review", issn: "0002-8282", tier: 4}
+  - {name: "The Quarterly Journal of Economics", issn: "0033-5533", tier: 4}
+  - {name: "Journal of International Economics", issn: "0022-1996", tier: 4}
+  - {name: "Journal of Public Economics", issn: "0047-2727", tier: 4}
+  - {name: "Journal of Development Economics", issn: "0304-3878", tier: 4}
+  - {name: "European Journal of Political Economy", issn: "0176-2680", tier: 4}
+  - {name: "Public Choice", issn: "0048-5829", tier: 4}
+  - {name: "Journal of Comparative Economics", issn: "0147-5967", tier: 4}
+
+# Working paper series and preprint servers, resolved by name search in OpenAlex.
+# `keyword_filter: true` restricts a high-volume repository to items matching the
+# keyword query below, so SSRN and arXiv don't flood the pull.
+working_papers:
+  - {name: "National Bureau of Economic Research", search: "NBER Working Paper", keyword_filter: false}
+  - {name: "CEPR Discussion Papers", search: "CEPR Discussion Paper", keyword_filter: false}
+  - {name: "IZA Discussion Papers", search: "IZA Discussion Paper", keyword_filter: false}
+  - {name: "CESifo Working Papers", search: "CESifo Working Paper", keyword_filter: false}
+  - {name: "IMF Working Papers", search: "IMF Working Papers", keyword_filter: false}
+  - {name: "World Bank Policy Research Working Papers", search: "Policy Research Working Paper", keyword_filter: false}
+  - {name: "IDB Working Papers", search: "IDB Working Paper", keyword_filter: false}
+  - {name: "SocArXiv", search: "SocArXiv", keyword_filter: true}
+  - {name: "SSRN", search: "SSRN Electronic Journal", keyword_filter: true}
+  - {name: "arXiv", search: "arXiv", keyword_filter: true}
+
+# Used only for keyword-filtered repositories. OpenAlex boolean search syntax.
+keyword_query: >-
+  (trade OR tariff OR globalization OR "foreign direct investment" OR FDI OR multinational
+  OR "supply chain" OR "capital mobility" OR immigration OR migration OR redistribution
+  OR "political trust" OR "Latin America" OR Chile OR "survey experiment" OR conjoint)
+  AND (political OR politics OR preferences OR attitudes OR opinion OR voters)
