@@ -128,11 +128,12 @@ def resolve_sources(cfg: dict, client, cache_path: Path) -> list[dict]:
 
     for w in cfg.get("working_papers", []):
         hit = cache.get(w["name"])
-        if not (hit and hit.get("ok")):
-            hit = _resolve_by_search(w["search"], client, threshold=0.55)
+        if not (hit and hit.get("ok")) or (w.get("openalex_id") and hit.get("openalex_id") != w["openalex_id"]):
+            hit = _resolve_wp(w, client)
             cache[w["name"]] = hit
         resolved.append({**hit, "name": w["name"], "tier": 5, "kind": "working_paper",
-                         "keyword_filter": bool(w.get("keyword_filter"))})
+                         "keyword_filter": bool(w.get("keyword_filter")),
+                         "queries": [w["search"], *w.get("alt_searches", [])]})
 
     cache_path.write_text(json.dumps(cache, indent=2, ensure_ascii=False))
     return resolved
@@ -147,6 +148,23 @@ def _resolve_journal(j: dict, client) -> dict:
                 return {"ok": True, "openalex_id": short_id(src["id"]),
                         "display_name": src["display_name"], "method": "issn", "score": round(score, 2)}
     return _resolve_by_search(j["name"], client, threshold=0.8)
+
+
+def _resolve_wp(w: dict, client) -> dict:
+    if w.get("openalex_id"):  # explicit override in sources.yaml
+        return {"ok": True, "openalex_id": w["openalex_id"], "display_name": w.get("search"),
+                "method": "override", "score": 1.0}
+    for query in [w["search"], *w.get("alt_searches", [])]:
+        hit = _resolve_by_search(query, client, threshold=0.7)
+        if hit["ok"]:
+            return hit
+    return hit
+
+
+def search_candidates(query: str, client, n: int = 5) -> list[dict]:
+    page = client.get("/sources", {"search": query, "per_page": n})
+    return [{"id": short_id(s["id"]), "name": s.get("display_name"), "type": s.get("type"),
+             "works_count": s.get("works_count")} for s in page.get("results", [])]
 
 
 def _resolve_by_search(query: str, client, threshold: float) -> dict:
@@ -198,17 +216,69 @@ def fetch_works(client, sources: list[dict], from_date: str, to_date: str,
 
 
 def fetch_rising(client, sources: list[dict], today: dt.date, window: list[int], top_n: int) -> list[dict]:
+    """Economics papers accumulate citations faster than political science, so a single
+    pooled ranking is all economics. Rank political science (tiers 1-3) and economics
+    (tier 4) separately and give political science two thirds of the slots."""
     lo, hi = window
-    pool = [s for s in sources if s.get("ok") and not s["keyword_filter"]]
-    works = fetch_works(client, pool, (today - dt.timedelta(days=hi)).isoformat(),
-                        (today - dt.timedelta(days=lo)).isoformat(), "",
-                        extra={"sort": "cited_by_count:desc"}, limit=200)
-    for w in works:
-        pub = dt.date.fromisoformat(w["publication_date"])
-        months = max((today - pub).days / 30.4, 1.0)
-        w["_velocity"] = round(w.get("cited_by_count", 0) / months, 2)
-    works.sort(key=lambda w: w["_velocity"], reverse=True)
-    return works[:top_n]
+    groups = [
+        ([s for s in sources if s.get("ok") and s["tier"] in (1, 2, 3)], top_n - top_n // 3),
+        ([s for s in sources if s.get("ok") and s["tier"] == 4], top_n // 3),
+    ]
+    out = []
+    for pool, n in groups:
+        works = fetch_works(client, pool, (today - dt.timedelta(days=hi)).isoformat(),
+                            (today - dt.timedelta(days=lo)).isoformat(), "",
+                            extra={"sort": "cited_by_count:desc"}, limit=200)
+        works = [w for w in works if not is_paratext(w.get("display_name"))]
+        for w in works:
+            pub = dt.date.fromisoformat(w["publication_date"])
+            months = max((today - pub).days / 30.4, 1.0)
+            w["_velocity"] = round(w.get("cited_by_count", 0) / months, 2)
+        works.sort(key=lambda w: w["_velocity"], reverse=True)
+        out += works[:n]
+    return out
+
+
+PARATEXT = re.compile(
+    r"(cover and (front|back) matter|front matter|back matter|issue information|editorial board"
+    r"|^erratum|^corrigendum|^correction to|^retraction|table of contents|^books? received"
+    r"|^masthead|^in this issue|^list of reviewers|^reviewer acknowledg)", re.I)
+
+
+def is_paratext(title: str | None) -> bool:
+    return bool(PARATEXT.search(title or ""))
+
+
+def write_diagnostics(client, sources: list[dict], from_date: str, to_date: str, path: Path) -> None:
+    """Per-source item counts for the window, with and without the type filter, and the
+    top OpenAlex search hits for any working paper source that did not resolve cleanly."""
+    lines = ["# Collector diagnostics", "", f"Window: {from_date} to {to_date}", "",
+             "## Items per source in window", "",
+             "| Source | ID | Kind | With type filter | All types |", "| --- | --- | --- | --- | --- |"]
+    ok = [s for s in sources if s.get("ok")]
+    counts = {}
+    for typed in (True, False):
+        for i in range(0, len(ok), 40):
+            ids = "|".join(s["openalex_id"] for s in ok[i:i + 40])
+            flt = f"from_publication_date:{from_date},to_publication_date:{to_date},primary_location.source.id:{ids}"
+            if typed:
+                flt += f",type:{WORK_TYPES}"
+            page = client.get("/works", {"filter": flt, "group_by": "primary_location.source.id"})
+            for g in page.get("group_by", []):
+                counts[(short_id(str(g.get("key"))), typed)] = g.get("count", 0)
+    for s in ok:
+        lines.append(f"| {s['name']} | {s['openalex_id']} | {s['kind']} | "
+                     f"{counts.get((s['openalex_id'], True), 0)} | {counts.get((s['openalex_id'], False), 0)} |")
+    weak = [s for s in sources if s["kind"] == "working_paper" and (not s.get("ok") or (s.get("score") or 0) < 0.95)]
+    if weak:
+        lines += ["", "## Search hits for unresolved or weak working paper matches", ""]
+        for s in weak:
+            lines += [f"**{s['name']}**", "", "| Query | ID | Name | Type | Works |", "| --- | --- | --- | --- | --- |"]
+            for q in s.get("queries", [s["name"]]):
+                for c in search_candidates(q, client):
+                    lines.append(f"| {q} | {c['id']} | {c['name']} | {c['type']} | {c['works_count']} |")
+            lines.append("")
+    path.write_text("\n".join(lines) + "\n")
 
 
 def attach_author_stats(client, items: list[dict]) -> None:
@@ -266,7 +336,7 @@ def dedupe(items: list[dict], seen: dict) -> list[dict]:
     by_title: dict[str, dict] = {}
     for it in items:
         key = norm(it["title"])
-        if not key or it["id"] in seen_ids or key in seen_titles:
+        if not key or is_paratext(it["title"]) or it["id"] in seen_ids or key in seen_titles:
             continue
         prev = by_title.get(key)
         if prev is None or (prev["source_kind"] != "journal" and it["source_kind"] == "journal"):
@@ -313,6 +383,7 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
     lookup = {s["openalex_id"]: s for s in sources if s.get("ok")}
 
     from_date = (today - dt.timedelta(days=cfg.get("lookback_days", 14))).isoformat()
+    write_diagnostics(client, sources, from_date, today.isoformat(), data / "diagnostics.md")
     raw = fetch_works(client, sources, from_date, today.isoformat(), cfg.get("keyword_query", ""))
     seen_path = data / "seen.json"
     seen = json.loads(seen_path.read_text()) if seen_path.exists() else {"ids": [], "titles": []}

@@ -145,5 +145,26 @@ def test_end_to_end(tmp_path):
     assert (root / "data/latest.json").exists()
 
 
+def test_paratext_and_diagnostics(tmp_path):
+    root = setup_root(tmp_path)
+    works = NEW + [work("W9", "PSR volume 120 issue 4 Cover and Back matter", "", "S1")]
+    out = collect.run(dt.date(2026, 11, 9), FakeClient(works, RISING), root=root)
+    ids = {c["id"] for c in out["candidates"]} | {o["id"] for o in out["other"]}
+    assert "W9" not in ids
+    assert collect.is_paratext("Issue Information") and not collect.is_paratext("Trade and trust")
+    assert (root / "data/diagnostics.md").exists()
+
+
+def test_override_and_rising_split(tmp_path):
+    root = setup_root(tmp_path)
+    cfg = (root / "config/sources.yaml").read_text().replace(
+        'search: "NBER Working Paper", keyword_filter: false}',
+        'search: "NBER Working Paper", keyword_filter: false, openalex_id: "S77"}')
+    (root / "config/sources.yaml").write_text(cfg.replace("rising_top_n: 2", "rising_top_n: 3"))
+    collect.run(dt.date(2026, 11, 9), FakeClient(NEW, RISING), root=root)
+    res = json.loads((root / "config/resolved_sources.json").read_text())
+    assert res["NBER"]["openalex_id"] == "S77" and res["NBER"]["method"] == "override"
+
+
 def test_abstract_order():
     assert collect.abstract_from_index({"b": [1], "a": [0], "c": [2, 3]}) == "a b c c"

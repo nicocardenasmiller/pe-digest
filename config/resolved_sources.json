@@ -313,12 +313,5 @@
     "display_name": "SSRN Electronic Journal",
     "method": "search",
     "score": 1.01
-  },
-  "arXiv": {
-    "ok": true,
-    "openalex_id": "S4404677083",
-    "display_name": "AI-EDU arxiv.",
-    "method": "search",
-    "score": 0.59
   }
 }

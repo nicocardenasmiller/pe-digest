@@ -53,17 +53,26 @@ journals:
 # Working paper series and preprint servers, resolved by name search in OpenAlex.
 # `keyword_filter: true` restricts a high-volume repository to items matching the
 # keyword query below, so SSRN and arXiv don't flood the pull.
+# Matching: `search` first, then each `alt_searches` entry; a match needs a name
+# similarity of 0.7 or more. To pin a source, add `openalex_id: "S..."` (see
+# data/diagnostics.md for candidate IDs).
 working_papers:
-  - {name: "National Bureau of Economic Research", search: "NBER Working Paper", keyword_filter: false}
-  - {name: "CEPR Discussion Papers", search: "CEPR Discussion Paper", keyword_filter: false}
-  - {name: "IZA Discussion Papers", search: "IZA Discussion Paper", keyword_filter: false}
-  - {name: "CESifo Working Papers", search: "CESifo Working Paper", keyword_filter: false}
+  - {name: "National Bureau of Economic Research", search: "NBER Working Paper", keyword_filter: false,
+     alt_searches: ["National Bureau of Economic Research"]}
+  - {name: "CEPR Discussion Papers", search: "CEPR Discussion Paper", keyword_filter: false,
+     alt_searches: ["Centre for Economic Policy Research", "CEPR Discussion Papers"]}
+  - {name: "IZA Discussion Papers", search: "IZA Discussion Paper", keyword_filter: false,
+     alt_searches: ["IZA Discussion Papers", "Institute of Labor Economics", "IZA"]}
+  - {name: "CESifo Working Papers", search: "CESifo Working Paper", keyword_filter: false,
+     alt_searches: ["CESifo Working Paper Series", "CESifo"]}
   - {name: "IMF Working Papers", search: "IMF Working Papers", keyword_filter: false}
-  - {name: "World Bank Policy Research Working Papers", search: "Policy Research Working Paper", keyword_filter: false}
-  - {name: "IDB Working Papers", search: "IDB Working Paper", keyword_filter: false}
+  - {name: "World Bank Policy Research Working Papers", search: "Policy Research Working Paper", keyword_filter: false,
+     alt_searches: ["World Bank Policy Research Working Paper"]}
+  - {name: "IDB Working Papers", search: "IDB Working Paper", keyword_filter: false,
+     alt_searches: ["IDB Working Paper Series", "Inter-American Development Bank"]}
   - {name: "SocArXiv", search: "SocArXiv", keyword_filter: true}
   - {name: "SSRN", search: "SSRN Electronic Journal", keyword_filter: true}
-  - {name: "arXiv", search: "arXiv", keyword_filter: true}
+  - {name: "arXiv", search: "arXiv (Cornell University)", keyword_filter: true}
 
 # Used only for keyword-filtered repositories. OpenAlex boolean search syntax.
 keyword_query: >-
