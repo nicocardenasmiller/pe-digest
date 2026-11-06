@@ -57,3 +57,16 @@ Window: 2026-10-23 to 2026-11-06
 | SocArXiv | 0 |
 | SSRN | 0 |
 | arXiv | 129 |
+
+## Direct working-paper feeds
+
+| Feed | Items in window | Status |
+| --- | --- | --- |
+| NEP Positive Political Economics (nep-pol) | 12 | rss ok (13 in feed, 12 in window) |
+| NEP International Trade (nep-int) | 5 | rss ok (6 in feed, 5 in window) |
+| NEP Central and South America (nep-lam) | 2 | rss ok (2 in feed, 2 in window) |
+| NEP Economics of Human Migration (nep-mig) | 5 | rss ok (13 in feed, 5 in window) |
+| NEP Public Economics (nep-pbe) | 13 | rss ok (17 in feed, 13 in window) |
+| NEP Collective Decision-Making (nep-cdm) | 4 | rss ok (4 in feed, 4 in window) |
+| NBER Working Papers | 23 | rss ok via https://back.nber.org/rss/new.xml (23 in feed, 23 kept) |
+| SocArXiv | 48 | OSF API ok (263 items); 48 matched keywords |
