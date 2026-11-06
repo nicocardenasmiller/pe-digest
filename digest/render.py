@@ -7,18 +7,26 @@ Usage:
 The scores file is written by the weekly scoring step:
 {
   "week_of": "2026-11-06",
+  "overview": {
+    "headline": "short newspaper-style headline for the week",
+    "standfirst": "one or two sentences summarizing the week",
+    "sections": [{"head": "section headline", "body": "paragraph; cite papers as {W123}"}]
+  },
   "flagged":     [{"id": "W...", "score": 8, "why": "one sentence"}],
   "high_signal": [{"id": "W...", "why": "one sentence"}],
   "near_misses": [{"id": "W...", "score": 6}],
-  "notes": "optional one-paragraph note shown under the header"
+  "notes": "optional coverage note"
 }
-IDs may refer to items in candidates, other or rising.
+IDs may refer to items in candidates, other or rising. In overview bodies, {W123}
+becomes the paper's linked title.
 """
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import html
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -34,28 +42,49 @@ def authors(it: dict, n: int = 3) -> str:
     return ", ".join(a[:n]) + (" et al." if len(a) > n else "")
 
 
-def meta_line(it: dict) -> str:
-    bits = [f'<span class="src">{esc(it.get("source"))}</span>']
-    if it.get("tier_label"):
-        bits.append(f'<span class="tier">{esc(it["tier_label"])}</span>')
-    if it.get("date"):
-        bits.append(f'<span class="num">{esc(it["date"])}</span>')
-    if it.get("max_author_h_index"):
-        bits.append(f'<span class="num">max h {it["max_author_h_index"]}</span>')
+def link(it: dict, cls: str = "") -> str:
+    c = f' class="{cls}"' if cls else ""
+    return f'<a{c} href="{esc(it.get("url"))}" target="_blank" rel="noopener">{esc(it.get("title"))}</a>'
+
+
+def byline(it: dict, extra: str = "") -> str:
+    bits = [esc(authors(it)), f'<span class="src">{esc(it.get("source"))}</span>']
     if it.get("missing_abstract"):
-        bits.append('<span class="warn">title only</span>')
-    return '<span class="sep">·</span>'.join(bits)
+        bits.append('<span class="flag">title only</span>')
+    return f'<p class="byline">{" · ".join(b for b in bits if b)}{extra}</p>'
 
 
-def entry(it: dict, why: str = "", score=None, extra: str = "") -> str:
-    sc = f'<span class="score num" title="Relevance score out of 10">{score}</span>' if score is not None else ""
-    why_html = f'<p class="why">{esc(why)}</p>' if why else ""
-    return f"""<li class="entry">
-  <div class="entry-head">{sc}<a class="title" href="{esc(it.get('url'))}" target="_blank" rel="noopener">{esc(it.get('title'))}</a></div>
-  <p class="by">{esc(authors(it))}</p>
-  <p class="meta">{meta_line(it)}{extra}</p>
-  {why_html}
-</li>"""
+def story(it: dict, r: dict, lead: bool = False) -> str:
+    kicker = esc((r.get("why") or "").split(":", 1)[0]) if ":" in (r.get("why") or "") else esc(it.get("tier_label"))
+    why = (r.get("why") or "").split(":", 1)[-1].strip()
+    score = f'<span class="score num" title="Relevance, out of 10">{r["score"]}/10</span>' if r.get("score") is not None else ""
+    cls = "story lead-story" if lead else "story"
+    return f"""<article class="{cls}">
+  <p class="kicker">{kicker}{score}</p>
+  <h3>{link(it)}</h3>
+  <p class="dek">{esc(why)}</p>
+  {byline(it)}
+</article>"""
+
+
+def render_overview(ov: dict, pool: dict) -> str:
+    if not ov:
+        return ""
+
+    def cite(m):
+        it = pool.get(m.group(1))
+        return f"<em>{link(it)}</em>" if it else ""
+
+    secs = []
+    for s in ov.get("sections", []):
+        body = re.sub(r"\{(W\d+)\}", cite, esc(s.get("body")))
+        secs.append(f'<h4>{esc(s.get("head"))}</h4><p>{body}</p>')
+    return f"""<section class="brief" aria-labelledby="brief-h">
+  <p class="section-label">The week in brief</p>
+  <h2 id="brief-h">{esc(ov.get("headline"))}</h2>
+  <p class="standfirst">{esc(ov.get("standfirst"))}</p>
+  <div class="brief-cols">{''.join(secs)}</div>
+</section>"""
 
 
 def render(data: dict, scores: dict, previous: dict | None = None) -> str:
@@ -84,49 +113,57 @@ def render(data: dict, scores: dict, previous: dict | None = None) -> str:
                 rest[it.get("source") or "Other"].append(it)
 
     c = data.get("counts", {})
-    warn = ""
-    if c.get("unresolved_sources"):
-        warn = f'<p class="alert">Sources not found in OpenAlex this week: {esc(", ".join(c["unresolved_sources"]))}.</p>'
-    notes = f'<p class="note">{esc(scores["notes"])}</p>' if scores.get("notes") else ""
+    week = scores.get("week_of") or data.get("week_of")
+    d = dt.date.fromisoformat(week)
+    iso = d.isocalendar()
+    window = data.get("window", {})
 
-    flagged_html = "\n".join(entry(it, r.get("why"), r.get("score")) for it, r in flagged) or \
-        '<li class="empty">Nothing scored 7 or higher this week.</li>'
-    signal_html = "\n".join(entry(it, r.get("why")) for it, r in signal) or \
-        '<li class="empty">No items selected.</li>'
-    near_html = "\n".join(
-        f'<li class="compact"><span class="score small num">{r.get("score", "")}</span>'
-        f'<a href="{esc(it.get("url"))}" target="_blank" rel="noopener">{esc(it.get("title"))}</a>'
-        f'<span class="src-inline">{esc(it.get("source"))}</span></li>' for it, r in near)
-    rising_html = "\n".join(
-        entry(it, extra=f'<span class="sep">·</span><span class="velocity num">{it.get("velocity_per_month", 0)} cites/mo</span>'
-              f'<span class="sep">·</span><span class="num">{it.get("cited_by_count", 0)} total</span>')
-        for it in rising)
+    if flagged:
+        front = story(*flagged[0], lead=True) + '<div class="story-grid">' + \
+            "".join(story(it, r) for it, r in flagged[1:]) + "</div>"
+    else:
+        front = '<p class="empty">Nothing scored 7 or higher this week.</p>'
+
+    signal_html = "".join(
+        f'<li><h4>{link(it)}</h4><p class="dek small">{esc(r.get("why"))}</p>{byline(it)}</li>' for it, r in signal
+    ) or '<li class="empty">No items selected.</li>'
+
+    near_html = "".join(
+        f'<li><span class="score num">{r.get("score", "")}</span><span>{link(it)}'
+        f'<span class="src-inline"> · {esc(it.get("source"))}</span></span></li>' for it, r in near
+    ) or '<li class="empty">None.</li>'
+
+    rising_rows = "".join(
+        f'<tr><td class="t">{link(it)}<span class="src-inline">{esc(it.get("source"))}</span></td>'
+        f'<td class="num">{esc((it.get("date") or "")[:7])}</td>'
+        f'<td class="num">{it.get("cited_by_count", 0)}</td>'
+        f'<td class="num strong">{it.get("velocity_per_month", 0):.1f}</td></tr>' for it in rising)
 
     groups = []
     for src in sorted(rest, key=lambda s: (-len(rest[s]), s)):
-        items = "\n".join(f'<li><a href="{esc(it.get("url"))}" target="_blank" rel="noopener">{esc(it.get("title"))}</a>'
-                          f'<span class="by-inline">{esc(authors(it, 2))}</span></li>' for it in rest[src])
-        groups.append(f'<details class="group"><summary><span>{esc(src)}</span>'
-                      f'<span class="count num">{len(rest[src])}</span></summary><ul>{items}</ul></details>')
+        items = "".join(f'<li>{link(it)}<span class="src-inline"> · {esc(authors(it, 2))}</span></li>' for it in rest[src])
+        groups.append(f'<details><summary><span>{esc(src)}</span><span class="num count">{len(rest[src])}</span>'
+                      f'</summary><ul>{items}</ul></details>')
 
     prev_html = ""
     if previous and previous.get("flagged_titles"):
-        lis = "\n".join(f'<li><a href="{esc(p.get("url"))}" target="_blank" rel="noopener">{esc(p.get("title"))}</a></li>'
-                        for p in previous["flagged_titles"])
-        prev_html = (f'<section><details class="group prev"><summary><span>Previous week ({esc(previous.get("week_of"))})'
-                     f'</span><span class="count num">{len(previous["flagged_titles"])}</span></summary><ul>{lis}</ul>'
-                     f'</details></section>')
+        lis = "".join(f'<li><a href="{esc(p.get("url"))}" target="_blank" rel="noopener">{esc(p.get("title"))}</a></li>'
+                      for p in previous["flagged_titles"])
+        prev_html = (f'<details class="prev"><summary><span>Last week\'s flagged papers, {esc(previous.get("week_of"))}'
+                     f'</span><span class="num count">{len(previous["flagged_titles"])}</span></summary><ul>{lis}</ul></details>')
 
-    total_rest = sum(len(v) for v in rest.values())
-    window = data.get("window", {})
+    notes = esc(scores.get("notes"))
+    if c.get("unresolved_sources"):
+        notes += f' Sources not found in OpenAlex: {esc(", ".join(c["unresolved_sources"]))}.'
+
     return TEMPLATE.format(
-        week=esc(scores.get("week_of") or data.get("week_of")),
+        dateline=esc(d.strftime("%A %-d %B %Y")), week_no=iso[1], year=iso[0],
         wfrom=esc(window.get("from")), wto=esc(window.get("to")),
-        n_new=c.get("new_after_dedupe", 0), n_flag=len(flagged), n_rising=len(rising),
-        n_missing=c.get("missing_abstract", 0),
-        warn=warn, notes=notes, flagged=flagged_html, signal=signal_html,
-        near=near_html or '<li class="empty">None.</li>', rising=rising_html,
-        groups="\n".join(groups), n_rest=total_rest, prev=prev_html,
+        n_new=c.get("new_after_dedupe", 0), n_flag=len(flagged),
+        brief=render_overview(scores.get("overview"), pool),
+        front=front, signal=signal_html, near=near_html, rising=rising_rows,
+        groups="".join(groups), n_rest=sum(len(v) for v in rest.values()), prev=prev_html,
+        notes=f'<p class="notes">{notes}</p>' if notes else "",
     )
 
 
@@ -134,116 +171,164 @@ TEMPLATE = """<title>Political Economy Digest</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: single reading column; a ledger-like header strip with the week's counts, then ranked lists. */
+/* Layout: broadsheet front page. Masthead and dateline rule; the week in brief as a
+   two-column lead; flagged papers as front-page stories; a rail of field news; a
+   citation-velocity table set like a markets page; an index of everything else. */
 :root {{
-  --bg: #f6f7f9; --surface: #ffffff; --fg: #1b2330; --muted: #5b6676; --rule: #dde2e9;
-  --accent: #1f5f8b; --accent-soft: #e3eef6; --warn: #8a5a00; --warn-soft: #fbf1dc;
-  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --paper: #f4f1ea; --ink: #1d1a17; --ink-2: #4f4a43; --rule: #cfc8bb; --rule-strong: #1d1a17;
+  --claret: #8c1d2f; --panel: #ebe6dc;
+  --masthead: "Libre Caslon Display", "Didot", "Bodoni 72", Georgia, serif;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --label: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }}
 @media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{
-  --bg: #12161c; --surface: #1a2029; --fg: #e3e7ee; --muted: #98a3b3; --rule: #2b3340;
-  --accent: #7fb6dc; --accent-soft: #1d3346; --warn: #e2b55c; --warn-soft: #33290f; color-scheme: dark; }} }}
+  --paper: #191816; --ink: #ebe6dc; --ink-2: #b3ab9e; --rule: #3a3631; --rule-strong: #ebe6dc;
+  --claret: #e0798a; --panel: #22201d; color-scheme: dark; }} }}
 :root[data-theme="dark"] {{
-  --bg: #12161c; --surface: #1a2029; --fg: #e3e7ee; --muted: #98a3b3; --rule: #2b3340;
-  --accent: #7fb6dc; --accent-soft: #1d3346; --warn: #e2b55c; --warn-soft: #33290f; color-scheme: dark; }}
-body {{ background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.55; }}
-.wrap {{ max-width: 760px; margin: 0 auto; padding-block: 40px 64px;
+  --paper: #191816; --ink: #ebe6dc; --ink-2: #b3ab9e; --rule: #3a3631; --rule-strong: #ebe6dc;
+  --claret: #e0798a; --panel: #22201d; color-scheme: dark; }}
+body {{ background: var(--paper); color: var(--ink); font: 400 16px/1.55 var(--serif); }}
+a {{ color: inherit; text-decoration: none; }}
+a:hover, a:focus-visible {{ color: var(--claret); text-decoration: underline; text-underline-offset: 3px; }}
+:focus-visible {{ outline: 2px solid var(--claret); outline-offset: 2px; }}
+.page {{ max-width: 1120px; margin: 0 auto; padding-block: 28px 56px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
-  display: flex; flex-direction: column; gap: 40px; }}
-header {{ display: flex; flex-direction: column; gap: 14px; }}
-.eyebrow {{ font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }}
-h1 {{ font: 600 clamp(28px, 5vw, 38px)/1.12 var(--display); margin: 0; text-wrap: balance; }}
-.ledger {{ display: flex; flex-wrap: wrap; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }}
-.ledger div {{ flex: 1 1 120px; padding: 10px 12px 10px 0; display: flex; flex-direction: column; gap: 2px; }}
-.ledger b {{ font: 500 20px/1.2 var(--mono); font-variant-numeric: tabular-nums; }}
-.ledger span {{ font-size: 12px; color: var(--muted); }}
-.note, .alert {{ margin: 0; font-size: 14px; color: var(--muted); max-width: 65ch; }}
-.alert {{ color: var(--warn); background: var(--warn-soft); padding: 8px 12px; border-radius: 4px; }}
-section {{ display: flex; flex-direction: column; gap: 14px; }}
-h2 {{ font: 600 21px/1.25 var(--display); margin: 0; display: flex; align-items: baseline; gap: 10px; }}
-h2 small {{ font: 400 13px var(--body); color: var(--muted); }}
-ol, ul {{ list-style: none; margin: 0; padding: 0; }}
-.list {{ display: flex; flex-direction: column; }}
-.entry {{ padding: 14px 0; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 3px; min-width: 0; }}
-.entry:last-child {{ border-bottom: 1px solid var(--rule); }}
-.entry-head {{ display: flex; gap: 10px; align-items: baseline; }}
-.title {{ font: 600 17px/1.35 var(--display); color: var(--fg); text-decoration: none; min-width: 0; }}
-.title:hover, .title:focus-visible {{ color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }}
-.score {{ flex: none; font: 500 13px/1 var(--mono); color: var(--accent); background: var(--accent-soft);
-  padding: 4px 6px; border-radius: 3px; min-width: 2.2em; text-align: center; }}
-.score.small {{ font-size: 12px; padding: 2px 5px; }}
-.by, .meta, .why {{ margin: 0; }}
-.by {{ font-size: 14px; color: var(--muted); }}
-.meta {{ font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0 2px; }}
-.sep {{ padding: 0 6px; opacity: .6; }}
-.src {{ font-weight: 500; color: var(--fg); }}
-.tier {{ text-transform: uppercase; letter-spacing: .05em; font-size: 11px; }}
+  display: flex; flex-direction: column; gap: 32px; }}
 .num {{ font-family: var(--mono); font-variant-numeric: tabular-nums; }}
-.warn {{ color: var(--warn); }}
-.velocity {{ color: var(--accent); font-weight: 500; }}
-.why {{ font-size: 14.5px; max-width: 65ch; margin-top: 4px; }}
-.empty {{ color: var(--muted); padding: 12px 0; border-top: 1px solid var(--rule); }}
-.compact {{ display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-top: 1px solid var(--rule); flex-wrap: wrap; }}
-.compact a, .group li a {{ color: var(--fg); text-decoration: none; min-width: 0; }}
-.compact a:hover, .group li a:hover, .compact a:focus-visible, .group li a:focus-visible {{ color: var(--accent); text-decoration: underline; }}
-.src-inline, .by-inline {{ font-size: 12.5px; color: var(--muted); }}
-.group {{ border-top: 1px solid var(--rule); }}
-.groups .group:last-child {{ border-bottom: 1px solid var(--rule); }}
-.group summary {{ cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; gap: 12px; font-weight: 500; list-style: none; }}
-.group summary::-webkit-details-marker {{ display: none; }}
-.group summary::before {{ content: "+"; font-family: var(--mono); color: var(--muted); width: 1em; }}
-.group[open] summary::before {{ content: "\\2212"; }}
-.group summary span:first-of-type {{ flex: 1; }}
-.group summary:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 2px; }}
-.count {{ color: var(--muted); font-size: 13px; }}
-.group ul {{ padding: 0 0 12px 1.6em; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }}
-.group li {{ display: flex; flex-direction: column; }}
-footer {{ font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; }}
+
+/* Masthead */
+.masthead {{ display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }}
+.masthead h1 {{ font: 400 clamp(34px, 7vw, 68px)/1 var(--masthead); margin: 0; letter-spacing: .01em; text-wrap: balance; }}
+.dateline {{ width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px;
+  border-top: 3px double var(--rule-strong); border-bottom: 1px solid var(--rule-strong); padding: 6px 0;
+  font: 500 12px/1.3 var(--label); letter-spacing: .06em; text-transform: uppercase; }}
+.dateline span:nth-child(2) {{ text-align: center; }}
+
+.section-label {{ font: 600 12px/1 var(--label); letter-spacing: .1em; text-transform: uppercase; color: var(--claret); margin: 0; }}
+h2 {{ font: 700 clamp(26px, 4vw, 40px)/1.1 var(--serif); margin: 0; text-wrap: balance; }}
+h3 {{ font: 600 21px/1.25 var(--serif); margin: 0; text-wrap: balance; }}
+h4 {{ font: 700 16px/1.3 var(--serif); margin: 0; }}
+.rubric {{ display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  border-top: 2px solid var(--rule-strong); padding-top: 8px; }}
+.rubric h2 {{ font: 600 14px/1 var(--label); letter-spacing: .1em; text-transform: uppercase; }}
+.rubric small {{ font: 400 13px var(--serif); color: var(--ink-2); font-style: italic; }}
+
+/* The week in brief */
+.brief {{ display: flex; flex-direction: column; gap: 12px; }}
+.standfirst {{ font: 400 20px/1.45 var(--serif); color: var(--ink-2); margin: 0; max-width: 60ch; }}
+.brief-cols {{ columns: 2 320px; column-gap: 40px; column-rule: 1px solid var(--rule); margin-top: 8px; }}
+.brief-cols h4 {{ break-after: avoid; margin-top: 14px; }}
+.brief-cols h4:first-child {{ margin-top: 0; }}
+.brief-cols p {{ margin: 4px 0 0; hyphens: auto; }}
+.brief-cols em a {{ font-style: italic; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }}
+
+/* Front page: flagged stories with a rail */
+.front {{ display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 32px; }}
+.front > * {{ min-width: 0; }}
+.main-col, .rail {{ display: flex; flex-direction: column; gap: 16px; }}
+.story {{ display: flex; flex-direction: column; gap: 6px; }}
+.lead-story {{ padding-bottom: 18px; border-bottom: 1px solid var(--rule); }}
+.lead-story h3 {{ font-size: clamp(24px, 3.4vw, 32px); line-height: 1.15; }}
+.lead-story .dek {{ font-size: 18px; }}
+.story-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; }}
+.story-grid .story {{ border-top: 1px solid var(--rule); padding-top: 12px; }}
+.kicker {{ margin: 0; display: flex; justify-content: space-between; gap: 12px;
+  font: 600 12px/1.2 var(--label); letter-spacing: .08em; text-transform: uppercase; color: var(--claret); }}
+.score {{ color: var(--ink-2); font-size: 12px; letter-spacing: 0; font-weight: 400; }}
+.dek {{ margin: 0; color: var(--ink-2); }}
+.dek.small {{ font-size: 14.5px; }}
+.byline {{ margin: 0; font: 500 12.5px/1.4 var(--label); color: var(--ink-2); letter-spacing: .02em; }}
+.byline .src {{ color: var(--ink); }}
+.flag {{ color: var(--claret); }}
+.rail {{ border-left: 1px solid var(--rule); padding-left: 24px; }}
+.rail ul {{ list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }}
+.rail li {{ padding: 12px 0; border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 4px; }}
+
+/* Lower page */
+.lower {{ display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; }}
+.lower > section {{ min-width: 0; display: flex; flex-direction: column; gap: 10px; }}
+.table-wrap {{ overflow-x: auto; }}
+table {{ width: 100%; border-collapse: collapse; font-size: 14px; }}
+th {{ font: 600 11px/1.2 var(--label); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2);
+  text-align: right; padding: 6px 0 6px 12px; border-bottom: 1px solid var(--rule-strong); white-space: nowrap; }}
+th:first-child, td.t {{ text-align: left; padding-left: 0; }}
+td {{ padding: 8px 0 8px 12px; border-bottom: 1px solid var(--rule); text-align: right; vertical-align: top; white-space: nowrap; }}
+td.t {{ white-space: normal; display: flex; flex-direction: column; gap: 2px; }}
+td.strong {{ color: var(--claret); font-weight: 500; }}
+.src-inline {{ font: 500 12px/1.3 var(--label); color: var(--ink-2); letter-spacing: .02em; }}
+.inbrief {{ list-style: none; margin: 0; padding: 0; }}
+.inbrief li {{ display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }}
+.inbrief .score {{ flex: none; width: 1.4em; color: var(--claret); }}
+.table-note {{ margin: 0; font-size: 13px; font-style: italic; color: var(--ink-2); }}
+
+/* Index */
+.index {{ display: flex; flex-direction: column; gap: 10px; }}
+.index-cols {{ columns: 2 300px; column-gap: 32px; }}
+details {{ break-inside: avoid; border-top: 1px solid var(--rule); }}
+summary {{ cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; padding: 8px 0;
+  font: 600 13px/1.3 var(--label); letter-spacing: .04em; text-transform: uppercase; }}
+summary::-webkit-details-marker {{ display: none; }}
+summary span:first-child::before {{ content: "+ "; font-family: var(--mono); color: var(--ink-2); }}
+details[open] summary span:first-child::before {{ content: "\\2212 "; }}
+.count {{ color: var(--ink-2); font-weight: 400; }}
+details ul {{ list-style: none; margin: 0; padding: 0 0 10px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; }}
+.prev {{ border-bottom: 1px solid var(--rule); }}
+.notes {{ margin: 0; font-size: 13.5px; font-style: italic; color: var(--ink-2); max-width: 75ch; }}
+footer {{ border-top: 3px double var(--rule-strong); padding-top: 10px; font: 500 12px/1.4 var(--label); color: var(--ink-2); letter-spacing: .03em; }}
+.empty {{ color: var(--ink-2); font-style: italic; }}
+
+@media (max-width: 820px) {{
+  .front, .lower {{ grid-template-columns: minmax(0, 1fr); }}
+  .rail {{ border-left: 0; padding-left: 0; }}
+  .story-grid {{ grid-template-columns: minmax(0, 1fr); }}
+  .dateline {{ justify-content: center; text-align: center; }}
+}}
 </style>
-<div class="wrap">
-<header>
-  <span class="eyebrow">Week of {week}</span>
-  <h1>Political Economy Digest</h1>
-  <div class="ledger">
-    <div><b>{n_new}</b><span>new items, {wfrom} to {wto}</span></div>
-    <div><b>{n_flag}</b><span>flagged for you</span></div>
-    <div><b>{n_rising}</b><span>rising papers</span></div>
-    <div><b>{n_missing}</b><span>without abstracts</span></div>
-  </div>
-  {warn}
-  {notes}
+<div class="page">
+<header class="masthead">
+  <h1>The Political Economy Digest</h1>
+  <div class="dateline"><span>{dateline}</span><span>Week {week_no}, {year}</span><span class="num">{n_new} new · {n_flag} flagged</span></div>
 </header>
 
-<section>
-  <h2>Flagged for you <small>score 7 or higher, out of 10</small></h2>
-  <ol class="list">{flagged}</ol>
+{brief}
+
+<div class="front">
+  <section class="main-col" aria-labelledby="front-h">
+    <div class="rubric"><h2 id="front-h">Flagged for you</h2><small>relevance 7 or higher, out of 10</small></div>
+    {front}
+  </section>
+  <aside class="rail" aria-labelledby="signal-h">
+    <div class="rubric"><h2 id="signal-h">Across the field</h2><small>top venues, senior authors</small></div>
+    <ul>{signal}</ul>
+  </aside>
+</div>
+
+<div class="lower">
+  <section aria-labelledby="rising-h">
+    <div class="rubric"><h2 id="rising-h">Rising</h2><small>3 to 12 months old</small></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Paper</th><th>Published</th><th>Citations</th><th>Per month</th></tr></thead>
+      <tbody>{rising}</tbody>
+    </table></div>
+    <p class="table-note">Political science and economics are ranked separately, since economics papers are cited faster.</p>
+  </section>
+  <section aria-labelledby="near-h">
+    <div class="rubric"><h2 id="near-h">In brief</h2><small>near misses, relevance 5 to 6</small></div>
+    <ul class="inbrief">{near}</ul>
+  </section>
+</div>
+
+<section class="index" aria-labelledby="index-h">
+  <div class="rubric"><h2 id="index-h">Index</h2><small>{n_rest} other new items, {wfrom} to {wto}</small></div>
+  <div class="index-cols">{groups}</div>
+  {prev}
 </section>
 
-<section>
-  <h2>High-signal in the field <small>Tier 1 and 2 venues or senior authors, any topic</small></h2>
-  <ul class="list">{signal}</ul>
-</section>
-
-<section>
-  <h2>Near misses <small>score 5 to 6</small></h2>
-  <ul>{near}</ul>
-</section>
-
-<section>
-  <h2>Rising <small>published 3 to 12 months ago, by citations per month</small></h2>
-  <ol class="list">{rising}</ol>
-</section>
-
-<section>
-  <h2>Everything else <small>{n_rest} items by source</small></h2>
-  <div class="groups">{groups}</div>
-</section>
-{prev}
-<footer>Collected from OpenAlex. Relevance scores are judged against your interest statement in the pe-digest repository. Working-paper coverage depends on what OpenAlex indexes; per-source counts are in data/diagnostics.md.</footer>
+{notes}
+<footer>Compiled from OpenAlex. Relevance is judged against the interest statement in the pe-digest repository; per-source counts are in data/diagnostics.md.</footer>
 </div>
 """
 
@@ -261,7 +346,6 @@ def main() -> int:
     if args.previous and Path(args.previous).exists():
         prev = json.loads(Path(args.previous).read_text())
         previous = {"week_of": prev.get("week_of"), "flagged_titles": prev.get("flagged_titles", [])}
-    # Store flagged titles in the scores file so next week can show them without old data.
     pool = {it["id"]: it for key in ("candidates", "other", "rising") for it in data.get(key, [])}
     scores["flagged_titles"] = [{"title": pool[r["id"]]["title"], "url": pool[r["id"]]["url"]}
                                 for r in scores.get("flagged", []) if r["id"] in pool]

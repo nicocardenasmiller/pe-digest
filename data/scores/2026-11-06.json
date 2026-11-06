@@ -5,7 +5,7 @@
   {
    "id": "W4414116330",
    "score": 9,
-   "why": "Trade preferences: argues agricultural comparative advantage makes rural voters more supportive of trade, a mass-preferences account of the rural-urban divide."
+   "why": "Trade preferences: rural voters back protectionist parties and policies where local agriculture is uncompetitive, using surveys from 127 countries plus post-NAFTA variation in the US."
   },
   {
    "id": "W7222506786",
@@ -156,5 +156,31 @@
    "title": "Peripheral monopoly capital: business groups, class power, and the reproduction of dependency in Chile",
    "url": "https://doi.org/10.1080/09692290.2026.2750442"
   }
- ]
+ ],
+ "overview": {
+  "headline": "Trade politics goes local, and cues move opinion in minutes",
+  "standfirst": "This week's strongest work ties trade preferences to the structure of local economies, shows how fast elite and group cues travel, and links immigrant political inclusion to local taxes. Working-paper coverage was thin.",
+  "sections": [
+   {
+    "head": "Trade preferences follow local comparative advantage",
+    "body": "Two papers tie trade politics to who gains and loses inside a community. {W4414116330} uses harmonized surveys from 127 countries and finds rural voters back protectionist parties and policies where local agriculture is uncompetitive; where agriculture has a comparative advantage, the rural-urban gap is negligible, a result the authors also find in post-NAFTA variation across the US. {W7222506786} finds offshoring by US multinationals raises the incumbent's vote share in counties with more educated workers and lowers it where manufacturing and easily relocated occupations dominate. Neither covers Latin America, and neither looks at how voters learn about these effects, which is where your trade project sits."
+   },
+   {
+    "head": "Dependence is measured better, and migration rides on trade deals",
+    "body": "{W7224848391} builds structural-gravity measures of dyadic dependence that account for intermediate goods and substitute suppliers. On those measures the world has not become steadily more interdependent, and Chinese assistance raised partners' dependence on China without a matching rise in China's dependence on them. {W7223458148}, using the MITA dataset of trade-agreement mobility provisions from 1960 to 2020, finds these provisions are driven by economic interdependence and institutional path dependence, while migration-control goals explain little."
+   },
+   {
+    "head": "Cues work fast, and the messenger matters",
+    "body": "{W7225174171} exploits an announcement that landed mid-fieldwork: partisan divergence on military intervention appeared within minutes, before media framing spread. In Brazil, {W7224821017} finds legislators were more likely to vote with a pro-reform business group when its messages stressed membership size, economic weight and sectoral reach. In five European countries, {W7224876078} finds anti-IO rhetoric from mainstream parties lowered support for multilateral aid across the spectrum, while the same rhetoric from populist parties moved mainly their own supporters. {W7223702150} adds that voters read parties' gender inclusivity as a left-right cue. Across all four, who sends the signal carries much of the effect, which bears directly on trust in leaders as a heuristic."
+   },
+   {
+    "head": "Immigration, the franchise and the tax base",
+    "body": "{W7113383583} studies Sweden's 1975 extension of local voting rights to non-citizens and finds a one-time rise in municipal income taxes, larger where foreign voters were a bigger share and where the previous election was close. It is an outcome-side complement to work on how fiscal concerns shape immigration attitudes. On attitudes themselves, {W7224807583} finds Americans hold different beliefs about refugees and immigrants but report no difference in warmth or policy preferences, and {W4414761356} finds coethnicity raises acceptance of Afghan refugees in Pakistan mainly among hosts who are a minority in their province."
+   },
+   {
+    "head": "Latin America",
+    "body": "{W7224930453} develops a theory of concentrated business groups as the organizational basis of dependency in Chile, built on four major groups. {W7225245667} finds Uruguay's 2012 top-rate increase raised revenue, but income shifting toward corporate and capital tax bases limited its effect on inequality. None of this week's Latin American items is about public opinion on trade or economic policy."
+   }
+  ]
+ }
 }

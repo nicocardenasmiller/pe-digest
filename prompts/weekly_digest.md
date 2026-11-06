@@ -16,6 +16,7 @@ Digest page: DIGEST_URL
    - `flagged`: items scoring 7 or higher, at most 15, highest first, each with one plain sentence naming the specific interest it touches. Say so when a paper is US only or outside Latin America and that matters.
    - `high_signal`: up to 5 items not already flagged, from Tier 1 or Tier 2 venues or with `max_author_h_index` of 40 or more, each with one sentence on why it matters to CPE or IPE broadly.
    - `near_misses`: items scoring 5 or 6, ids and scores only.
+   - `overview`: the week in brief. A short headline, a one- or two-sentence standfirst, and 3 to 5 sections, each a headline and one paragraph of 60 to 120 words. Group the flagged and high-signal papers by theme, say what each finds in a clause, and note where they connect to Felix's projects (trade preferences and political trust in Latin America; immigration attitudes and fiscal outcomes) or where they fall outside them. Cite papers as {W123} using their ids. Read full abstracts before describing findings, and state only what the abstract says.
    - `notes`: one or two sentences only if something about this week's data needs saying, such as a source returning nothing in diagnostics.md. Otherwise omit.
    Write plainly. No praise or hype, no em dashes, and nothing that is not in the data.
 5. Render: `python digest/render.py data/scores/<week_of>.json /tmp/digest.html --previous <the most recent earlier file in data/scores/>`.
