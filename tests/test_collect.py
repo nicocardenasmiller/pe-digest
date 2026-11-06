@@ -176,6 +176,13 @@ def test_keyword_cap():
     assert len(kept) + len(rest) == 11
 
 
+def test_dry_run_leaves_data(tmp_path):
+    root = setup_root(tmp_path)
+    collect.run(dt.date(2026, 11, 9), FakeClient(NEW, RISING), root=root, dry_run=True)
+    assert (root / "data/diagnostics.md").exists()
+    assert not (root / "data/latest.json").exists() and not (root / "data/seen.json").exists()
+
+
 def test_rss_parsing():
     import feeds
     rss2 = b"""<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>

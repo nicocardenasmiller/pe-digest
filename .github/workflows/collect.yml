@@ -3,7 +3,12 @@ name: Weekly collect
 on:
   schedule:
     - cron: "17 22 * * 0"   # Sundays 22:17 UTC, ahead of the Monday digest
-  workflow_dispatch: {}      # allows a manual run from the Actions tab
+  workflow_dispatch:         # manual run from the Actions tab
+    inputs:
+      dry_run:
+        description: "Diagnostics only (does not change this week's data)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -23,7 +28,7 @@ jobs:
       - name: Collect
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python collector/collect.py
+        run: python collector/collect.py ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '--dry-run' || '' }}
       - name: Commit output
         run: |
           git config user.name "pe-digest-bot"

@@ -411,7 +411,7 @@ def compact(it: dict) -> dict:
 
 # ---------------------------------------------------------------- main
 
-def run(today: dt.date, client, root: Path = ROOT) -> dict:
+def run(today: dt.date, client, root: Path = ROOT, dry_run: bool = False) -> dict:
     cfg = yaml.safe_load((root / "config/sources.yaml").read_text())
     interests = (root / "config/interests.md").read_text()
     data = root / "data"
@@ -454,6 +454,8 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
         "rising": rising,
         "other": [compact(it) for it in rest],
     }
+    if dry_run:  # diagnostics only: leave the week's data and the seen list untouched
+        return out
     text = json.dumps(out, indent=1, ensure_ascii=False)
     (data / "weekly" / f"{today.isoformat()}.json").write_text(text)
     (data / "latest.json").write_text(text)
@@ -468,9 +470,11 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--today", help="override run date (YYYY-MM-DD)")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="write diagnostics only; do not touch latest.json, weekly output or seen.json")
     args = ap.parse_args()
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
-    out = run(today, OpenAlexClient(os.environ.get("OPENALEX_API_KEY")))
+    out = run(today, OpenAlexClient(os.environ.get("OPENALEX_API_KEY")), dry_run=args.dry_run)
     print(json.dumps(out["counts"], indent=2))
     return 0
 
