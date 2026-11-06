@@ -1,0 +1,160 @@
+{
+ "week_of": "2026-11-06",
+ "notes": "First digest. The collector's lexical prefilter sent some off-topic Latin American Research Review humanities pieces through and held back a few relevant economics working papers; both were checked by hand this week.",
+ "flagged": [
+  {
+   "id": "W4414116330",
+   "score": 9,
+   "why": "Trade preferences: argues agricultural comparative advantage makes rural voters more supportive of trade, a mass-preferences account of the rural-urban divide."
+  },
+  {
+   "id": "W7222506786",
+   "score": 8,
+   "why": "Multinationals and voters: links offshoring by US multinationals' foreign affiliates to incumbent vote share at the county level. US only."
+  },
+  {
+   "id": "W7113383583",
+   "score": 8,
+   "why": "Immigration and fiscal outcomes: tests whether enfranchising non-citizens changed local redistribution, using Sweden's 1975 reform and closeness of local contests."
+  },
+  {
+   "id": "W7225174171",
+   "score": 7,
+   "why": "Partisan cues: estimates in real time how an elite announcement moved partisan opinion, using minute-level survey exposure. Foreign policy, not economic, but the cue mechanism matches your trust-as-heuristic work."
+  },
+  {
+   "id": "W7224115010",
+   "score": 7,
+   "why": "Redistribution preferences: uses votes on eight state ballot initiatives to measure self-interest as revealed rather than survey-reported preferences."
+  },
+  {
+   "id": "W7223458148",
+   "score": 7,
+   "why": "Trade and migration together: explains why preferential trade agreements increasingly include worker-mobility provisions despite hostile migration politics."
+  },
+  {
+   "id": "W7224821017",
+   "score": 7,
+   "why": "Latin America and business cues: field experiment in Brazil showing legislators respond to information about an interest group's economic weight and coalition breadth."
+  },
+  {
+   "id": "W7224930453",
+   "score": 7,
+   "why": "Chile: theorizes concentrated business groups as a source of class power and dependency in the Chilean economy."
+  }
+ ],
+ "high_signal": [
+  {
+   "id": "W7224848391",
+   "why": "APSR piece building structural-gravity measures of dyadic trade dependence that account for intermediates and substitute suppliers; likely to be used as a dataset."
+  },
+  {
+   "id": "W7223702150",
+   "why": "Shows citizens infer party ideology from gender-inclusivity cues, observational and experimental; a heuristics paper by senior authors."
+  },
+  {
+   "id": "W7224089378",
+   "why": "RIPE argument that the IMF's central position in balance-of-payments lending is less secure than IPE assumes as China builds alternatives."
+  },
+  {
+   "id": "W7223656183",
+   "why": "International Organization study of how local exposure to settler actions shapes Palestinian political attitudes."
+  },
+  {
+   "id": "W7224807583",
+   "why": "Survey experiment finding Americans distinguish less between refugees and immigrants than theory predicts; relevant framing evidence for immigration attitudes."
+  }
+ ],
+ "near_misses": [
+  {
+   "id": "W7224876078",
+   "score": 6
+  },
+  {
+   "id": "W7225245667",
+   "score": 6
+  },
+  {
+   "id": "W7223808300",
+   "score": 6
+  },
+  {
+   "id": "W7224165558",
+   "score": 6
+  },
+  {
+   "id": "W7223630718",
+   "score": 6
+  },
+  {
+   "id": "W7225244652",
+   "score": 5
+  },
+  {
+   "id": "W7225261503",
+   "score": 5
+  },
+  {
+   "id": "W7224097632",
+   "score": 5
+  },
+  {
+   "id": "W7224126325",
+   "score": 5
+  },
+  {
+   "id": "W7223465394",
+   "score": 5
+  },
+  {
+   "id": "W4414761356",
+   "score": 5
+  },
+  {
+   "id": "W7224259526",
+   "score": 5
+  },
+  {
+   "id": "W7224134337",
+   "score": 5
+  },
+  {
+   "id": "W7225111662",
+   "score": 5
+  }
+ ],
+ "flagged_titles": [
+  {
+   "title": "Globalization and the Hinterland: International Trade and the Rural–Urban Divide",
+   "url": "https://doi.org/10.1017/s0003055426102111"
+  },
+  {
+   "title": "Offshoring and voting patterns in the US",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104348"
+  },
+  {
+   "title": "Contested elections and the power of new voters: The impact of extending voting rights to non-citizens",
+   "url": "https://doi.org/10.1016/j.ejpoleco.2026.102913"
+  },
+  {
+   "title": "Partisan responsiveness in real time: causal evidence from Trump’s military attack on Iran",
+   "url": "https://doi.org/10.1017/psrm.2026.10135"
+  },
+  {
+   "title": "Economic Self-Interest and Support for Redistribution: New Evidence Using Election Results Data",
+   "url": "https://doi.org/10.1017/s000305542610207x"
+  },
+  {
+   "title": "Trading migration? Explaining mobility provisions in preferential trade agreements",
+   "url": "https://doi.org/10.1007/s11558-026-09654-2"
+  },
+  {
+   "title": "When Business Speaks, Legislators Listen: Experimental and Qualitative Evidence from Brazil",
+   "url": "https://doi.org/10.1017/s0003055426101865"
+  },
+  {
+   "title": "Peripheral monopoly capital: business groups, class power, and the reproduction of dependency in Chile",
+   "url": "https://doi.org/10.1080/09692290.2026.2750442"
+  }
+ ]
+}

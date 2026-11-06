@@ -6,7 +6,7 @@
 lookback_days: 14          # window for new items; dedupe against data/seen.json handles overlap
 rising_window_days: [90, 365]
 rising_top_n: 15
-prefilter_keep: 80         # max candidates handed to the scorer each week
+prefilter_keep: 120        # max candidates handed to the scorer each week
 keyword_source_cap: 15     # max of those 80 that may come from arXiv / SSRN / SocArXiv
 keyword_fields: "20|33"    # OpenAlex fields: 20 Economics, Econometrics and Finance; 33 Social Sciences
 
