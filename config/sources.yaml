@@ -74,6 +74,22 @@ working_papers:
   - {name: "SSRN", search: "SSRN Electronic Journal", keyword_filter: true}
   - {name: "arXiv", search: "arXiv (Cornell University)", keyword_filter: true}
 
+# Direct feeds, fetched outside OpenAlex (collector/feeds.py). Status of each feed is
+# written to data/diagnostics.md every run.
+feeds:
+  nep:   # RePEc New Economics Papers: weekly, editor-curated working paper reports
+    - {code: "nep-pol", name: "Positive Political Economics"}
+    - {code: "nep-int", name: "International Trade"}
+    - {code: "nep-lam", name: "Central and South America"}
+    - {code: "nep-mig", name: "Economics of Human Migration"}
+    - {code: "nep-pbe", name: "Public Economics"}
+    - {code: "nep-cdm", name: "Collective Decision-Making"}
+  nber: true
+  socarxiv: true
+  socarxiv_terms: [trade, tariff, globaliz, globalis, foreign direct investment, multinational,
+                   supply chain, immigra, migra, redistribut, fiscal, tax, political trust,
+                   latin america, chile, survey experiment, conjoint, political economy]
+
 # Used only for keyword-filtered repositories. OpenAlex boolean search syntax.
 keyword_query: >-
   (trade OR tariff OR globalization OR "foreign direct investment" OR FDI OR multinational

@@ -29,6 +29,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 import yaml
+from feeds import fetch_all as fetch_feeds
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -252,6 +253,15 @@ def is_paratext(title: str | None) -> bool:
     return bool(PARATEXT.search(title or ""))
 
 
+def append_feed_diagnostics(report: list[tuple[str, int, str]], path: Path) -> None:
+    if not report:
+        return
+    lines = ["", "## Direct working-paper feeds", "", "| Feed | Items in window | Status |", "| --- | --- | --- |"]
+    lines += [f"| {name} | {n} | {status} |" for name, n, status in report]
+    with path.open("a") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def write_diagnostics(client, sources: list[dict], from_date: str, to_date: str, path: Path,
                       keyword_query: str = "", keyword_fields: str | None = None) -> None:
     """Per-source item counts for the window, with and without the type filter, and the
@@ -418,7 +428,10 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
                       keyword_fields=cfg.get("keyword_fields"))
     seen_path = data / "seen.json"
     seen = json.loads(seen_path.read_text()) if seen_path.exists() else {"ids": [], "titles": []}
-    items = dedupe([to_item(w, lookup) for w in raw], seen)
+    feed_items, feed_report = fetch_feeds(cfg, today) if cfg.get("feeds") else ([], [])
+    append_feed_diagnostics(feed_report, data / "diagnostics.md")
+    # Journal items first so dedupe keeps the journal version of a paper.
+    items = dedupe([to_item(w, lookup) for w in raw] + feed_items, seen)
 
     candidates, rest = prefilter(items, interests, cfg.get("prefilter_keep", 80),
                                  cfg.get("keyword_source_cap", 15))
@@ -431,7 +444,8 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "week_of": today.isoformat(),
         "window": {"from": from_date, "to": today.isoformat()},
-        "counts": {"raw": len(raw), "new_after_dedupe": len(items), "candidates": len(candidates),
+        "counts": {"raw": len(raw), "feed_items": len(feed_items), "new_after_dedupe": len(items),
+                   "feeds": {name: n for name, n, _ in feed_report}, "candidates": len(candidates),
                    "other": len(rest), "rising": len(rising),
                    "missing_abstract": sum(it["missing_abstract"] for it in items),
                    "unresolved_sources": [s["name"] for s in sources if not s.get("ok")],

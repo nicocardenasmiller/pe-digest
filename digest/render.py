@@ -77,7 +77,7 @@ def render_overview(ov: dict, pool: dict) -> str:
 
     secs = []
     for s in ov.get("sections", []):
-        body = re.sub(r"\{(W\d+)\}", cite, esc(s.get("body")))
+        body = re.sub(r"\{([A-Z][A-Za-z0-9]{3,})\}", cite, esc(s.get("body")))
         secs.append(f'<h4>{esc(s.get("head"))}</h4><p>{body}</p>')
     return f"""<section class="brief" aria-labelledby="brief-h">
   <p class="section-label">The week in brief</p>
@@ -87,7 +87,7 @@ def render_overview(ov: dict, pool: dict) -> str:
 </section>"""
 
 
-def render(data: dict, scores: dict, previous: dict | None = None) -> str:
+def render(data: dict, scores: dict, previous: dict | None = None, site: bool = False) -> str:
     pool = {it["id"]: it for key in ("candidates", "other", "rising") for it in data.get(key, [])}
     used = set()
 
@@ -164,6 +164,7 @@ def render(data: dict, scores: dict, previous: dict | None = None) -> str:
         front=front, signal=signal_html, near=near_html, rising=rising_rows,
         groups="".join(groups), n_rest=sum(len(v) for v in rest.values()), prev=prev_html,
         notes=f'<p class="notes">{notes}</p>' if notes else "",
+        archive=' <a href="archive.html">Past issues</a>.' if site else "",
     )
 
 
@@ -328,9 +329,20 @@ footer {{ border-top: 3px double var(--rule-strong); padding-top: 10px; font: 50
 </section>
 
 {notes}
-<footer>Compiled from OpenAlex. Relevance is judged against the interest statement in the pe-digest repository; per-source counts are in data/diagnostics.md.</footer>
+<footer>Compiled from OpenAlex. Relevance is judged against the interest statement in the pe-digest repository; per-source counts are in data/diagnostics.md.{archive}</footer>
 </div>
 """
+
+
+def standalone(fragment: str, title: str = "The Political Economy Digest") -> str:
+    """Wrap the artifact-style fragment as a complete HTML document for the website."""
+    head, sep, body = fragment.partition('<div class="page">')
+    head = re.sub(r"<title>.*?</title>", f"<title>{esc(title)}</title>", head)
+    head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "")
+    return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            '<style>body{margin:0}img{max-width:100%}</style>\n'
+            f"{head}</head>\n<body>\n{sep}{body}</body>\n</html>\n")
 
 
 def main() -> int:

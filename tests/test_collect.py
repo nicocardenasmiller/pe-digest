@@ -176,5 +176,22 @@ def test_keyword_cap():
     assert len(kept) + len(rest) == 11
 
 
+def test_rss_parsing():
+    import feeds
+    rss2 = b"""<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel>
+      <item><title>Trade &amp; Trust</title><link>https://x.org/w1</link>
+      <description>&lt;p&gt;We study trade.&lt;/p&gt;</description><pubDate>Mon, 02 Nov 2026 10:00:00 GMT</pubDate>
+      <dc:creator>Ana Perez, Juan Soto</dc:creator></item></channel></rss>"""
+    rss1 = b"""<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"><item rdf:about="https://x.org/w2"><title>Fiscal Turn</title>
+      <link>https://x.org/w2</link><description>Abstract here</description><dc:date>2026-11-03</dc:date></item></rdf:RDF>"""
+    a = feeds.parse_rss(rss2, "NEP X")[0]
+    assert a["title"] == "Trade & Trust" and a["abstract"] == "We study trade." and a["date"] == "2026-11-02"
+    assert a["authors"] == ["Ana Perez", "Juan Soto"] and a["source"] == "NEP X"
+    b = feeds.parse_rss(rss1, "NEP Y")[0]
+    assert b["title"] == "Fiscal Turn" and b["date"] == "2026-11-03"
+    assert a["id"] == feeds.parse_rss(rss2, "NEP X")[0]["id"]  # stable ids across runs
+
+
 def test_abstract_order():
     assert collect.abstract_from_index({"b": [1], "a": [0], "c": [2, 3]}) == "a b c c"
