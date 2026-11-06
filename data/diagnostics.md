@@ -42,58 +42,18 @@ Window: 2026-10-23 to 2026-11-06
 | European Journal of Political Economy | S100134864 | journal | 1 | 1 |
 | Public Choice | S7424199 | journal | 6 | 6 |
 | Journal of Comparative Economics | S138645024 | journal | 0 | 0 |
-| National Bureau of Economic Research | S4393916240 | working_paper | 0 | 0 |
-| CEPR Discussion Papers | S4306467399 | working_paper | 0 | 0 |
+| National Bureau of Economic Research | S2809516038 | working_paper | 0 | 0 |
 | CESifo Working Papers | S7407053623 | working_paper | 42 | 42 |
 | IMF Working Papers | S5407031312 | working_paper | 0 | 0 |
-| World Bank Policy Research Working Papers | S4306489184 | working_paper | 0 | 0 |
-| IDB Working Papers | S4306463453 | working_paper | 0 | 2 |
+| World Bank Policy Research Working Papers | S4210231086 | working_paper | 0 | 0 |
 | SocArXiv | S3006283864 | working_paper | 0 | 0 |
 | SSRN | S4210172589 | working_paper | 0 | 0 |
 | arXiv | S4306400194 | working_paper | 14364 | 14372 |
 
-## Search hits for unresolved or weak working paper matches
+## Keyword-filtered sources after keyword and field filters
 
-**National Bureau of Economic Research**
-
-| Query | ID | Name | Type | Works |
-| --- | --- | --- | --- | --- |
-| NBER Working Paper | S4393916240 | NBER working paper series | journal | 0 |
-| National Bureau of Economic Research | S2809516038 | National Bureau of Economic Research | repository | 34201 |
-| National Bureau of Economic Research | S127060114 | NBER Macroeconomics Annual | journal | 1205 |
-| National Bureau of Economic Research | S4210202647 | NBER International Seminar on Macroeconomics | journal | 188 |
-| National Bureau of Economic Research | S4306476451 | National Bureau of Economic Research eBooks | ebook platform | 15 |
-| National Bureau of Economic Research | S4363606943 | National Bureau of Economic Research bulletin on aging and health | journal | 0 |
-
-**CEPR Discussion Papers**
-
-| Query | ID | Name | Type | Works |
-| --- | --- | --- | --- | --- |
-| Centre for Economic Policy Research | S4306467399 | Centre for Economic Policy Research (CEPR) eBooks | ebook platform | 3 |
-| Centre for Economic Policy Research | S4306467508 | CEPR eBooks | ebook platform | 6 |
-
-**IZA Discussion Papers**
-
-| Query | ID | Name | Type | Works |
-| --- | --- | --- | --- | --- |
-| IZA | S4210213389 | IZA World of Labor | journal | 596 |
-| IZA | S2764684190 | IZA Journal of Labor Policy | journal | 190 |
-| IZA | S188431908 | IZA Journal of Migration | journal | 115 |
-| IZA | S2738132587 | IZA Journal of Labor Economics | journal | 116 |
-| IZA | S4210177942 | IZA Journal of Labor & Development | journal | 93 |
-
-**World Bank Policy Research Working Papers**
-
-| Query | ID | Name | Type | Works |
-| --- | --- | --- | --- | --- |
-| Policy Research Working Paper | S4210231086 | World Bank policy research working paper | ebook platform | 1290 |
-| Policy Research Working Paper | S4306489184 | Policy Research Working Paper eBooks | ebook platform | 236 |
-| World Bank Policy Research Working Paper | S4210231086 | World Bank policy research working paper | ebook platform | 1290 |
-
-**IDB Working Papers**
-
-| Query | ID | Name | Type | Works |
-| --- | --- | --- | --- | --- |
-| Inter-American Development Bank | S4306463453 | Inter-American Development Bank eBooks | ebook platform | 1341 |
-| Inter-American Development Bank | S4306490648 | Washington, DC: Inter-American Development Bank and World Bank eBooks | ebook platform | 2 |
-
+| Source | Items pulled (before dedupe, cap 200) |
+| --- | --- |
+| SocArXiv | 0 |
+| SSRN | 0 |
+| arXiv | 129 |

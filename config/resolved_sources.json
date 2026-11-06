@@ -253,10 +253,10 @@
   },
   "National Bureau of Economic Research": {
     "ok": true,
-    "openalex_id": "S4393916240",
-    "display_name": "NBER working paper series",
-    "method": "search",
-    "score": 0.84
+    "openalex_id": "S2809516038",
+    "display_name": "National Bureau of Economic Research",
+    "method": "override",
+    "score": 1.0
   },
   "CESifo Working Papers": {
     "ok": true,
@@ -274,10 +274,10 @@
   },
   "World Bank Policy Research Working Papers": {
     "ok": true,
-    "openalex_id": "S4306489184",
-    "display_name": "Policy Research Working Paper eBooks",
-    "method": "search",
-    "score": 0.89
+    "openalex_id": "S4210231086",
+    "display_name": "World Bank policy research working paper",
+    "method": "override",
+    "score": 1.0
   },
   "SocArXiv": {
     "ok": true,

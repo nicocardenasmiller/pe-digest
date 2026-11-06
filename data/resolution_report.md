@@ -40,13 +40,10 @@ Check every row marked UNRESOLVED or with a display name that is not the intende
 | European Journal of Political Economy | European Journal of Political Economy | S100134864 | issn | 1.0 | ok |
 | Public Choice | Public Choice | S7424199 | issn | 1.0 | ok |
 | Journal of Comparative Economics | Journal of Comparative Economics | S138645024 | issn | 1.0 | ok |
-| National Bureau of Economic Research | NBER working paper series | S4393916240 | search | 0.84 | ok |
-| CEPR Discussion Papers | Centre for Economic Policy Research (CEPR) eBooks | S4306467399 | search | 0.85 | ok |
-| IZA Discussion Papers | IZA Policy Papers |  | search | 0.3 | UNRESOLVED |
+| National Bureau of Economic Research | National Bureau of Economic Research | S2809516038 | override | 1.0 | ok |
 | CESifo Working Papers | CESifo | S7407053623 | search | 1.0 | ok |
 | IMF Working Papers | IMF Working Papers | S5407031312 | search | 1.0 | ok |
-| World Bank Policy Research Working Papers | Policy Research Working Paper eBooks | S4306489184 | search | 0.89 | ok |
-| IDB Working Papers | Inter-American Development Bank eBooks | S4306463453 | search | 0.9 | ok |
+| World Bank Policy Research Working Papers | World Bank policy research working paper | S4210231086 | override | 1.0 | ok |
 | SocArXiv | SocArXiv | S3006283864 | search | 1.0 | ok |
 | SSRN | SSRN Electronic Journal | S4210172589 | search | 1.01 | ok |
 | arXiv | arXiv (Cornell University) | S4306400194 | search | 1.01 | ok |
