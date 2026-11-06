@@ -258,20 +258,6 @@
     "method": "search",
     "score": 0.84
   },
-  "CEPR Discussion Papers": {
-    "ok": true,
-    "openalex_id": "S4306467399",
-    "display_name": "Centre for Economic Policy Research (CEPR) eBooks",
-    "method": "search",
-    "score": 0.85
-  },
-  "IZA Discussion Papers": {
-    "ok": false,
-    "openalex_id": null,
-    "display_name": "IZA Policy Papers",
-    "method": "search",
-    "score": 0.3
-  },
   "CESifo Working Papers": {
     "ok": true,
     "openalex_id": "S7407053623",
@@ -292,13 +278,6 @@
     "display_name": "Policy Research Working Paper eBooks",
     "method": "search",
     "score": 0.89
-  },
-  "IDB Working Papers": {
-    "ok": true,
-    "openalex_id": "S4306463453",
-    "display_name": "Inter-American Development Bank eBooks",
-    "method": "search",
-    "score": 0.9
   },
   "SocArXiv": {
     "ok": true,

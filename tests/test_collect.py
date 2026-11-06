@@ -166,5 +166,15 @@ def test_override_and_rising_split(tmp_path):
     assert res["NBER"]["openalex_id"] == "S77" and res["NBER"]["method"] == "override"
 
 
+def test_keyword_cap():
+    items = [{"title": f"trade preferences trust {i}", "abstract": "trade attitudes", "tier": None,
+              "keyword_source": True} for i in range(10)]
+    items += [{"title": "monetary policy", "abstract": "", "tier": 1, "keyword_source": False}]
+    kept, rest = collect.prefilter(items, (ROOT / "config/interests.md").read_text(), keep=5, keyword_cap=2)
+    assert sum(it["keyword_source"] for it in kept) == 2
+    assert any(not it["keyword_source"] for it in kept)
+    assert len(kept) + len(rest) == 11
+
+
 def test_abstract_order():
     assert collect.abstract_from_index({"b": [1], "a": [0], "c": [2, 3]}) == "a b c c"

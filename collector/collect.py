@@ -199,7 +199,8 @@ def write_resolution_report(sources: list[dict], path: Path) -> None:
 # ---------------------------------------------------------------- fetching
 
 def fetch_works(client, sources: list[dict], from_date: str, to_date: str,
-                keyword_query: str, extra: dict | None = None, limit: int = 3000) -> list[dict]:
+                keyword_query: str, extra: dict | None = None, limit: int = 3000,
+                keyword_fields: str | None = None) -> list[dict]:
     plain = [s for s in sources if s.get("ok") and not s["keyword_filter"]]
     keyed = [s for s in sources if s.get("ok") and s["keyword_filter"]]
     base = f"from_publication_date:{from_date},to_publication_date:{to_date},type:{WORK_TYPES}"
@@ -209,9 +210,11 @@ def fetch_works(client, sources: list[dict], from_date: str, to_date: str,
         out += client.paginate("/works", {"filter": f"{base},primary_location.source.id:{ids}",
                                           "select": WORK_FIELDS, **(extra or {})}, limit=limit)
     for s in keyed:
-        out += client.paginate("/works", {"filter": f"{base},primary_location.source.id:{s['openalex_id']}",
-                                          "search": keyword_query, "select": WORK_FIELDS,
-                                          **(extra or {})}, limit=500)
+        flt = f"{base},primary_location.source.id:{s['openalex_id']}"
+        if keyword_fields:  # restrict broad repositories (arXiv) to social science / economics
+            flt += f",primary_topic.field.id:{keyword_fields}"
+        out += client.paginate("/works", {"filter": flt, "search": keyword_query, "select": WORK_FIELDS,
+                                          **(extra or {})}, limit=200)
     return out
 
 
@@ -249,7 +252,8 @@ def is_paratext(title: str | None) -> bool:
     return bool(PARATEXT.search(title or ""))
 
 
-def write_diagnostics(client, sources: list[dict], from_date: str, to_date: str, path: Path) -> None:
+def write_diagnostics(client, sources: list[dict], from_date: str, to_date: str, path: Path,
+                      keyword_query: str = "", keyword_fields: str | None = None) -> None:
     """Per-source item counts for the window, with and without the type filter, and the
     top OpenAlex search hits for any working paper source that did not resolve cleanly."""
     lines = ["# Collector diagnostics", "", f"Window: {from_date} to {to_date}", "",
@@ -269,7 +273,19 @@ def write_diagnostics(client, sources: list[dict], from_date: str, to_date: str,
     for s in ok:
         lines.append(f"| {s['name']} | {s['openalex_id']} | {s['kind']} | "
                      f"{counts.get((s['openalex_id'], True), 0)} | {counts.get((s['openalex_id'], False), 0)} |")
-    weak = [s for s in sources if s["kind"] == "working_paper" and (not s.get("ok") or (s.get("score") or 0) < 0.95)]
+    kw = [s for s in ok if s["keyword_filter"]]
+    if kw:
+        lines += ["", "## Keyword-filtered sources after keyword and field filters", "",
+                  "| Source | Items pulled (before dedupe, cap 200) |", "| --- | --- |"]
+        for s in kw:
+            flt = (f"from_publication_date:{from_date},to_publication_date:{to_date},type:{WORK_TYPES},"
+                   f"primary_location.source.id:{s['openalex_id']}")
+            if keyword_fields:
+                flt += f",primary_topic.field.id:{keyword_fields}"
+            page = client.get("/works", {"filter": flt, "search": keyword_query, "per_page": 1})
+            lines.append(f"| {s['name']} | {page.get('meta', {}).get('count', 0)} |")
+    weak = [s for s in sources if s["kind"] == "working_paper" and (not s.get("ok") or (s.get("score") or 0) < 0.95)
+            and s.get("method") != "override"]
     if weak:
         lines += ["", "## Search hits for unresolved or weak working paper matches", ""]
         for s in weak:
@@ -322,6 +338,7 @@ def to_item(w: dict, source_lookup: dict) -> dict:
         "language": w.get("language"),
         "source": meta.get("name") or src.get("display_name"),
         "source_kind": meta.get("kind", "unknown"),
+        "keyword_source": bool(meta.get("keyword_filter")),
         "tier": meta.get("tier"),
         "tier_label": TIER_LABELS.get(meta.get("tier"), ""),
         "url": w.get("doi") or loc.get("landing_page_url") or w["id"],
@@ -349,9 +366,12 @@ def interest_chunks(text: str) -> list[str]:
             if ln.strip().startswith("- ") and len(ln.strip()) > 10]
 
 
-def prefilter(items: list[dict], interests_text: str, keep: int) -> tuple[list[dict], list[dict]]:
+def prefilter(items: list[dict], interests_text: str, keep: int,
+              keyword_cap: int | None = None) -> tuple[list[dict], list[dict]]:
     """Crude lexical screen so the scorer sees a manageable list. Similarity is the max
-    cosine between an item and any single interest bullet. Not a relevance judgment."""
+    cosine between an item and any single interest bullet. Not a relevance judgment.
+    Items from keyword-filtered repositories (arXiv, SSRN, SocArXiv) are capped at
+    `keyword_cap` so high-volume preprint servers can't crowd out the journals."""
     if not items:
         return [], []
     chunks = interest_chunks(interests_text) or [interests_text]
@@ -363,7 +383,16 @@ def prefilter(items: list[dict], interests_text: str, keep: int) -> tuple[list[d
         boost = 0.02 if it.get("tier") in (1, 3) else 0.0
         it["prefilter_score"] = round(float(s) + boost, 4)
     ranked = sorted(items, key=lambda it: it["prefilter_score"], reverse=True)
-    return ranked[:keep], ranked[keep:]
+    cap = keep if keyword_cap is None else keyword_cap
+    kept, rest, n_kw = [], [], 0
+    for it in ranked:
+        is_kw = it.get("keyword_source")
+        if len(kept) < keep and (not is_kw or n_kw < cap):
+            kept.append(it)
+            n_kw += bool(is_kw)
+        else:
+            rest.append(it)
+    return kept, rest
 
 
 def compact(it: dict) -> dict:
@@ -383,13 +412,16 @@ def run(today: dt.date, client, root: Path = ROOT) -> dict:
     lookup = {s["openalex_id"]: s for s in sources if s.get("ok")}
 
     from_date = (today - dt.timedelta(days=cfg.get("lookback_days", 14))).isoformat()
-    write_diagnostics(client, sources, from_date, today.isoformat(), data / "diagnostics.md")
-    raw = fetch_works(client, sources, from_date, today.isoformat(), cfg.get("keyword_query", ""))
+    write_diagnostics(client, sources, from_date, today.isoformat(), data / "diagnostics.md",
+                      cfg.get("keyword_query", ""), cfg.get("keyword_fields"))
+    raw = fetch_works(client, sources, from_date, today.isoformat(), cfg.get("keyword_query", ""),
+                      keyword_fields=cfg.get("keyword_fields"))
     seen_path = data / "seen.json"
     seen = json.loads(seen_path.read_text()) if seen_path.exists() else {"ids": [], "titles": []}
     items = dedupe([to_item(w, lookup) for w in raw], seen)
 
-    candidates, rest = prefilter(items, interests, cfg.get("prefilter_keep", 80))
+    candidates, rest = prefilter(items, interests, cfg.get("prefilter_keep", 80),
+                                 cfg.get("keyword_source_cap", 15))
     rising = [to_item(w, lookup) | {"velocity_per_month": w["_velocity"]}
               for w in fetch_rising(client, sources, today, cfg.get("rising_window_days", [90, 365]),
                                     cfg.get("rising_top_n", 15))]
