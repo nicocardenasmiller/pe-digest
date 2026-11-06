@@ -172,7 +172,7 @@ TEMPLATE = """<title>Political Economy Digest</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
 <style>
 /* Layout: broadsheet front page. Masthead and dateline rule; the week in brief as a
    two-column lead; flagged papers as front-page stories; a rail of field news; a
@@ -180,10 +180,9 @@ TEMPLATE = """<title>Political Economy Digest</title>
 :root {{
   --paper: #f4f1ea; --ink: #1d1a17; --ink-2: #4f4a43; --rule: #cfc8bb; --rule-strong: #1d1a17;
   --claret: #8c1d2f; --panel: #ebe6dc;
-  --masthead: "Libre Caslon Display", "Didot", "Bodoni 72", Georgia, serif;
+  /* One typeface throughout; roles differ only by size, weight, case and spacing. */
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --label: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --masthead: var(--serif); --label: var(--serif); --mono: var(--serif);
 }}
 @media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{
   --paper: #191816; --ink: #ebe6dc; --ink-2: #b3ab9e; --rule: #3a3631; --rule-strong: #ebe6dc;
@@ -202,7 +201,7 @@ a:hover, a:focus-visible {{ color: var(--claret); text-decoration: underline; te
 
 /* Masthead */
 .masthead {{ display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }}
-.masthead h1 {{ font: 400 clamp(34px, 7vw, 68px)/1 var(--masthead); margin: 0; letter-spacing: .01em; text-wrap: balance; }}
+.masthead h1 {{ font: 700 clamp(32px, 6.5vw, 62px)/1.05 var(--masthead); margin: 0; letter-spacing: -.01em; text-wrap: balance; }}
 .dateline {{ width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px;
   border-top: 3px double var(--rule-strong); border-bottom: 1px solid var(--rule-strong); padding: 6px 0;
   font: 500 12px/1.3 var(--label); letter-spacing: .06em; text-transform: uppercase; }}

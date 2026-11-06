@@ -67,21 +67,21 @@ ARCHIVE = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Past issues · The Political Economy Digest</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap">
 <style>
 :root {{ --paper:#f4f1ea; --ink:#1d1a17; --ink-2:#4f4a43; --rule:#cfc8bb; --claret:#8c1d2f; }}
 @media (prefers-color-scheme: dark) {{ :root {{ --paper:#191816; --ink:#ebe6dc; --ink-2:#b3ab9e; --rule:#3a3631; --claret:#e0798a; color-scheme: dark; }} }}
 body {{ margin:0; background:var(--paper); color:var(--ink); font:400 16px/1.5 "Source Serif 4", Georgia, serif; }}
 main {{ max-width:760px; margin:0 auto; padding:32px max(16px, env(safe-area-inset-right, 0px)) 56px max(16px, env(safe-area-inset-left, 0px)); }}
-h1 {{ font:400 clamp(30px,6vw,52px)/1 "Libre Caslon Display", Georgia, serif; margin:0 0 8px; text-align:center; }}
-.sub {{ text-align:center; font:500 12px/1.3 "IBM Plex Sans Condensed", sans-serif; letter-spacing:.08em; text-transform:uppercase;
+h1 {{ font:700 clamp(30px,6vw,50px)/1.05 "Source Serif 4", Georgia, serif; margin:0 0 8px; text-align:center; }}
+.sub {{ text-align:center; font:500 12px/1.3 "Source Serif 4", Georgia, serif; letter-spacing:.08em; text-transform:uppercase;
   border-top:3px double var(--ink); border-bottom:1px solid var(--ink); padding:6px 0; margin-bottom:24px; }}
 .sub a {{ color:inherit; }}
 ul {{ list-style:none; margin:0; padding:0; }}
 li a {{ display:grid; grid-template-columns:7.5em minmax(0,1fr) auto; gap:12px; padding:12px 0; border-bottom:1px solid var(--rule);
   color:inherit; text-decoration:none; align-items:baseline; }}
 li a:hover .h, li a:focus-visible .h {{ color:var(--claret); text-decoration:underline; }}
-.num {{ font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--ink-2); font-variant-numeric:tabular-nums; }}
+.num {{ font-family:"Source Serif 4", Georgia, serif; font-size:13px; color:var(--ink-2); font-variant-numeric:tabular-nums; }}
 .h {{ font-weight:600; }}
 @media (max-width:520px) {{ li a {{ grid-template-columns:minmax(0,1fr); gap:2px; }} }}
 </style></head>
