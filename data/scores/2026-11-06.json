@@ -1,81 +1,94 @@
 {
  "week_of": "2026-11-06",
- "notes": "First digest. The collector's lexical prefilter sent some off-topic Latin American Research Review humanities pieces through and held back a few relevant economics working papers; both were checked by hand this week.",
+ "overview": {
+  "headline": "Trade backlash starts on the farm, and cues move opinion fast",
+  "standfirst": "Eight papers clear the bar this week. The strongest match for the trade preferences project is a 127-country study tying rural protectionism to uncompetitive agriculture; the immigration and fiscal project gets a Swedish study of non-citizen voting and local taxes.",
+  "sections": [
+   {
+    "head": "Where trade attitudes come from",
+    "body": "{W4414116330} argues that rural voters back protectionist parties and policies where local agriculture lacks comparative advantage, using harmonized surveys from 127 countries and post-NAFTA variation in the US. The abstract does not say which survey programs are merged, so coverage of Latin America is worth checking. {W7222506786} finds that offshoring by US multinationals raises incumbent vote share in counties with more educated workers and lowers it where manufacturing and offshorable occupations are common; it is US only and county level, not individual attitudes. {W7223458148} uses the MITA dataset to show that worker mobility clauses in trade agreements follow economic interdependence and path dependence, not migration control goals."
+   },
+   {
+    "head": "Immigrants, refugees and the public purse",
+    "body": "{W7113383583} studies Sweden's 1975 reform giving non-citizens the local vote and finds a one-time rise in municipal income taxes, larger where foreign voters were a bigger share and concentrated in closely contested municipalities. It speaks to fiscal outcomes of immigration through political power rather than attitudes. On attitudes, {W7224807583} finds in a 2024 US survey experiment that Americans associate refugees and immigrants with different themes but show no difference in warmth, affect or policy preferences. {W4414761356} finds in Pakistan that coethnicity raises acceptance of Afghan refugees mainly among hosts who are a minority in their province. Neither attitude paper measures fiscal concerns."
+   },
+   {
+    "head": "Cues work quickly and depend on the messenger",
+    "body": "{W7225174171} uses a US strike announcement that fell during a fielded survey and finds partisan divergence in support for military action within minutes. {W7224876078} runs a survey experiment in five European countries (n = 10,513) and finds that anti-IO populist cues lower support for multilateral aid, and that the same message from a mainstream party lowers support across the spectrum, while bilateral aid is unaffected. Both bear on cues as shortcuts, the mechanism in the political trust project, though neither concerns trade or Latin America. {W7224821017} reports a field experiment in Brazil where legislators sided more often with a business group when its size and economic weight were emphasized."
+   },
+   {
+    "head": "Redistribution and the Latin American economy",
+    "body": "{W7224115010} uses eight redistributive ballot initiatives in six US states and finds lower- to upper-middle-income precincts more supportive than upper-income ones, with the largest class gap in Republican precincts. {W7224930453} develops a concept of peripheral monopoly capital from four Chilean business groups; it is theoretical and qualitative, not about opinion. For data, {W7223808300} introduces a database of 38 non-reciprocal preference schemes from 1950 to 2025 and finds export gains only for least developed countries, and {W7224848391} builds structural gravity measures of trade dependence and finds Chinese aid has raised partners' dependence on China without the reverse."
+   }
+  ]
+ },
  "flagged": [
   {
    "id": "W4414116330",
    "score": 9,
-   "why": "Trade preferences: rural voters back protectionist parties and policies where local agriculture is uncompetitive, using surveys from 127 countries plus post-NAFTA variation in the US."
+   "why": "Trade preferences: rural voters support protectionist parties and policies where local agriculture is uncompetitive, shown with harmonized surveys from 127 countries and post-NAFTA variation in the US."
   },
   {
    "id": "W7222506786",
    "score": 8,
-   "why": "Multinationals and voters: links offshoring by US multinationals' foreign affiliates to incumbent vote share at the county level. US only."
+   "why": "Multinationals and voters: links employment at foreign affiliates of US multinationals to incumbent vote share, positive in more educated counties and negative in manufacturing counties. US only."
   },
   {
    "id": "W7113383583",
    "score": 8,
-   "why": "Immigration and fiscal outcomes: tests whether enfranchising non-citizens changed local redistribution, using Sweden's 1975 reform and closeness of local contests."
+   "why": "Immigration and fiscal outcomes: Sweden's 1975 non-citizen local franchise produced a one-time rise in municipal income taxes, concentrated in closely contested municipalities. Outside Latin America."
   },
   {
-   "id": "W7225174171",
+   "id": "W7224807583",
    "score": 7,
-   "why": "Partisan cues: estimates in real time how an elite announcement moved partisan opinion, using minute-level survey exposure. Foreign policy, not economic, but the cue mechanism matches your trust-as-heuristic work."
+   "why": "Immigration attitudes: a US survey experiment finds different beliefs about refugees and immigrants but no difference in affect or policy preferences. US only, no fiscal measures."
   },
   {
-   "id": "W7224115010",
+   "id": "W7224876078",
    "score": 7,
-   "why": "Redistribution preferences: uses votes on eight state ballot initiatives to measure self-interest as revealed rather than survey-reported preferences."
+   "why": "Elite cues and IPE attitudes: a five-country European survey experiment finds anti-IO populist rhetoric from mainstream parties lowers support for multilateral aid across the spectrum."
   },
   {
    "id": "W7223458148",
    "score": 7,
-   "why": "Trade and migration together: explains why preferential trade agreements increasingly include worker-mobility provisions despite hostile migration politics."
+   "why": "Trade and migration policy: new MITA data show worker mobility clauses in trade agreements follow economic interdependence and path dependence, not migration control goals."
   },
   {
-   "id": "W7224821017",
+   "id": "W7224115010",
    "score": 7,
-   "why": "Latin America and business cues: field experiment in Brazil showing legislators respond to information about an interest group's economic weight and coalition breadth."
+   "why": "Redistribution preferences: revealed support in eight US redistributive ballot initiatives tracks precinct income, with the largest class gap in Republican precincts. US only."
   },
   {
-   "id": "W7224930453",
+   "id": "W7225174171",
    "score": 7,
-   "why": "Chile: theorizes concentrated business groups as a source of class power and dependency in the Chilean economy."
+   "why": "Partisan cues: minute-level exposure to a US strike announcement during a survey shows partisan divergence in opinion within minutes. US only and on military policy, not economic policy."
   }
  ],
  "high_signal": [
   {
    "id": "W7224848391",
-   "why": "APSR piece building structural-gravity measures of dyadic trade dependence that account for intermediates and substitute suppliers; likely to be used as a dataset."
+   "why": "APSR article offering structural gravity measures of trade dependence that account for intermediates and substitutes, useful for any IPE work that uses interdependence as a variable."
   },
   {
-   "id": "W7223702150",
-   "why": "Shows citizens infer party ideology from gender-inclusivity cues, observational and experimental; a heuristics paper by senior authors."
+   "id": "W7224821017",
+   "why": "APSR field experiment in Brazil showing legislators respond to business groups' signals of size and economic importance, a causal test of informational lobbying in Latin America."
   },
   {
-   "id": "W7224089378",
-   "why": "RIPE argument that the IMF's central position in balance-of-payments lending is less secure than IPE assumes as China builds alternatives."
+   "id": "W7224930453",
+   "why": "RIPE article theorizing Chilean business groups as the organizational base of dependency, relevant to debates on concentrated capital in Latin American political economy."
   },
   {
-   "id": "W7223656183",
-   "why": "International Organization study of how local exposure to settler actions shapes Palestinian political attitudes."
+   "id": "W7223808300",
+   "why": "New database of 38 non-reciprocal trade preference schemes from 1950 to 2025, with gains found only for least developed countries."
   },
   {
-   "id": "W7224807583",
-   "why": "Survey experiment finding Americans distinguish less between refugees and immigrants than theory predicts; relevant framing evidence for immigration attitudes."
+   "id": "W4414761356",
+   "why": "Journal of Politics study showing coethnicity with refugees raises host acceptance mainly where hosts are a provincial minority, qualifying cultural threat accounts of immigration attitudes."
   }
  ],
  "near_misses": [
   {
-   "id": "W7224876078",
-   "score": 6
-  },
-  {
    "id": "W7225245667",
-   "score": 6
-  },
-  {
-   "id": "W7223808300",
    "score": 6
   },
   {
@@ -83,23 +96,7 @@
    "score": 6
   },
   {
-   "id": "W7223630718",
-   "score": 6
-  },
-  {
-   "id": "W7225244652",
-   "score": 5
-  },
-  {
-   "id": "W7225261503",
-   "score": 5
-  },
-  {
-   "id": "W7224097632",
-   "score": 5
-  },
-  {
-   "id": "W7224126325",
+   "id": "W4400524233",
    "score": 5
   },
   {
@@ -107,22 +104,27 @@
    "score": 5
   },
   {
-   "id": "W4414761356",
+   "id": "W7225197048",
    "score": 5
   },
   {
-   "id": "W7224259526",
+   "id": "W4408408603",
    "score": 5
   },
   {
-   "id": "W7224134337",
+   "id": "W7225261503",
    "score": 5
   },
   {
-   "id": "W7225111662",
+   "id": "W7223801718",
+   "score": 5
+  },
+  {
+   "id": "W7225244652",
    "score": 5
   }
  ],
+ "notes": "NBER, SSRN, SocArXiv, IMF and World Bank working papers returned no items in this window, nor did Latin American Politics and Society, Revista de Ciencia Política or Política y Gobierno, so Latin American and working paper coverage is thin this week.",
  "flagged_titles": [
   {
    "title": "Globalization and the Hinterland: International Trade and the Rural–Urban Divide",
@@ -137,50 +139,24 @@
    "url": "https://doi.org/10.1016/j.ejpoleco.2026.102913"
   },
   {
-   "title": "Partisan responsiveness in real time: causal evidence from Trump’s military attack on Iran",
-   "url": "https://doi.org/10.1017/psrm.2026.10135"
+   "title": "Distinction Without a Difference: American Public Opinion on Immigrants and Refugees",
+   "url": "https://doi.org/10.1007/s11109-026-10208-w"
   },
   {
-   "title": "Economic Self-Interest and Support for Redistribution: New Evidence Using Election Results Data",
-   "url": "https://doi.org/10.1017/s000305542610207x"
+   "title": "The populist contagion: how the mainstreaming of right-wing populist rhetoric reduces public support for international aid",
+   "url": "https://doi.org/10.1080/13501763.2026.2750197"
   },
   {
    "title": "Trading migration? Explaining mobility provisions in preferential trade agreements",
    "url": "https://doi.org/10.1007/s11558-026-09654-2"
   },
   {
-   "title": "When Business Speaks, Legislators Listen: Experimental and Qualitative Evidence from Brazil",
-   "url": "https://doi.org/10.1017/s0003055426101865"
+   "title": "Economic Self-Interest and Support for Redistribution: New Evidence Using Election Results Data",
+   "url": "https://doi.org/10.1017/s000305542610207x"
   },
   {
-   "title": "Peripheral monopoly capital: business groups, class power, and the reproduction of dependency in Chile",
-   "url": "https://doi.org/10.1080/09692290.2026.2750442"
+   "title": "Partisan responsiveness in real time: causal evidence from Trump’s military attack on Iran",
+   "url": "https://doi.org/10.1017/psrm.2026.10135"
   }
- ],
- "overview": {
-  "headline": "Trade politics goes local, and cues move opinion in minutes",
-  "standfirst": "This week's strongest work ties trade preferences to the structure of local economies, shows how fast elite and group cues travel, and links immigrant political inclusion to local taxes. Working-paper coverage was thin.",
-  "sections": [
-   {
-    "head": "Trade preferences follow local comparative advantage",
-    "body": "Two papers tie trade politics to who gains and loses inside a community. {W4414116330} uses harmonized surveys from 127 countries and finds rural voters back protectionist parties and policies where local agriculture is uncompetitive; where agriculture has a comparative advantage, the rural-urban gap is negligible, a result the authors also find in post-NAFTA variation across the US. {W7222506786} finds offshoring by US multinationals raises the incumbent's vote share in counties with more educated workers and lowers it where manufacturing and easily relocated occupations dominate. Neither covers Latin America, and neither looks at how voters learn about these effects, which is where your trade project sits."
-   },
-   {
-    "head": "Dependence is measured better, and migration rides on trade deals",
-    "body": "{W7224848391} builds structural-gravity measures of dyadic dependence that account for intermediate goods and substitute suppliers. On those measures the world has not become steadily more interdependent, and Chinese assistance raised partners' dependence on China without a matching rise in China's dependence on them. {W7223458148}, using the MITA dataset of trade-agreement mobility provisions from 1960 to 2020, finds these provisions are driven by economic interdependence and institutional path dependence, while migration-control goals explain little."
-   },
-   {
-    "head": "Cues work fast, and the messenger matters",
-    "body": "{W7225174171} exploits an announcement that landed mid-fieldwork: partisan divergence on military intervention appeared within minutes, before media framing spread. In Brazil, {W7224821017} finds legislators were more likely to vote with a pro-reform business group when its messages stressed membership size, economic weight and sectoral reach. In five European countries, {W7224876078} finds anti-IO rhetoric from mainstream parties lowered support for multilateral aid across the spectrum, while the same rhetoric from populist parties moved mainly their own supporters. {W7223702150} adds that voters read parties' gender inclusivity as a left-right cue. Across all four, who sends the signal carries much of the effect, which bears directly on trust in leaders as a heuristic."
-   },
-   {
-    "head": "Immigration, the franchise and the tax base",
-    "body": "{W7113383583} studies Sweden's 1975 extension of local voting rights to non-citizens and finds a one-time rise in municipal income taxes, larger where foreign voters were a bigger share and where the previous election was close. It is an outcome-side complement to work on how fiscal concerns shape immigration attitudes. On attitudes themselves, {W7224807583} finds Americans hold different beliefs about refugees and immigrants but report no difference in warmth or policy preferences, and {W4414761356} finds coethnicity raises acceptance of Afghan refugees in Pakistan mainly among hosts who are a minority in their province."
-   },
-   {
-    "head": "Latin America",
-    "body": "{W7224930453} develops a theory of concentrated business groups as the organizational basis of dependency in Chile, built on four major groups. {W7225245667} finds Uruguay's 2012 top-rate increase raised revenue, but income shifting toward corporate and capital tax bases limited its effect on inequality. None of this week's Latin American items is about public opinion on trade or economic policy."
-   }
-  ]
- }
+ ]
 }
