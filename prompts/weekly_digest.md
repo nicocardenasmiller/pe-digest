@@ -1,13 +1,13 @@
 # Weekly digest task prompt
 
-This is the instruction for the Monday scheduled task. The digest is published as a website at https://nicocardenasmiller.github.io/pe-digest/ by the "Publish site" workflow whenever a scores file is pushed.
+This is the instruction for the Monday scheduled task. The digest is published as a website at https://nicolascardenasmiller.com/pe-digest/ by the "Publish site" workflow whenever a scores file is pushed.
 
 ---
 
 Build this week's political economy reading digest for Felix.
 
 Repository: https://github.com/nicocardenasmiller/pe-digest
-Website: https://nicocardenasmiller.github.io/pe-digest/
+Website: https://nicolascardenasmiller.com/pe-digest/
 
 1. Attach the repository with push access (add_repo, owner nicocardenasmiller, repo pe-digest, access push) and clone it. Read `config/interests.md`, `data/latest.json` and `data/diagnostics.md`.
 2. If `week_of` in latest.json is more than 8 days old, the collector did not run. Write no scores. Send a short message saying the collector is stale and to check the Actions tab of the repository.

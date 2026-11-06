@@ -65,6 +65,7 @@ def main() -> int:
 ARCHIVE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>Past issues · The Political Economy Digest</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono&display=swap">
 <style>

@@ -341,6 +341,7 @@ def standalone(fragment: str, title: str = "The Political Economy Digest") -> st
     head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', "")
     return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            '<meta name="robots" content="noindex, nofollow">\n'
             '<style>body{margin:0}img{max-width:100%}</style>\n'
             f"{head}</head>\n<body>\n{sep}{body}</body>\n</html>\n")
 
